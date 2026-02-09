@@ -165,10 +165,10 @@ def main():
                 send_telegram_message(f"🤖 Ramki TT Wallet\n\n{error_msg}")
                 sys.exit(1)
         num_toggles_ramki = os.getenv("NUM_TOGGLES_RAMKI")
-        STRATEGY_ID = int(os.getenv("STRATEGY_ID_RAMKI") or "18713274")
+        STRATEGY_ID = int(os.getenv("STRATEGY_ID_RAMKI") or "22789265")
     else:
         num_toggles_ramki = os.getenv("NUM_TOGGLES_RAMKI") or os.getenv("NUM_TOGGLES")
-        STRATEGY_ID = int(os.getenv("STRATEGY_ID_RAMKI") or "18713274")
+        STRATEGY_ID = int(os.getenv("STRATEGY_ID_RAMKI") or "22789265")
     if not num_toggles_ramki or not num_toggles_ramki.strip():
         error_msg = "❌ NUM_TOGGLES_RAMKI is missing or empty."
         print(error_msg)
@@ -179,8 +179,8 @@ def main():
     print(" TRADETRON API AUTOMATION - NO BROWSER! (RAMKI)")
     print("="*70)
     strategy_id_ramki = os.getenv("STRATEGY_ID_RAMKI")
-    STRATEGY_ID = int(strategy_id_ramki) if strategy_id_ramki and strategy_id_ramki.strip() else 18713274
-    NUM_TOGGLES = int(os.getenv("NUM_TOGGLES_RAMKI", os.getenv("NUM_TOGGLES", "50")))
+    STRATEGY_ID = int(strategy_id_ramki) if strategy_id_ramki and strategy_id_ramki.strip() else 22789265
+    NUM_TOGGLES = int(os.getenv("NUM_TOGGLES_RAMKI", os.getenv("NUM_TOGGLES", "30")))
     DELAY_SECONDS = int(os.getenv("DELAY_SECONDS", "1"))
     print("\n1. Loading session from saved cookies...")
     session = load_session()
