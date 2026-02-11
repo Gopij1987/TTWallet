@@ -49,24 +49,23 @@ def send_telegram_message(message):
         return False
 
 def load_session():
-    """Load session from saved cookies"""
-    if not COOKIES_FILE.exists():
-        encoded = os.getenv("TT_COOKIES_B64_RAMKI")
-        if encoded:
-            try:
-                COOKIES_FILE.write_bytes(base64.b64decode(encoded))
-                print("✓ Cookies restored from TT_COOKIES_B64_RAMKI")
-            except Exception as e:
-                error_msg = f"❌ Failed to decode TT_COOKIES_B64_RAMKI: {str(e)}"
-                print(error_msg)
-                send_telegram_message(f"🤖 Ramki TT Wallet\n\n{error_msg}")
-                return None
-        else:
-            print("❌ No cookies found! Run quick_login.py first")
-            return None
+    """Load session from base64 encoded cookies"""
+    encoded = os.getenv("TT_COOKIES_B64_RAMKI")
+    if not encoded:
+        print("❌ No cookies found! Set TT_COOKIES_B64_RAMKI environment variable")
+        return None
+    
+    try:
+        cookies_bytes = base64.b64decode(encoded)
+        print("✓ Cookies loaded from TT_COOKIES_B64_RAMKI")
+    except Exception as e:
+        error_msg = f"❌ Failed to decode TT_COOKIES_B64_RAMKI: {str(e)}"
+        print(error_msg)
+        send_telegram_message(f"🤖 Ramki TT Wallet\n\n{error_msg}")
+        return None
+    
     session = requests.Session()
-    with open(COOKIES_FILE, 'rb') as f:
-        cookies = pickle.load(f)
+    cookies = pickle.loads(cookies_bytes)
     for cookie in cookies:
         session.cookies.set(cookie['name'], cookie['value'], domain=cookie.get('domain'))
     xsrf_token = session.cookies.get("XSRF-TOKEN") or session.cookies.get("X-XSRF-TOKEN")
