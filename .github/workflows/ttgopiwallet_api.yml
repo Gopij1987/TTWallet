@@ -2,7 +2,7 @@ name: TTGopiWallet API Automation
 
 on:
   schedule:
-    - cron: '02 0 * * *'  # Runs at 5:32 AM IST (0:32 UTC)
+    - cron: '02 0 * * 1-6'  # Runs at 5:32 AM IST (0:32 UTC)
   workflow_dispatch:
 
 jobs:
