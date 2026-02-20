@@ -2,7 +2,7 @@ name: TTRamkiWallet API Automation
 
 on:
   schedule:
-    - cron: '3 0 * * *'  # 5:33 AM IST (IST = UTC+5:30, so 0:03 UTC)
+    - cron: '3 0 * * 1-6'  # 5:33 AM IST (IST = UTC+5:30, so 0:03 UTC)
   workflow_dispatch:
 
 jobs:
