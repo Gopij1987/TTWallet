@@ -427,10 +427,37 @@ def main():
     session = load_session()
     
     if not session:
+        print("❌ Session invalid: cookies are expired or incorrect. Aborting.")
+        send_telegram_message("🤖 Gopi TT Wallet\n\n❌ Session invalid: cookies are expired or incorrect. Aborting automation.")
         sys.exit(1)
-    
     print("✓ Session loaded")
-    
+
+    # Validate cookies/session with a lightweight API call before proceeding
+    print("\n1a. Validating session with API...")
+    xsrf_token = session.cookies.get("XSRF-TOKEN") or session.cookies.get("X-XSRF-TOKEN")
+    headers = {
+        "Accept": "application/json",
+        "Referer": "https://tradetron.tech/user/dashboard",
+        "X-Requested-With": "XMLHttpRequest"
+    }
+    if xsrf_token:
+        headers["X-XSRF-TOKEN"] = xsrf_token
+        headers["X-CSRF-TOKEN"] = xsrf_token
+    try:
+        test = session.get("https://tradetron.tech/api/pricing/user-taxes", headers=headers)
+        if test.status_code != 200:
+            error_msg = f"❌ Cookie validation failed (status {test.status_code}) - aborting."
+            print(error_msg)
+            send_telegram_message(f"🤖 Gopi TT Wallet\n\n{error_msg}\n\nCookies may be expired. Please refresh cookies.")
+            sys.exit(1)
+        else:
+            print("✓ Session validated with API.")
+    except Exception as e:
+        error_msg = f"❌ Cookie validation failed: {str(e)} - aborting."
+        print(error_msg)
+        send_telegram_message(f"🤖 Gopi TT Wallet\n\n{error_msg}")
+        sys.exit(1)
+
     # Toggle Start/Stop
     print(f"\n2. Toggling Start/Stop {NUM_TOGGLES} times via API...")
     print(f"   (with {DELAY_SECONDS} second delay between commands)")

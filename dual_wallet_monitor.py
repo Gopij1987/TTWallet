@@ -17,10 +17,18 @@ import time
 from pathlib import Path
 from datetime import datetime
 
-# Load environment variables from .env file (for local development)
+# Load environment variables from TTGopiWallet/.env and TTRamkiWallet/.env (for local development)
 try:
     from dotenv import load_dotenv
-    load_dotenv()
+    import os
+    # Load Gopi wallet env
+    gopi_env = os.path.join(os.path.dirname(__file__), 'TTGopiWallet', '.env')
+    if os.path.exists(gopi_env):
+        load_dotenv(dotenv_path=gopi_env, override=True)
+    # Load Ramki wallet env
+    ramki_env = os.path.join(os.path.dirname(__file__), 'TTRamkiWallet', '.env')
+    if os.path.exists(ramki_env):
+        load_dotenv(dotenv_path=ramki_env, override=True)
 except ImportError:
     pass  # dotenv not installed or not needed in GitHub Actions
 
@@ -46,46 +54,31 @@ def send_telegram_message(message, title="TT Wallet Monitor"):
         print(f"⚠️  Telegram error: {str(e)}")
         return False
 
-def check_wallet_cookie(wallet_name, env_var_name):
+def check_wallet_cookie_and_api(wallet_name, env_var_name, strategy_id):
     """
-    Check if a wallet cookie is valid and return wallet info
-    Returns: (is_valid, wallet_info_dict)
+    Check if a wallet cookie is valid and if API endpoint is accessible.
+    Returns: (wallet_ok, wallet_info, api_ok, api_info)
     """
     print(f"\n🔍 Checking {wallet_name} wallet...")
-    
-    # Load cookie from environment
     encoded = os.getenv(env_var_name)
-    
     if not encoded:
         print(f"   ❌ {env_var_name} not found")
-        return False, {"error": f"Environment variable {env_var_name} not found"}
-    
+        return False, {"error": f"Environment variable {env_var_name} not found"}, False, {"error": "No cookie"}
     print(f"   ✓ Cookie loaded from {env_var_name}")
-    
-    # Decode the base64 cookie
     try:
         cookies_bytes = base64.b64decode(encoded)
     except Exception as e:
         print(f"   ❌ Failed to decode base64: {str(e)}")
-        return False, {"error": f"Base64 decode failed: {str(e)}"}
-    
-    # Load cookies into session
+        return False, {"error": f"Base64 decode failed: {str(e)}"}, False, {"error": "No cookie"}
     try:
         session = requests.Session()
         cookies = pickle.loads(cookies_bytes)
-        
         for cookie in cookies:
-            session.cookies.set(
-                cookie['name'], 
-                cookie['value'], 
-                domain=cookie.get('domain')
-            )
+            session.cookies.set(cookie['name'], cookie['value'], domain=cookie.get('domain'))
         print(f"   ✓ Session created with {len(cookies)} cookies")
     except Exception as e:
         print(f"   ❌ Failed to load cookies: {str(e)}")
-        return False, {"error": f"Cookie load failed: {str(e)}"}
-    
-    # Test the session with API call
+        return False, {"error": f"Cookie load failed: {str(e)}"}, False, {"error": "No session"}
     xsrf_token = session.cookies.get("XSRF-TOKEN") or session.cookies.get("X-XSRF-TOKEN")
     headers = {
         "Accept": "application/json",
@@ -95,69 +88,81 @@ def check_wallet_cookie(wallet_name, env_var_name):
     if xsrf_token:
         headers["X-XSRF-TOKEN"] = xsrf_token
         headers["X-CSRF-TOKEN"] = xsrf_token
-    
+    # Wallet check
     try:
-        response = session.get(
-            "https://tradetron.tech/api/pricing/user-taxes", 
-            headers=headers,
-            timeout=10
-        )
-        
+        response = session.get("https://tradetron.tech/api/pricing/user-taxes", headers=headers, timeout=10)
         if response.status_code == 200:
             try:
                 data = response.json()
                 balances = data.get("data", {}).get("balances", {})
                 print(f"   ✓ {wallet_name} cookie is VALID")
-                return True, balances
+                wallet_ok = True
+                wallet_info = balances
             except Exception as e:
                 print(f"   ⚠️  Response received but JSON parse failed: {str(e)}")
-                return False, {"error": f"JSON parse failed: {str(e)}"}
-        
+                wallet_ok = False
+                wallet_info = {"error": f"JSON parse failed: {str(e)}"}
         elif response.status_code == 401:
             print(f"   ❌ {wallet_name} cookie EXPIRED (401 Unauthorized)")
-            return False, {"error": "Cookie expired - Status 401"}
-        
+            wallet_ok = False
+            wallet_info = {"error": "Cookie expired - Status 401"}
         else:
             print(f"   ❌ {wallet_name} API error (Status {response.status_code})")
-            return False, {"error": f"API error - Status {response.status_code}"}
-            
+            wallet_ok = False
+            wallet_info = {"error": f"API error - Status {response.status_code}"}
     except requests.exceptions.Timeout:
         print(f"   ❌ {wallet_name} request timeout")
-        return False, {"error": "Request timeout"}
+        wallet_ok = False
+        wallet_info = {"error": "Request timeout"}
     except Exception as e:
         print(f"   ❌ {wallet_name} request failed: {str(e)}")
-        return False, {"error": str(e)}
+        wallet_ok = False
+        wallet_info = {"error": str(e)}
+    # API endpoint check (read-only, e.g., deployed status)
+    api_url = f"https://tradetron.tech/api/deployed/status?id={strategy_id}"
+    try:
+        api_response = session.get(api_url, headers=headers, timeout=10)
+        if api_response.status_code == 200:
+            api_ok = True
+            api_info = {"msg": "API OK"}
+        elif api_response.status_code == 401:
+            api_ok = False
+            api_info = {"msg": "API Unauthorized (401)"}
+        else:
+            api_ok = False
+            api_info = {"msg": f"API error: {api_response.status_code}"}
+    except Exception as e:
+        api_ok = False
+        api_info = {"msg": f"API exception: {str(e)}"}
+    return wallet_ok, wallet_info, api_ok, api_info
 
-def format_telegram_message(gopi_valid, gopi_info, ramki_valid, ramki_info):
-    """Format wallet status into Telegram message - short and crispy"""
+def format_telegram_message(gopi_wallet, gopi_api, ramki_wallet, ramki_api, gopi_info, gopi_api_info, ramki_info, ramki_api_info):
+    """Format wallet and API status into concise Telegram message"""
     timestamp = datetime.now().strftime("%H:%M:%S")
-    
-    gopi_status = "✅" if gopi_valid else "❌"
-    ramki_status = "✅" if ramki_valid else "❌"
-    
-    gopi_line = f"{gopi_status} Gopi: Running={gopi_info.get('running', '?')}"
-    if not gopi_valid:
-        gopi_line = f"{gopi_status} Gopi: {gopi_info.get('error', 'Error')}"
-    
-    ramki_line = f"{ramki_status} Ramki: Running={ramki_info.get('running', '?')}"
-    if not ramki_valid:
-        ramki_line = f"{ramki_status} Ramki: {ramki_info.get('error', 'Error')}"
-    
-    # Summary emoji
-    if gopi_valid and ramki_valid:
+    def line(name, wallet_ok, api_ok, info, api_info):
+        w = "✅" if wallet_ok else "❌"
+        a = "✅" if api_ok else "❌"
+        if wallet_ok:
+            wallet_part = f"Wallet OK"
+        else:
+            wallet_part = info.get('error', 'Wallet FAIL')
+        if api_ok:
+            api_part = "API OK"
+        else:
+            api_part = api_info.get('msg', 'API FAIL')
+        return f"{w} {name}: {wallet_part}, {a} {api_part}"
+    gopi_line = line("Gopi", gopi_wallet, gopi_api, gopi_info, gopi_api_info)
+    ramki_line = line("Ramki", ramki_wallet, ramki_api, ramki_info, ramki_api_info)
+    # Summary
+    if gopi_wallet and gopi_api and ramki_wallet and ramki_api:
         summary = "✅ All Good"
-    elif gopi_valid or ramki_valid:
-        summary = "⚠️ Check needed"
+    elif (gopi_wallet and gopi_api) or (ramki_wallet and ramki_api):
+        summary = "⚠️ Check Needed"
+    elif gopi_wallet or ramki_wallet or gopi_api or ramki_api:
+        summary = "⚠️ Partial Down"
     else:
         summary = "❌ Down"
-    
-    msg = f"""<b>🤖 Cookie Check</b> {timestamp}
-
-{gopi_line}
-{ramki_line}
-
-{summary}"""
-    
+    msg = f"""<b>🤖 TT Wallet Health</b> {timestamp}\n\n{gopi_line}\n{ramki_line}\n\n{summary}"""
     return msg
 
 def main():
@@ -186,12 +191,16 @@ def main():
     else:
         print("\n💻 Running locally")
     
-    # Check both wallets
-    gopi_valid, gopi_info = check_wallet_cookie("Gopi", "TT_COOKIES_B64_GOPI")
-    ramki_valid, ramki_info = check_wallet_cookie("Ramki", "TT_COOKIES_B64_RAMKI")
-    
+    # Strategy IDs for API check (set your real IDs here)
+    GOPI_STRATEGY_ID = int(os.getenv("STRATEGY_ID_GOPI") or 18713274)
+    RAMKI_STRATEGY_ID = int(os.getenv("STRATEGY_ID_RAMKI") or 12345678)
+
+    # Check both wallets and API
+    gopi_wallet, gopi_info, gopi_api, gopi_api_info = check_wallet_cookie_and_api("Gopi", "TT_COOKIES_B64_GOPI", GOPI_STRATEGY_ID)
+    ramki_wallet, ramki_info, ramki_api, ramki_api_info = check_wallet_cookie_and_api("Ramki", "TT_COOKIES_B64_RAMKI", RAMKI_STRATEGY_ID)
+
     # Format message
-    telegram_msg = format_telegram_message(gopi_valid, gopi_info, ramki_valid, ramki_info)
+    telegram_msg = format_telegram_message(gopi_wallet, gopi_api, ramki_wallet, ramki_api, gopi_info, gopi_api_info, ramki_info, ramki_api_info)
     
     # Display result
     print("\n" + "="*70)
@@ -209,7 +218,7 @@ def main():
         print("❌ Failed to send Telegram notification")
     
     # Return success/failure
-    return 0 if (gopi_valid and ramki_valid) else 1
+    return 0 if (gopi_wallet and gopi_api and ramki_wallet and ramki_api) else 1
 
 def run_periodic_check(interval_hours=6):
     """

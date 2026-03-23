@@ -1,5 +1,4 @@
-"""
-Refresh Tradetron Cookies and save to file (Gopi Wallet)
+"""Refresh Tradetron Cookies and generate base64 for GitHub (Gopi Wallet)
 Run in GitHub Actions weekly to keep cookies fresh
 """
 
@@ -11,8 +10,6 @@ import subprocess
 from shutil import which
 from pathlib import Path
 from config_TTGopiWallet import load_credentials, validate_credentials
-
-COOKIES_FILE = Path(__file__).parent / "tradetron_cookies_gopi.pkl"
 
 def login_and_save_cookies():
     """Login to Tradetron using Selenium and save cookies"""
@@ -86,16 +83,13 @@ def login_and_save_cookies():
                     'domain': cookie.get('domain', '.tradetron.tech')
                 })
             
-            # Save cookies
-            COOKIES_FILE.write_bytes(pickle.dumps(cookies_list))
-            print(f"✓ Cookies saved to {COOKIES_FILE}")
             print(f"✓ Total cookies: {len(cookies_list)}")
             
             # Generate base64 for GitHub secret
             print("\n" + "="*70)
             print("📋 Base64 encoded cookies for GitHub secret TT_COOKIES_B64_GOPI:")
             print("="*70)
-            cookies_b64 = base64.b64encode(COOKIES_FILE.read_bytes()).decode('utf-8')
+            cookies_b64 = base64.b64encode(pickle.dumps(cookies_list)).decode('utf-8')
             print(cookies_b64)
             print("="*70)
             print("\nℹ️  Copy the above value and update the GitHub secret:")
