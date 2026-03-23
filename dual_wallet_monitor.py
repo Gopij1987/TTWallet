@@ -1,3 +1,27 @@
+import pickle
+import json
+def fetch_wallet_running_count(wallet_name, session):
+    """Fetch the count of running strategies from wallet/dashboard for a given session."""
+    endpoint = "https://tradetron.tech/api/pricing/user-taxes"
+    xsrf_token = session.cookies.get("XSRF-TOKEN") or session.cookies.get("X-XSRF-TOKEN")
+    headers = {
+        "Accept": "application/json",
+        "Referer": "https://tradetron.tech/user/dashboard",
+        "X-Requested-With": "XMLHttpRequest"
+    }
+    if xsrf_token:
+        headers["X-XSRF-TOKEN"] = xsrf_token
+        headers["X-CSRF-TOKEN"] = xsrf_token
+    try:
+        response = session.get(endpoint, headers=headers)
+        if response.status_code == 200:
+            data = response.json()
+            balances = data.get("data", {}).get("balances", {})
+            if isinstance(balances, dict) and "running" in balances:
+                return int(balances.get("running"))
+    except Exception as e:
+        print(f"   ⚠️  {wallet_name} Wallet API failed: {str(e)}")
+    return None
 """
 Dual Wallet Cookie Validator & Health Monitor
 Checks both Gopi and Ramki wallet cookies every 6 hours
@@ -6,7 +30,6 @@ Sends Telegram notification with wallet status
 For Local: Set credentials in .env file
 For GitHub: Set as repository secrets
 """
-
 import requests
 import pickle
 import base64
@@ -139,7 +162,7 @@ def check_wallet_cookie_and_api(wallet_name, env_var_name, strategy_id):
 def format_telegram_message(gopi_wallet, gopi_api, ramki_wallet, ramki_api, gopi_info, gopi_api_info, ramki_info, ramki_api_info):
     """Format wallet and API status into concise Telegram message"""
     timestamp = datetime.now().strftime("%H:%M:%S")
-    def line(name, wallet_ok, api_ok, info, api_info):
+    def lines(name, wallet_ok, api_ok, info, api_info):
         w = "✅" if wallet_ok else "❌"
         a = "✅" if api_ok else "❌"
         if wallet_ok:
@@ -150,9 +173,10 @@ def format_telegram_message(gopi_wallet, gopi_api, ramki_wallet, ramki_api, gopi
             api_part = "API OK"
         else:
             api_part = api_info.get('msg', 'API FAIL')
-        return f"{w} {name}: {wallet_part}, {a} {api_part}"
-    gopi_line = line("Gopi", gopi_wallet, gopi_api, gopi_info, gopi_api_info)
-    ramki_line = line("Ramki", ramki_wallet, ramki_api, ramki_info, ramki_api_info)
+        # Show API status as next line
+        return f"{w} {name}: {wallet_part}\n    {a} API: {api_part}"
+    gopi_lines = lines("Gopi", gopi_wallet, gopi_api, gopi_info, gopi_api_info)
+    ramki_lines = lines("Ramki", ramki_wallet, ramki_api, ramki_info, ramki_api_info)
     # Summary
     if gopi_wallet and gopi_api and ramki_wallet and ramki_api:
         summary = "✅ All Good"
@@ -162,7 +186,7 @@ def format_telegram_message(gopi_wallet, gopi_api, ramki_wallet, ramki_api, gopi
         summary = "⚠️ Partial Down"
     else:
         summary = "❌ Down"
-    msg = f"""<b>🤖 TT Wallet Health</b> {timestamp}\n\n{gopi_line}\n{ramki_line}\n\n{summary}"""
+    msg = f"""<b>🤖 TT Wallet Health</b> {timestamp}\n\n{gopi_lines}\n{ramki_lines}\n\n{summary}"""
     return msg
 
 def main():
@@ -199,15 +223,70 @@ def main():
     gopi_wallet, gopi_info, gopi_api, gopi_api_info = check_wallet_cookie_and_api("Gopi", "TT_COOKIES_B64_GOPI", GOPI_STRATEGY_ID)
     ramki_wallet, ramki_info, ramki_api, ramki_api_info = check_wallet_cookie_and_api("Ramki", "TT_COOKIES_B64_RAMKI", RAMKI_STRATEGY_ID)
 
+    # Show wallet running count from API (if possible)
+    print("\n" + "="*70)
+    print(" WALLET CHECK SUMMARY")
+    print("="*70)
+
+    # Try to get running count for each wallet
+    gopi_running = None
+    ramki_running = None
+    # Only try if wallet is valid
+    if gopi_wallet:
+        # Re-create session for Gopi wallet
+        encoded = os.getenv("TT_COOKIES_B64_GOPI")
+        try:
+            cookies_bytes = base64.b64decode(encoded)
+            session = requests.Session()
+            cookies = pickle.loads(cookies_bytes)
+            for cookie in cookies:
+                session.cookies.set(cookie['name'], cookie['value'], domain=cookie.get('domain'))
+            gopi_running = fetch_wallet_running_count("Gopi", session)
+        except Exception as e:
+            print(f"   ⚠️  Gopi wallet running count error: {str(e)}")
+    if ramki_wallet:
+        encoded = os.getenv("TT_COOKIES_B64_RAMKI")
+        try:
+            cookies_bytes = base64.b64decode(encoded)
+            session = requests.Session()
+            cookies = pickle.loads(cookies_bytes)
+            for cookie in cookies:
+                session.cookies.set(cookie['name'], cookie['value'], domain=cookie.get('domain'))
+            ramki_running = fetch_wallet_running_count("Ramki", session)
+        except Exception as e:
+            print(f"   ⚠️  Ramki wallet running count error: {str(e)}")
+
+    # Print running counts
+    if gopi_running is not None:
+        print(f"👛 Gopi Wallets checked: {gopi_running}")
+    else:
+        print(f"👛 Gopi Wallets checked: unknown")
+    if ramki_running is not None:
+        print(f"👛 Ramki Wallets checked: {ramki_running}")
+    else:
+        print(f"👛 Ramki Wallets checked: unknown")
+
     # Format message
     telegram_msg = format_telegram_message(gopi_wallet, gopi_api, ramki_wallet, ramki_api, gopi_info, gopi_api_info, ramki_info, ramki_api_info)
-    
+
+    # Add wallet running counts to Telegram message
+    wallet_lines = []
+    if gopi_running is not None:
+        wallet_lines.append(f"👛 Gopi Wallets checked: <b>{gopi_running}</b>")
+    else:
+        wallet_lines.append(f"👛 Gopi Wallets checked: <b>unknown</b>")
+    if ramki_running is not None:
+        wallet_lines.append(f"👛 Ramki Wallets checked: <b>{ramki_running}</b>")
+    else:
+        wallet_lines.append(f"👛 Ramki Wallets checked: <b>unknown</b>")
+    telegram_msg = telegram_msg + "\n" + "\n".join(wallet_lines)
+
     # Display result
     print("\n" + "="*70)
     print(" HEALTH CHECK RESULTS")
     print("="*70)
     print(telegram_msg)
-    
+
     # Send to Telegram
     print("\n" + "="*70)
     print(" SENDING TELEGRAM NOTIFICATION...")
@@ -216,7 +295,7 @@ def main():
         print("✓ Telegram notification sent successfully")
     else:
         print("❌ Failed to send Telegram notification")
-    
+
     # Return success/failure
     return 0 if (gopi_wallet and gopi_api and ramki_wallet and ramki_api) else 1
 
