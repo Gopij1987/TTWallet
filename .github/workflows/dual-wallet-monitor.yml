@@ -33,5 +33,7 @@ jobs:
           TT_COOKIES_B64_RAMKI: ${{ secrets.TT_COOKIES_B64_RAMKI }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          STRATEGY_ID_GOPI: ${{ secrets.STRATEGY_ID_GOPI }}
+          STRATEGY_ID_RAMKI: ${{ secrets.STRATEGY_ID_RAMKI }}
           GITHUB_ACTIONS: 'true'
         run: python dual_wallet_monitor.py
