@@ -40,15 +40,18 @@ import time
 from pathlib import Path
 from datetime import datetime
 
-# Load environment variables from TTGopiWallet/.env and TTRamkiWallet/.env (for local development)
+# Load environment variables from wallet_monitor.env (for local development)
 try:
     from dotenv import load_dotenv
     import os
-    # Load Gopi wallet env
+    # Load wallet monitor env
+    wallet_monitor_env = os.path.join(os.path.dirname(__file__), 'wallet_monitor.env')
+    if os.path.exists(wallet_monitor_env):
+        load_dotenv(dotenv_path=wallet_monitor_env, override=True)
+    # Also load legacy wallet-specific env for compatibility
     gopi_env = os.path.join(os.path.dirname(__file__), 'TTGopiWallet', '.env')
     if os.path.exists(gopi_env):
         load_dotenv(dotenv_path=gopi_env, override=True)
-    # Load Ramki wallet env
     ramki_env = os.path.join(os.path.dirname(__file__), 'TTRamkiWallet', '.env')
     if os.path.exists(ramki_env):
         load_dotenv(dotenv_path=ramki_env, override=True)
@@ -159,8 +162,11 @@ def check_wallet_cookie_and_api(wallet_name, env_var_name, strategy_id):
         api_info = {"msg": f"API exception: {str(e)}"}
     return wallet_ok, wallet_info, api_ok, api_info
 
-def format_telegram_message(gopi_wallet, gopi_api, ramki_wallet, ramki_api, gopi_info, gopi_api_info, ramki_info, ramki_api_info):
-    """Format wallet and API status into concise Telegram message"""
+def format_telegram_message(wallets_status):
+    """Format wallet and API status into concise Telegram message
+    
+    wallets_status: dict with wallet names as keys and tuples of (wallet_ok, api_ok, info, api_info)
+    """
     timestamp = datetime.now().strftime("%H:%M:%S")
     def lines(name, wallet_ok, api_ok, info, api_info):
         w = "✅" if wallet_ok else "❌"
@@ -175,27 +181,50 @@ def format_telegram_message(gopi_wallet, gopi_api, ramki_wallet, ramki_api, gopi
             api_part = api_info.get('msg', 'API FAIL')
         # Show API status as next line
         return f"{w} {name}: {wallet_part}\n    {a} API: {api_part}"
-    gopi_lines = lines("Gopi", gopi_wallet, gopi_api, gopi_info, gopi_api_info)
-    ramki_lines = lines("Ramki", ramki_wallet, ramki_api, ramki_info, ramki_api_info)
+    
+    # Build lines for each wallet
+    wallet_lines = []
+    all_wallet_ok = True
+    all_api_ok = True
+    any_ok = False
+    
+    for wallet_name in sorted(wallets_status.keys()):
+        wallet_ok, api_ok, info, api_info = wallets_status[wallet_name]
+        wallet_lines.append(lines(wallet_name, wallet_ok, api_ok, info, api_info))
+        if not (wallet_ok and api_ok):
+            all_wallet_ok = False
+        if not api_ok:
+            all_api_ok = False
+        if wallet_ok and api_ok:
+            any_ok = True
+    
     # Summary
-    if gopi_wallet and gopi_api and ramki_wallet and ramki_api:
+    if all_wallet_ok and all_api_ok:
         summary = "✅ All Good"
-    elif (gopi_wallet and gopi_api) or (ramki_wallet and ramki_api):
+    elif any_ok:
         summary = "⚠️ Check Needed"
-    elif gopi_wallet or ramki_wallet or gopi_api or ramki_api:
+    elif any(ws[0] or ws[2] for ws in wallets_status.values()):
         summary = "⚠️ Partial Down"
     else:
         summary = "❌ Down"
-    msg = f"""<b>🤖 TT Wallet Health</b> {timestamp}\n\n{gopi_lines}\n{ramki_lines}\n\n{summary}"""
+    
+    msg = f"""<b>🤖 TT Wallet Health</b> {timestamp}\n\n{chr(10).join(wallet_lines)}\n\n{summary}"""
     return msg
 
 def main():
     print("\n" + "="*70)
-    print(" DUAL WALLET COOKIE & HEALTH CHECK")
+    print(" WALLET COOKIE & HEALTH CHECK")
     print("="*70)
     
     # Detect local vs GitHub Actions run
     running_in_github = os.getenv('GITHUB_ACTIONS', '').lower() == 'true'
+    
+    # Wallet configurations
+    WALLETS = {
+        "Gopi": {"cookie_var": "TT_COOKIES_B64_GOPI", "strategy_var": "STRATEGY_ID_GOPI", "default_strategy": 18713274},
+        "Ramki": {"cookie_var": "TT_COOKIES_B64_RAMKI", "strategy_var": "STRATEGY_ID_RAMKI", "default_strategy": 12345678},
+        "Capital": {"cookie_var": "TT_COOKIES_B64_CAPITAL", "strategy_var": "STRATEGY_ID_CAPITAL", "default_strategy": 87654321},
+    }
     
     # For GitHub Actions: require all secrets
     if running_in_github:
@@ -203,6 +232,7 @@ def main():
         required_secrets = [
             ("TT_COOKIES_B64_GOPI", os.getenv("TT_COOKIES_B64_GOPI")),
             ("TT_COOKIES_B64_RAMKI", os.getenv("TT_COOKIES_B64_RAMKI")),
+            ("TT_COOKIES_B64_CAPITAL", os.getenv("TT_COOKIES_B64_CAPITAL")),
             ("TELEGRAM_BOT_TOKEN", os.getenv("TELEGRAM_BOT_TOKEN")),
             ("TELEGRAM_CHAT_ID", os.getenv("TELEGRAM_CHAT_ID")),
         ]
@@ -214,14 +244,15 @@ def main():
         print("✓ All required secrets found")
     else:
         print("\n💻 Running locally")
-    
-    # Strategy IDs for API check (set your real IDs here)
-    GOPI_STRATEGY_ID = int(os.getenv("STRATEGY_ID_GOPI") or 18713274)
-    RAMKI_STRATEGY_ID = int(os.getenv("STRATEGY_ID_RAMKI") or 12345678)
 
-    # Check both wallets and API
-    gopi_wallet, gopi_info, gopi_api, gopi_api_info = check_wallet_cookie_and_api("Gopi", "TT_COOKIES_B64_GOPI", GOPI_STRATEGY_ID)
-    ramki_wallet, ramki_info, ramki_api, ramki_api_info = check_wallet_cookie_and_api("Ramki", "TT_COOKIES_B64_RAMKI", RAMKI_STRATEGY_ID)
+    # Check all wallets and API
+    wallets_status = {}
+    for wallet_name, config in WALLETS.items():
+        strategy_id = int(os.getenv(config["strategy_var"]) or config["default_strategy"])
+        wallet_ok, wallet_info, api_ok, api_info = check_wallet_cookie_and_api(
+            wallet_name, config["cookie_var"], strategy_id
+        )
+        wallets_status[wallet_name] = (wallet_ok, api_ok, wallet_info, api_info)
 
     # Show wallet running count from API (if possible)
     print("\n" + "="*70)
@@ -229,56 +260,43 @@ def main():
     print("="*70)
 
     # Try to get running count for each wallet
-    gopi_running = None
-    ramki_running = None
-    # Only try if wallet is valid
-    if gopi_wallet:
-        # Re-create session for Gopi wallet
-        encoded = os.getenv("TT_COOKIES_B64_GOPI")
-        try:
-            cookies_bytes = base64.b64decode(encoded)
-            session = requests.Session()
-            cookies = pickle.loads(cookies_bytes)
-            for cookie in cookies:
-                session.cookies.set(cookie['name'], cookie['value'], domain=cookie.get('domain'))
-            gopi_running = fetch_wallet_running_count("Gopi", session)
-        except Exception as e:
-            print(f"   ⚠️  Gopi wallet running count error: {str(e)}")
-    if ramki_wallet:
-        encoded = os.getenv("TT_COOKIES_B64_RAMKI")
-        try:
-            cookies_bytes = base64.b64decode(encoded)
-            session = requests.Session()
-            cookies = pickle.loads(cookies_bytes)
-            for cookie in cookies:
-                session.cookies.set(cookie['name'], cookie['value'], domain=cookie.get('domain'))
-            ramki_running = fetch_wallet_running_count("Ramki", session)
-        except Exception as e:
-            print(f"   ⚠️  Ramki wallet running count error: {str(e)}")
+    wallets_running = {}
+    for wallet_name, config in WALLETS.items():
+        wallet_ok, api_ok, _, _ = wallets_status[wallet_name]
+        if wallet_ok:
+            encoded = os.getenv(config["cookie_var"])
+            try:
+                cookies_bytes = base64.b64decode(encoded)
+                session = requests.Session()
+                cookies = pickle.loads(cookies_bytes)
+                for cookie in cookies:
+                    session.cookies.set(cookie['name'], cookie['value'], domain=cookie.get('domain'))
+                wallets_running[wallet_name] = fetch_wallet_running_count(wallet_name, session)
+            except Exception as e:
+                print(f"   ⚠️  {wallet_name} wallet running count error: {str(e)}")
+                wallets_running[wallet_name] = None
+        else:
+            wallets_running[wallet_name] = None
 
     # Print running counts
-    if gopi_running is not None:
-        print(f"👛 Gopi Wallets checked: {gopi_running}")
-    else:
-        print(f"👛 Gopi Wallets checked: unknown")
-    if ramki_running is not None:
-        print(f"👛 Ramki Wallets checked: {ramki_running}")
-    else:
-        print(f"👛 Ramki Wallets checked: unknown")
+    for wallet_name in sorted(wallets_running.keys()):
+        running = wallets_running[wallet_name]
+        if running is not None:
+            print(f"👛 {wallet_name} Wallets checked: {running}")
+        else:
+            print(f"👛 {wallet_name} Wallets checked: unknown")
 
     # Format message
-    telegram_msg = format_telegram_message(gopi_wallet, gopi_api, ramki_wallet, ramki_api, gopi_info, gopi_api_info, ramki_info, ramki_api_info)
+    telegram_msg = format_telegram_message(wallets_status)
 
     # Add wallet running counts to Telegram message
     wallet_lines = []
-    if gopi_running is not None:
-        wallet_lines.append(f"👛 Gopi Wallets checked: <b>{gopi_running}</b>")
-    else:
-        wallet_lines.append(f"👛 Gopi Wallets checked: <b>unknown</b>")
-    if ramki_running is not None:
-        wallet_lines.append(f"👛 Ramki Wallets checked: <b>{ramki_running}</b>")
-    else:
-        wallet_lines.append(f"👛 Ramki Wallets checked: <b>unknown</b>")
+    for wallet_name in sorted(wallets_running.keys()):
+        running = wallets_running[wallet_name]
+        if running is not None:
+            wallet_lines.append(f"👛 {wallet_name} Wallets checked: <b>{running}</b>")
+        else:
+            wallet_lines.append(f"👛 {wallet_name} Wallets checked: <b>unknown</b>")
     telegram_msg = telegram_msg + "\n" + "\n".join(wallet_lines)
 
     # Display result
@@ -296,8 +314,9 @@ def main():
     else:
         print("❌ Failed to send Telegram notification")
 
-    # Return success/failure
-    return 0 if (gopi_wallet and gopi_api and ramki_wallet and ramki_api) else 1
+    # Return success/failure (all wallets must be OK)
+    all_ok = all(wallet_ok and api_ok for wallet_ok, api_ok, _, _ in wallets_status.values())
+    return 0 if all_ok else 1
 
 def run_periodic_check(interval_hours=6):
     """
