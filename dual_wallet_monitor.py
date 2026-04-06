@@ -39,6 +39,7 @@ import traceback
 import time
 from pathlib import Path
 from datetime import datetime
+import pytz
 
 # Load environment variables from wallet_monitor.env (for local development)
 try:
@@ -79,6 +80,17 @@ def send_telegram_message(message, title="TT Wallet Monitor"):
     except Exception as e:
         print(f"⚠️  Telegram error: {str(e)}")
         return False
+
+def get_execution_times():
+    """Get current server time (UTC) and Indian time (IST)"""
+    utc_now = datetime.now(pytz.UTC)
+    ist = pytz.timezone('Asia/Kolkata')
+    indian_time = utc_now.astimezone(ist)
+    
+    server_time = utc_now.strftime("%H:%M:%S UTC")
+    indian_time_str = indian_time.strftime("%H:%M:%S IST")
+    
+    return server_time, indian_time_str
 
 def check_wallet_cookie_and_api(wallet_name, env_var_name, strategy_id):
     """
@@ -167,7 +179,8 @@ def format_telegram_message(wallets_status):
     
     wallets_status: dict with wallet names as keys and tuples of (wallet_ok, api_ok, info, api_info)
     """
-    timestamp = datetime.now().strftime("%H:%M:%S")
+    server_time, indian_time = get_execution_times()
+    
     def lines(name, wallet_ok, api_ok, info, api_info):
         w = "✅" if wallet_ok else "❌"
         a = "✅" if api_ok else "❌"
@@ -208,7 +221,14 @@ def format_telegram_message(wallets_status):
     else:
         summary = "❌ Down"
     
-    msg = f"""<b>🤖 TT Wallet Health</b> {timestamp}\n\n{chr(10).join(wallet_lines)}\n\n{summary}"""
+    msg = f"""<b>🤖 TT Wallet Health</b>
+
+⏱️ Executing: <b>{server_time}</b>
+🇮🇳 Indian Time: <b>{indian_time}</b>
+
+{chr(10).join(wallet_lines)}
+
+{summary}"""
     return msg
 
 def main():

@@ -1,0 +1,5163 @@
+{
+  "counter": 5,
+  "status": 200,
+  "endpoint": "https://tradetron.tech/api/deployed/7147483?counter=5",
+  "data": {
+    "success": true,
+    "data": {
+      "created_at": "2023-03-06T03:15:54.000000Z",
+      "created_by_id": 212848,
+      "deployment_date": "2023-03-06T00:00:00.000000Z",
+      "deployment_type": "LIVE AUTO",
+      "id": 7147483,
+      "run_counter": 1008,
+      "status": "Live-Entered",
+      "sum_of_pnl": 5762.4995,
+      "strategy_broker": {
+        "id": 7154525,
+        "exchange": "NFO",
+        "broker": {
+          "id": 167,
+          "name": "Angelone"
+        }
+      },
+      "strategy_template_id": 2457803,
+      "subscriber_id": 212848,
+      "user": {
+        "id": 212848,
+        "name": "Patni Capital PVT LTD"
+      },
+      "template": {
+        "id": 2457803,
+        "name": "Directional Option Selling BNF With Hedge V4",
+        "user": {
+          "id": 212848,
+          "name": "Patni Capital PVT LTD"
+        },
+        "created_by_id": 212848,
+        "strategy_params": "",
+        "min_multiple": 1,
+        "capital_required": 140000,
+        "variable_fee": "6.75",
+        "display_positions_to_non_subscribers": 0,
+        "profile": {
+          "id": 2381607,
+          "country": "IN",
+          "currency_code": "INR",
+          "strategy_template_id": 2457803,
+          "live_deployment_count": 36,
+          "deployed_display_type": 1,
+          "max_multiple": 100,
+          "exchanges_data": "NFO"
+        }
+      },
+      "user_notes": "",
+      "calculated_positions": [
+        {
+          "id": 23030900300129,
+          "strategy_id": 7147483,
+          "Instrument": "OPTIDX_BANKNIFTY_09MAR2023_PE_41100",
+          "quantity": 0,
+          "price": 12.65,
+          "underlying": "NIFTY BANK",
+          "option_type": "PE",
+          "exchange": "NFO",
+          "ltp": 0,
+          "gamma": 0,
+          "delta": 0,
+          "iv": 0,
+          "vega": 0,
+          "theta": 0,
+          "pnl": -1932.5,
+          "exp": 0,
+          "entry_value": 1932.5
+        },
+        {
+          "id": 23030806740596,
+          "strategy_id": 7147483,
+          "Instrument": "OPTIDX_BANKNIFTY_09MAR2023_PE_41700",
+          "quantity": 0,
+          "price": 305.75,
+          "underlying": "NIFTY BANK",
+          "option_type": "PE",
+          "exchange": "NFO",
+          "ltp": 0,
+          "gamma": 0,
+          "delta": 0,
+          "iv": 0,
+          "vega": 0,
+          "theta": 0,
+          "pnl": 7694.9995,
+          "exp": 0,
+          "entry_value": -7694.9995
+        }
+      ],
+      "max_run_counter": 1008,
+      "count_of_run_counter": 1008,
+      "blocked_term": "TT_SUBSCRIPTION_EXPIRED",
+      "deployed_display_type": 1,
+      "max_multiple": 100,
+      "exchange": "NFO",
+      "minimum_multiple": 4,
+      "market_open": null,
+      "is_blur": false,
+      "ltp_precision": 2,
+      "access_level": "Write",
+      "exit_on_error": 0,
+      "local": 3,
+      "stockbag": null,
+      "strategyExtra": {
+        "id": 255111,
+        "strategy_id": 7147483,
+        "exclude_booked_pnl": 0
+      },
+      "can_change_broker": false,
+      "filtered_run_counter": [
+        {
+          "strategy_id": 7147483,
+          "run_counter": 1008,
+          "pnl": 9092.40151977539
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 1007,
+          "pnl": 1528.8006591796875
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 1006,
+          "pnl": 6261.59912109375
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 1005,
+          "pnl": 5363.998718261719
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 1004,
+          "pnl": 11248.799743652344
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 1003,
+          "pnl": -15112.801666259766
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 1002,
+          "pnl": 18137.99835205078
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 1001,
+          "pnl": -2088.0010986328125
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 1000,
+          "pnl": 9265.201263427734
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 999,
+          "pnl": -18144.000091552734
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 998,
+          "pnl": 20857.201538085938
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 997,
+          "pnl": -6262.80029296875
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 996,
+          "pnl": -6425.999450683594
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 995,
+          "pnl": -11975.999908447266
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 994,
+          "pnl": -9899.998626708984
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 993,
+          "pnl": 19775.999450683594
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 992,
+          "pnl": -8338.802490234375
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 991,
+          "pnl": -6374.4012451171875
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 990,
+          "pnl": 10202.402114868164
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 989,
+          "pnl": -4403.999176025391
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 988,
+          "pnl": -6296.401062011719
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 987,
+          "pnl": 7233.601226806641
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 986,
+          "pnl": -5438.399505615234
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 985,
+          "pnl": 4567.2015380859375
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 984,
+          "pnl": -3019.2022705078125
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 983,
+          "pnl": -2260.7981872558594
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 982,
+          "pnl": 18814.799194335938
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 981,
+          "pnl": -9989.001388549805
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 980,
+          "pnl": 16326.80025100708
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 979,
+          "pnl": 22747.19846725464
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 978,
+          "pnl": -3770.2005767822266
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 977,
+          "pnl": 3038.001174926758
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 976,
+          "pnl": 15177.399978637695
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 975,
+          "pnl": -3876.599807739258
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 974,
+          "pnl": -7203.001174926758
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 973,
+          "pnl": -7679.002990722656
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 972,
+          "pnl": -8773.797607421875
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 971,
+          "pnl": 9381.399230957031
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 970,
+          "pnl": -14110.596389770508
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 969,
+          "pnl": -8264.197692871094
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 968,
+          "pnl": -1814.4014739990234
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 967,
+          "pnl": -4306.402435302734
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 966,
+          "pnl": -12170.201110839844
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 965,
+          "pnl": 2207.797393798828
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 964,
+          "pnl": 9553.597564697266
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 963,
+          "pnl": -5625.20378112793
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 962,
+          "pnl": -9924.600448608398
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 961,
+          "pnl": 9125.201110839844
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 960,
+          "pnl": -8330
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 959,
+          "pnl": 14356.997756958008
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 958,
+          "pnl": -16315.600662231445
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 957,
+          "pnl": -13693.402862548828
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 956,
+          "pnl": -16616.600341796875
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 955,
+          "pnl": -12921.999893188477
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 954,
+          "pnl": 4670.400085449219
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 953,
+          "pnl": -13446.99935913086
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 952,
+          "pnl": 9570.39981842041
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 951,
+          "pnl": -7144.1998291015625
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 950,
+          "pnl": -369.5967102050781
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 949,
+          "pnl": 8975.39794921875
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 948,
+          "pnl": -12735.801773071289
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 947,
+          "pnl": -3948.0027770996094
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 946,
+          "pnl": -14694.397735595703
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 945,
+          "pnl": 21145.60146331787
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 944,
+          "pnl": -5221.997222900391
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 943,
+          "pnl": 6431.598739624023
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 942,
+          "pnl": -1703.7997436523438
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 941,
+          "pnl": -14557.200469970703
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 940,
+          "pnl": -13413.402328491211
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 939,
+          "pnl": -14496.99935913086
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 938,
+          "pnl": 20628.99845123291
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 937,
+          "pnl": -11038.999786376953
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 936,
+          "pnl": -17389.400939941406
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 935,
+          "pnl": -14711.20346069336
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 934,
+          "pnl": 21492.799530029297
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 933,
+          "pnl": -4750.200042724609
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 932,
+          "pnl": -3974.598846435547
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 931,
+          "pnl": -6.999359130859375
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 930,
+          "pnl": -1925.0032043457031
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 929,
+          "pnl": 11802.002029418945
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 928,
+          "pnl": -10418.801879882812
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 927,
+          "pnl": 17204.60178375244
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 926,
+          "pnl": 20553.40045928955
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 925,
+          "pnl": -3331.9991463422775
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 924,
+          "pnl": -4453.400726318359
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 923,
+          "pnl": -18782.39891052246
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 922,
+          "pnl": 24329.201431274414
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 921,
+          "pnl": 19689.6004486084
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 920,
+          "pnl": 4227.999038696289
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 919,
+          "pnl": -15714.998397827148
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 918,
+          "pnl": -634.1987609863281
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 917,
+          "pnl": -7688.799209594727
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 916,
+          "pnl": -7389.199295043945
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 915,
+          "pnl": -10287.199935913086
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 914,
+          "pnl": -2309.9983978271484
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 913,
+          "pnl": 27172.60108947754
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 912,
+          "pnl": 2876.9972229003906
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 911,
+          "pnl": 21919.8002243042
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 910,
+          "pnl": -1416.79931640625
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 909,
+          "pnl": -2672.5994873046875
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 908,
+          "pnl": 2136.4013671875
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 907,
+          "pnl": -8670.198440551758
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 906,
+          "pnl": 2903.6002349853516
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 905,
+          "pnl": -916.9977569580078
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 904,
+          "pnl": -1338.4007263183594
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 903,
+          "pnl": 5783.400726318359
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 902,
+          "pnl": -14578.202819824219
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 901,
+          "pnl": 29509.198026657104
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 900,
+          "pnl": 21315.001335144043
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 899,
+          "pnl": 4249.001388549805
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 898,
+          "pnl": 22174.59857940674
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 897,
+          "pnl": -4576.602478027344
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 896,
+          "pnl": -2843.4033966064453
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 895,
+          "pnl": -7698.601837158203
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 894,
+          "pnl": -15752.801132202148
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 893,
+          "pnl": 22000.998611450195
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 892,
+          "pnl": -2444.3961334228516
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 891,
+          "pnl": -2183.999786376953
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 890,
+          "pnl": 839.9978637695312
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 889,
+          "pnl": -694.3972015380859
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 888,
+          "pnl": -1855.0010681152344
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 887,
+          "pnl": -9753.798141479492
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 886,
+          "pnl": -1300.599594116211
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 885,
+          "pnl": 16596.998558044434
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 884,
+          "pnl": -18251.8009185791
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 883,
+          "pnl": -12844.999465942383
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 882,
+          "pnl": 19382.998504638672
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 881,
+          "pnl": -4725.001602172852
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 880,
+          "pnl": -14782.597351074219
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 879,
+          "pnl": -12854.799423217773
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 878,
+          "pnl": 22348.199882507324
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 877,
+          "pnl": -7487.197265625
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 876,
+          "pnl": 3624.6004486083984
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 875,
+          "pnl": -3572.7984619140625
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 874,
+          "pnl": 6033.997116088867
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 873,
+          "pnl": -8174.600448608398
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 872,
+          "pnl": 20501.598205566406
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 871,
+          "pnl": 3590.9991455078125
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 870,
+          "pnl": -2158.797073364258
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 869,
+          "pnl": 9406.60140991211
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 868,
+          "pnl": 2525.6017303466797
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 867,
+          "pnl": -2003.4012603759766
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 866,
+          "pnl": 16.798782348632812
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 865,
+          "pnl": 6917.40104675293
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 864,
+          "pnl": -3548.9987182617188
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 863,
+          "pnl": -4230.8001708984375
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 862,
+          "pnl": 12182.799263000488
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 861,
+          "pnl": -8871.600952148438
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 860,
+          "pnl": 15578.400993347168
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 859,
+          "pnl": -11331.600494384766
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 858,
+          "pnl": 19949.997940063477
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 857,
+          "pnl": -10208.401336669922
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 856,
+          "pnl": -3907.1983337402344
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 855,
+          "pnl": 1783.198471069336
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 854,
+          "pnl": -1417.1974182128906
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 853,
+          "pnl": -2140.8004760742188
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 852,
+          "pnl": -2001.6018676757812
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 851,
+          "pnl": -5618.401336669922
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 850,
+          "pnl": 498.0006408691406
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 849,
+          "pnl": 981.6000366210938
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 848,
+          "pnl": 20179.20066833496
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 847,
+          "pnl": -4917.600860595703
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 846,
+          "pnl": 136.80084228515625
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 845,
+          "pnl": 13023.601455688477
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 844,
+          "pnl": -2817.600860595703
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 843,
+          "pnl": 868.7992858886719
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 842,
+          "pnl": 6864.000091552734
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 841,
+          "pnl": -2077.200164794922
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 840,
+          "pnl": 0
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 839,
+          "pnl": -20504.39998626709
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 838,
+          "pnl": -7855.201721191406
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 837,
+          "pnl": 20326.80072784424
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 836,
+          "pnl": -5983.2000732421875
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 835,
+          "pnl": 16842.000045776367
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 834,
+          "pnl": -9435.600128173828
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 833,
+          "pnl": -12352.799377441406
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 832,
+          "pnl": -6988.799743652344
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 831,
+          "pnl": -2242.800750732422
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 830,
+          "pnl": -1624.8019409179688
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 829,
+          "pnl": 648.0006408691406
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 828,
+          "pnl": 9344.401245117188
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 827,
+          "pnl": -3796.7990112304688
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 826,
+          "pnl": -2451.598663330078
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 825,
+          "pnl": -5624.402618408203
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 824,
+          "pnl": -13641.599578857422
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 823,
+          "pnl": -9338.402709960938
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 822,
+          "pnl": 1610.401611328125
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 821,
+          "pnl": 16721.998443603516
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 820,
+          "pnl": -7311.59912109375
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 819,
+          "pnl": -8366.39877319336
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 818,
+          "pnl": -4148.3990478515625
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 817,
+          "pnl": -1114.79736328125
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 816,
+          "pnl": 1600.8009338378906
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 815,
+          "pnl": -11617.197875976562
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 814,
+          "pnl": -14833.199615478516
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 813,
+          "pnl": 19288.799285888672
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 812,
+          "pnl": 18661.199111938477
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 811,
+          "pnl": 22898.401107788086
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 810,
+          "pnl": 18294.001693725586
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 809,
+          "pnl": 17481.600952148438
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 808,
+          "pnl": 21617.998580932617
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 807,
+          "pnl": -12163.202362060547
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 806,
+          "pnl": -5749.199523925781
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 805,
+          "pnl": -14797.196960449219
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 804,
+          "pnl": 4383.600769042969
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 803,
+          "pnl": 1086.0008239746094
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 802,
+          "pnl": -6304.7991943359375
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 801,
+          "pnl": -10309.19906616211
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 800,
+          "pnl": 1952.4000549316406
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 799,
+          "pnl": -8348.396987915039
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 798,
+          "pnl": -13527.598571777344
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 797,
+          "pnl": 21969.601249694824
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 796,
+          "pnl": -8953.199157714844
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 795,
+          "pnl": 7145.999450683594
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 794,
+          "pnl": 19395.600128173828
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 793,
+          "pnl": 18832.79914855957
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 792,
+          "pnl": 17242.79972076416
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 791,
+          "pnl": 17881.201400756836
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 790,
+          "pnl": 19045.19989013672
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 789,
+          "pnl": -3775.1980590820312
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 788,
+          "pnl": 112.79708862304688
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 787,
+          "pnl": -2551.2002563476562
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 786,
+          "pnl": 4320.0018310546875
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 785,
+          "pnl": -1172.3995971679688
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 784,
+          "pnl": 80.40206909179688
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 783,
+          "pnl": -4285.20263671875
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 782,
+          "pnl": 6759.60090637207
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 781,
+          "pnl": -7278.000640869141
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 780,
+          "pnl": 7501.201171875
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 779,
+          "pnl": -849.6011352539062
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 778,
+          "pnl": -8175.600128173828
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 777,
+          "pnl": -1068.0001831054688
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 776,
+          "pnl": -2845.198974609375
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 775,
+          "pnl": -5707.200164794922
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 774,
+          "pnl": 22641.601066589355
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 773,
+          "pnl": -4512.000732421875
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 772,
+          "pnl": -2073.5980224609375
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 771,
+          "pnl": 9393.600311279297
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 770,
+          "pnl": -1809.6002197265625
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 769,
+          "pnl": -15244.800567626953
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 768,
+          "pnl": -13069.19677734375
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 767,
+          "pnl": 17296.798782348633
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 766,
+          "pnl": -7617.601318359375
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 765,
+          "pnl": -12675.60287475586
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 764,
+          "pnl": 17435.999221801758
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 763,
+          "pnl": 4464.00146484375
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 762,
+          "pnl": -8720.399780273438
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 761,
+          "pnl": 577.2001647949219
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 760,
+          "pnl": 8824.79965209961
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 759,
+          "pnl": -10465.19760131836
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 758,
+          "pnl": -6724.950656890869
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 757,
+          "pnl": 13527.148690223694
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 756,
+          "pnl": -10151.401233673096
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 755,
+          "pnl": 15176.699295043945
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 754,
+          "pnl": -23125.20097732544
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 753,
+          "pnl": 15381.448974609375
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 752,
+          "pnl": -10658.551425933838
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 751,
+          "pnl": -1002.7483177185059
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 750,
+          "pnl": -11257.049503326416
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 749,
+          "pnl": -12291.302146911621
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 748,
+          "pnl": -1346.1015701293945
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 747,
+          "pnl": -4648.350048065186
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 746,
+          "pnl": -12154.800624847412
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 745,
+          "pnl": 70.35140991210938
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 744,
+          "pnl": -11534.249038696289
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 743,
+          "pnl": 17804.84836578369
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 742,
+          "pnl": 16475.55058479309
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 741,
+          "pnl": 12839.40107345581
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 740,
+          "pnl": 5261.547260284424
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 739,
+          "pnl": -5280.450096130371
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 738,
+          "pnl": -8778.001041412354
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 737,
+          "pnl": -5349.7504806518555
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 736,
+          "pnl": -4282.9484939575195
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 735,
+          "pnl": -4433.099327087402
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 734,
+          "pnl": -9994.949855804443
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 733,
+          "pnl": -10527.298221588135
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 732,
+          "pnl": -1236.9006729125977
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 731,
+          "pnl": -11676.000480651855
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 730,
+          "pnl": 16445.099086761475
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 729,
+          "pnl": 14191.799783706665
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 728,
+          "pnl": 16210.94913482666
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 727,
+          "pnl": 16701.299743652344
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 726,
+          "pnl": -2319.4496154785156
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 725,
+          "pnl": -10186.05182647705
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 724,
+          "pnl": 17045.698614120483
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 723,
+          "pnl": -3317.998638153076
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 722,
+          "pnl": -2854.950656890869
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 721,
+          "pnl": -43.04878234863281
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 720,
+          "pnl": -1479.4512176513672
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 719,
+          "pnl": -1116.148509979248
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 718,
+          "pnl": -4512.901554107666
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 717,
+          "pnl": 3876.6006088256836
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 716,
+          "pnl": 9887.85140991211
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 715,
+          "pnl": -4627.349967956543
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 714,
+          "pnl": 2589.29838180542
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 713,
+          "pnl": -6748.349647521973
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 712,
+          "pnl": 13701.449174880981
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 711,
+          "pnl": -5785.501842498779
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 710,
+          "pnl": -2156.700897216797
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 709,
+          "pnl": 14507.849607467651
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 708,
+          "pnl": 23293.201518058777
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 707,
+          "pnl": -9359.698734283447
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 706,
+          "pnl": -6166.65075302124
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 705,
+          "pnl": -2146.200656890869
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 704,
+          "pnl": -11184.599647521973
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 703,
+          "pnl": 15703.800344467163
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 702,
+          "pnl": 10571.401634216309
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 701,
+          "pnl": -10589.251441955566
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 700,
+          "pnl": 14097.299823760986
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 699,
+          "pnl": 13378.048882484436
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 698,
+          "pnl": 14812.349967956543
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 697,
+          "pnl": -8679.300384521484
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 696,
+          "pnl": -5161.798782348633
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 695,
+          "pnl": 8456.698694229126
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 694,
+          "pnl": -5671.051025390625
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 693,
+          "pnl": 8258.250060081482
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 692,
+          "pnl": 16412.55024433136
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 691,
+          "pnl": 15546.301746368408
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 690,
+          "pnl": -10938.90043258667
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 689,
+          "pnl": -8382.147789001465
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 688,
+          "pnl": -8465.100688934326
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 687,
+          "pnl": 22264.201197624207
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 686,
+          "pnl": -11049.151153564453
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 685,
+          "pnl": 17323.9497756958
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 684,
+          "pnl": 15005.55118560791
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 683,
+          "pnl": 13777.051706314087
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 682,
+          "pnl": -11216.09956741333
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 681,
+          "pnl": 15878.09892654419
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 680,
+          "pnl": -20618.84828567505
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 679,
+          "pnl": 14181.30054473877
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 678,
+          "pnl": 14645.399951934814
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 677,
+          "pnl": -8664.598445892334
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 676,
+          "pnl": -8626.798782348633
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 675,
+          "pnl": -11726.398429870605
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 674,
+          "pnl": -3022.9484939575195
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 673,
+          "pnl": -9423.749198913574
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 672,
+          "pnl": -11751.601009368896
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 671,
+          "pnl": 16372.649631500244
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 670,
+          "pnl": -7869.747276306152
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 669,
+          "pnl": 16459.799423217773
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 668,
+          "pnl": -896.7008972167969
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 667,
+          "pnl": -1009.0496635437012
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 666,
+          "pnl": -9078.299703598022
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 665,
+          "pnl": 14281.0502243042
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 664,
+          "pnl": 15549.45101737976
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 663,
+          "pnl": -1786.0486221313477
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 662,
+          "pnl": -2810.8504486083984
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 661,
+          "pnl": -6790.349807739258
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 660,
+          "pnl": -12921.298942565918
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 659,
+          "pnl": 15041.249198913574
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 658,
+          "pnl": -9325.051746368408
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 657,
+          "pnl": -14516.25
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 656,
+          "pnl": 15368.850688934326
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 655,
+          "pnl": -11082.751522064209
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 654,
+          "pnl": -11126.85173034668
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 653,
+          "pnl": 16602.599487304688
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 652,
+          "pnl": -8205.750961303711
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 651,
+          "pnl": 17212.651133537292
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 650,
+          "pnl": 15452.85080909729
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 649,
+          "pnl": 15073.798141479492
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 648,
+          "pnl": 21100.801305770874
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 647,
+          "pnl": -4124.397869110107
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 646,
+          "pnl": 15482.250280380249
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 645,
+          "pnl": 4659.898760318756
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 644,
+          "pnl": -8103.898830413818
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 643,
+          "pnl": 15587.250280380249
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 642,
+          "pnl": -9907.80086517334
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 641,
+          "pnl": 16116.45097732544
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 640,
+          "pnl": 14731.499519348145
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 639,
+          "pnl": -6972.000560760498
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 638,
+          "pnl": -5010.599727630615
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 637,
+          "pnl": 14419.651193618774
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 636,
+          "pnl": 16097.550945281982
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 635,
+          "pnl": 15992.549543380737
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 634,
+          "pnl": -2207.101249694824
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 633,
+          "pnl": -2098.948974609375
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 632,
+          "pnl": -92.40251541137695
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 631,
+          "pnl": -4509.748878479004
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 630,
+          "pnl": -211.04982376098633
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 629,
+          "pnl": -2408.700656890869
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 628,
+          "pnl": -8983.802146911621
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 627,
+          "pnl": 16280.249419212341
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 626,
+          "pnl": -3207.7517223358154
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 625,
+          "pnl": 16621.49971961975
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 624,
+          "pnl": -11255.998878479004
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 623,
+          "pnl": -1316.7024993896484
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 622,
+          "pnl": 381.1517143249512
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 621,
+          "pnl": -2693.251361846924
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 620,
+          "pnl": -1265.2503204345703
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 619,
+          "pnl": -785.3987503051758
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 618,
+          "pnl": -1094.1006088256836
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 617,
+          "pnl": -8294.998798370361
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 616,
+          "pnl": -10920.000801086426
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 615,
+          "pnl": -1874.2506408691406
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 614,
+          "pnl": -10470.59772491455
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 613,
+          "pnl": -6945.748558044434
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 612,
+          "pnl": -928.1992149353027
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 611,
+          "pnl": -9737.69817352295
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 610,
+          "pnl": -4139.098606109619
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 609,
+          "pnl": -3751.6503524780273
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 608,
+          "pnl": -1948.7993431091309
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 607,
+          "pnl": -931.3493371009827
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 606,
+          "pnl": -7966.348686218262
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 605,
+          "pnl": -8781.148109436035
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 604,
+          "pnl": 366.4521789550781
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 603,
+          "pnl": -9866.851329803467
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 602,
+          "pnl": 6232.801065444946
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 601,
+          "pnl": -15204.003925323486
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 600,
+          "pnl": -12677.700576782227
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 599,
+          "pnl": 14960.400352478027
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 598,
+          "pnl": -11469.151153564453
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 597,
+          "pnl": -8589.00032043457
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 596,
+          "pnl": -8749.651794433594
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 595,
+          "pnl": -11897.551746368408
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 594,
+          "pnl": 5171.251442581415
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 593,
+          "pnl": 15498.00124168396
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 592,
+          "pnl": 16768.499879837036
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 591,
+          "pnl": -10164.000520706177
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 590,
+          "pnl": -10277.398509979248
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 589,
+          "pnl": -1337.6997756958008
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 588,
+          "pnl": -1775.5475807189941
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 587,
+          "pnl": -12594.749279022217
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 586,
+          "pnl": -10830.750160217285
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 585,
+          "pnl": -14236.948013305664
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 584,
+          "pnl": 14409.149551391602
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 583,
+          "pnl": 14100.449495315552
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 582,
+          "pnl": 17381.700496673584
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 581,
+          "pnl": -7147.350769042969
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 580,
+          "pnl": 4730.25032043457
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 579,
+          "pnl": -9978.149871826172
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 578,
+          "pnl": -10305.750961303711
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 577,
+          "pnl": 13106.100218296051
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 576,
+          "pnl": -3931.199655532837
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 575,
+          "pnl": -13620.60173034668
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 574,
+          "pnl": -9497.249279022217
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 573,
+          "pnl": 15357.301025390625
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 572,
+          "pnl": 22027.94909477234
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 571,
+          "pnl": -4284.001522064209
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 570,
+          "pnl": -11438.70065689087
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 569,
+          "pnl": 14772.451457977295
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 568,
+          "pnl": 16632.001762390137
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 567,
+          "pnl": -10505.248718261719
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 566,
+          "pnl": 14934.148950576782
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 565,
+          "pnl": -5316.1505126953125
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 564,
+          "pnl": 470.40075302124023
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 563,
+          "pnl": -2763.600368499756
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 562,
+          "pnl": 857.8510093688965
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 561,
+          "pnl": -5418.001441955566
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 560,
+          "pnl": -7931.698894500732
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 559,
+          "pnl": -8398.951778411865
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 558,
+          "pnl": -3714.9013137817383
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 557,
+          "pnl": -821.1019706726074
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 556,
+          "pnl": -1054.2008972167969
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 555,
+          "pnl": -13434.74967956543
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 554,
+          "pnl": -10107.29902267456
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 553,
+          "pnl": 9393.299703598022
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 552,
+          "pnl": 3597.2980213165283
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 551,
+          "pnl": -11752.649230957031
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 550,
+          "pnl": 15819.299283027649
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 549,
+          "pnl": -11652.900352478027
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 548,
+          "pnl": -11131.04902267456
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 547,
+          "pnl": -19288.497276306152
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 546,
+          "pnl": -19626.601009368896
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 545,
+          "pnl": 14115.149431228638
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 544,
+          "pnl": -8315.999279022217
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 543,
+          "pnl": 14915.249619483948
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 542,
+          "pnl": -2983.0491828918457
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 541,
+          "pnl": -9464.700736999512
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 540,
+          "pnl": 15679.649991989136
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 539,
+          "pnl": -8182.648830413818
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 538,
+          "pnl": -9151.803188323975
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 537,
+          "pnl": 2146.199655532837
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 536,
+          "pnl": 12948.600068092346
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 535,
+          "pnl": -14871.149311065674
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 534,
+          "pnl": 16064.999198913574
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 533,
+          "pnl": 15247.04810142517
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 532,
+          "pnl": -10125.151634216309
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 531,
+          "pnl": -11661.299743652344
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 530,
+          "pnl": 856.7991828918457
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 529,
+          "pnl": -1915.2017784118652
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 528,
+          "pnl": 15132.599487304688
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 527,
+          "pnl": -12510.74935913086
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 526,
+          "pnl": 14507.849807739258
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 525,
+          "pnl": 13167.00156211853
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 524,
+          "pnl": 14454.29868221283
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 523,
+          "pnl": -2358.2979011535645
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 522,
+          "pnl": -1375.502643585205
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 521,
+          "pnl": -414.75208282470703
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 520,
+          "pnl": -1853.2485580444336
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 519,
+          "pnl": -2858.1021308898926
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 518,
+          "pnl": -5643.749198913574
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 517,
+          "pnl": -3374.702739715576
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 516,
+          "pnl": -12559.049663543701
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 515,
+          "pnl": -17355.44969558716
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 514,
+          "pnl": -3367.3487663269043
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 513,
+          "pnl": -12147.44945526123
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 512,
+          "pnl": -9688.35205078125
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 511,
+          "pnl": 16652.998638153076
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 510,
+          "pnl": -7231.3494873046875
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 509,
+          "pnl": 12101.249599456787
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 508,
+          "pnl": 0
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 507,
+          "pnl": -6506.8525314331055
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 506,
+          "pnl": 12846.750165224075
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 505,
+          "pnl": 10956.749339103699
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 504,
+          "pnl": 14198.099727630615
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 503,
+          "pnl": 11698.050785064697
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 502,
+          "pnl": -7450.8015060424805
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 501,
+          "pnl": 16248.751602172852
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 500,
+          "pnl": -6201.298942565918
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 499,
+          "pnl": -1436.3984298706055
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 498,
+          "pnl": -3832.500801086426
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 497,
+          "pnl": 66.14850997924805
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 496,
+          "pnl": 1369.1984939575195
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 495,
+          "pnl": 0
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 494,
+          "pnl": 0
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 493,
+          "pnl": 15662.849957942963
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 492,
+          "pnl": 14284.201498031616
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 491,
+          "pnl": 21629.999749660492
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 490,
+          "pnl": -10480.048542022705
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 489,
+          "pnl": 17019.448614120483
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 488,
+          "pnl": -10820.250120162964
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 487,
+          "pnl": 15021.30054473877
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 486,
+          "pnl": -10011.751041412354
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 485,
+          "pnl": 9761.848688721657
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 484,
+          "pnl": 16714.95125770569
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 483,
+          "pnl": -6134.1010093688965
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 482,
+          "pnl": -7019.249839782715
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 481,
+          "pnl": -8295.000801086426
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 480,
+          "pnl": 13835.851049423218
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 479,
+          "pnl": -9086.700897216797
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 478,
+          "pnl": -8971.199054718018
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 477,
+          "pnl": -6272.698974609375
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 476,
+          "pnl": -630.0020027160645
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 475,
+          "pnl": -8098.6505126953125
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 474,
+          "pnl": 15307.9509973526
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 473,
+          "pnl": -9985.499839782715
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 472,
+          "pnl": -9611.702499389648
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 471,
+          "pnl": -5322.451457977295
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 470,
+          "pnl": 15211.348686218262
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 469,
+          "pnl": 15688.049983978271
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 468,
+          "pnl": -10794.00032043457
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 467,
+          "pnl": 13105.04964351654
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 466,
+          "pnl": -9092.998237609863
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 465,
+          "pnl": 15264.89951133728
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 464,
+          "pnl": 14827.05150604248
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 463,
+          "pnl": -11140.49783706665
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 462,
+          "pnl": 8037.749319076538
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 461,
+          "pnl": -9262.047901153564
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 460,
+          "pnl": -2777.248477935791
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 459,
+          "pnl": -12493.94817352295
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 458,
+          "pnl": -7033.949775695801
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 457,
+          "pnl": 15044.400973320007
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 456,
+          "pnl": 16805.24871826172
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 455,
+          "pnl": 15534.750680923462
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 454,
+          "pnl": -12917.099647521973
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 453,
+          "pnl": 656.2491989135742
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 452,
+          "pnl": -8891.398429870605
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 451,
+          "pnl": -6519.4500160217285
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 450,
+          "pnl": -645.7525634765625
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 449,
+          "pnl": 15618.748898506165
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 448,
+          "pnl": 17570.699815750122
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 447,
+          "pnl": 20289.148750305176
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 446,
+          "pnl": -9511.950016021729
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 445,
+          "pnl": 19560.449295043945
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 444,
+          "pnl": -8773.798141479492
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 443,
+          "pnl": 353.8502883911133
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 442,
+          "pnl": -10238.552627563477
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 441,
+          "pnl": 18225.899991989136
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 440,
+          "pnl": 17293.499479293823
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 439,
+          "pnl": 21162.75057077408
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 438,
+          "pnl": -9193.802547454834
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 437,
+          "pnl": 2745.751042664051
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 436,
+          "pnl": 15151.501121520996
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 435,
+          "pnl": -4516.051025390625
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 434,
+          "pnl": -11722.197933197021
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 433,
+          "pnl": 16047.151193618774
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 432,
+          "pnl": 15330.000801086426
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 431,
+          "pnl": 15198.749599456787
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 430,
+          "pnl": -11365.200176239014
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 429,
+          "pnl": 15989.398469924927
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 428,
+          "pnl": 4042.501802444458
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 426,
+          "pnl": 20097.00036048889
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 425,
+          "pnl": -1141.3494873046875
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 424,
+          "pnl": -11335.799102783203
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 423,
+          "pnl": 5246.849226951599
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 422,
+          "pnl": 5316.1501121521
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 421,
+          "pnl": -9469.95065689087
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 420,
+          "pnl": -7378.350448608398
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 419,
+          "pnl": -14355.59892654419
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 418,
+          "pnl": -2576.700897216797
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 417,
+          "pnl": -12265.048542022705
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 416,
+          "pnl": 16380.000801086426
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 415,
+          "pnl": 14689.50001001358
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 414,
+          "pnl": -2062.1983337402344
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 413,
+          "pnl": -11213.999519348145
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 412,
+          "pnl": -5259.449615478516
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 411,
+          "pnl": -11681.248397827148
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 410,
+          "pnl": 16302.298221588135
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 409,
+          "pnl": -10782.448654174805
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 408,
+          "pnl": -2283.75
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 407,
+          "pnl": 15007.650833129883
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 406,
+          "pnl": -13256.248798370361
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 405,
+          "pnl": -9819.60205078125
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 404,
+          "pnl": -10157.698974609375
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 403,
+          "pnl": 15656.548862457275
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 402,
+          "pnl": 13672.050004005432
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 401,
+          "pnl": -296.09936714172363
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 400,
+          "pnl": 15319.499559402466
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 399,
+          "pnl": 16578.450136184692
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 398,
+          "pnl": -5020.049743652344
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 397,
+          "pnl": 6450.15013217926
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 396,
+          "pnl": 16249.799823760986
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 395,
+          "pnl": 16373.701858520508
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 394,
+          "pnl": -12419.399471282959
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 393,
+          "pnl": 14703.149471282959
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 392,
+          "pnl": -9993.902034759521
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 391,
+          "pnl": -4664.098205566406
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 390,
+          "pnl": 14476.349687576294
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 389,
+          "pnl": -781.2002563476562
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 388,
+          "pnl": 6785.099086761475
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 387,
+          "pnl": -12602.098846435547
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 386,
+          "pnl": -9632.698974609375
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 385,
+          "pnl": 14804.999198913574
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 384,
+          "pnl": -3884.9983978271484
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 383,
+          "pnl": -7205.101490020752
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 382,
+          "pnl": 15142.050504684448
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 381,
+          "pnl": 15134.699335098267
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 380,
+          "pnl": 14227.501602172852
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 379,
+          "pnl": -8066.099967956543
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 378,
+          "pnl": -10441.200256347656
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 377,
+          "pnl": -11485.949935913086
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 376,
+          "pnl": -13127.098045349121
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 375,
+          "pnl": 16401.00028038025
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 374,
+          "pnl": -3451.348285675049
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 373,
+          "pnl": 3511.1990547180176
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 372,
+          "pnl": -10259.550704956055
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 371,
+          "pnl": -1386.0012817382812
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 370,
+          "pnl": -8676.148509979248
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 369,
+          "pnl": -18741.44697189331
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 368,
+          "pnl": -9275.699615478516
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 367,
+          "pnl": 17230.500240325928
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 366,
+          "pnl": -9424.799823760986
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 365,
+          "pnl": 15789.899311065674
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 364,
+          "pnl": 14433.299403190613
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 363,
+          "pnl": -10485.29806137085
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 362,
+          "pnl": 15319.500360488892
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 361,
+          "pnl": -9161.25280380249
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 360,
+          "pnl": 3556.3493871688843
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 359,
+          "pnl": -13247.853012084961
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 358,
+          "pnl": 14842.801015377045
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 357,
+          "pnl": 15246.000280380249
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 356,
+          "pnl": -9182.247276306152
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 355,
+          "pnl": -11457.599487304688
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 354,
+          "pnl": -9687.3002243042
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 353,
+          "pnl": 15503.24875831604
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 352,
+          "pnl": -9911.99935913086
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 351,
+          "pnl": -12726.001281738281
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 350,
+          "pnl": -10317.29902267456
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 349,
+          "pnl": 9118.200817108154
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 348,
+          "pnl": 11933.25063586235
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 347,
+          "pnl": 14848.050985336304
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 346,
+          "pnl": 16820.998678207397
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 345,
+          "pnl": 15619.799423217773
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 344,
+          "pnl": 24396.749439239502
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 343,
+          "pnl": -10452.75032043457
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 342,
+          "pnl": 14437.49969959259
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 341,
+          "pnl": -4002.597885131836
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 340,
+          "pnl": -8519.69913482666
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 339,
+          "pnl": -10967.250080108643
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 338,
+          "pnl": 16397.84960746765
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 337,
+          "pnl": -9903.599166870117
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 336,
+          "pnl": -16899.752082824707
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 335,
+          "pnl": 15617.699975967407
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 334,
+          "pnl": 14930.998477935791
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 333,
+          "pnl": -10153.498878479004
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 332,
+          "pnl": 16616.248598098755
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 331,
+          "pnl": -4635.749759674072
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 330,
+          "pnl": -12991.649951934814
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 329,
+          "pnl": 15528.450236320496
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 328,
+          "pnl": 15942.14919090271
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 327,
+          "pnl": -9952.950096130371
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 326,
+          "pnl": -9538.199615478516
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 325,
+          "pnl": 15272.249579429626
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 324,
+          "pnl": -9080.401954650879
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 323,
+          "pnl": -4555.948333740234
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 322,
+          "pnl": 15147.300524711609
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 321,
+          "pnl": 14998.200016021729
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 320,
+          "pnl": 13979.70003604889
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 319,
+          "pnl": -9354.449615478516
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 318,
+          "pnl": -305.5503845214844
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 317,
+          "pnl": -11982.5998878479
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 316,
+          "pnl": 15438.14887046814
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 315,
+          "pnl": -3811.4999198913574
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 314,
+          "pnl": -1207.4987983703613
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 313,
+          "pnl": -2005.4998397827148
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 312,
+          "pnl": -3717.000961303711
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 311,
+          "pnl": 1335.5993270874023
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 310,
+          "pnl": -1576.051025390625
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 309,
+          "pnl": 2846.5492630004883
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 308,
+          "pnl": 15077.99843788147
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 307,
+          "pnl": -13728.75
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 306,
+          "pnl": 16772.69847393036
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 305,
+          "pnl": -8808.450736999512
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 304,
+          "pnl": 17167.499599456787
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 303,
+          "pnl": -3087.0017623901367
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 302,
+          "pnl": 6206.549863815308
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 301,
+          "pnl": 873.6015701293945
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 300,
+          "pnl": -6982.497997283936
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 299,
+          "pnl": -5779.201698303223
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 298,
+          "pnl": -11252.847805023193
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 297,
+          "pnl": 14730.45129776001
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 296,
+          "pnl": 17538.149271011353
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 295,
+          "pnl": 16233.00064086914
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 294,
+          "pnl": 20494.95005607605
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 293,
+          "pnl": 15240.751762390137
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 292,
+          "pnl": -2361.448974609375
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 291,
+          "pnl": -1864.7998237609863
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 290,
+          "pnl": -4192.650032043457
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 289,
+          "pnl": -10573.49967956543
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 288,
+          "pnl": 16623.60076904297
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 287,
+          "pnl": 14269.498958587646
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 286,
+          "pnl": 14507.84860610962
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 285,
+          "pnl": 16354.79872226715
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 284,
+          "pnl": -6724.200096130371
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 283,
+          "pnl": 18541.197967529297
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 282,
+          "pnl": 17345.99956512451
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 281,
+          "pnl": -9974.999599456787
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 280,
+          "pnl": -7402.500400543213
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 279,
+          "pnl": -1279.9502563476562
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 278,
+          "pnl": -1543.5012817382812
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 277,
+          "pnl": -1081.4999198913574
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 276,
+          "pnl": 9439.49815750122
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 275,
+          "pnl": -12071.851329803467
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 274,
+          "pnl": -6334.649791717529
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 273,
+          "pnl": -8614.199695587158
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 272,
+          "pnl": 22100.401303768158
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 271,
+          "pnl": -10612.349166870117
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 270,
+          "pnl": -4320.750560760498
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 269,
+          "pnl": 1852.2023391723633
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 268,
+          "pnl": 4840.498638153076
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 267,
+          "pnl": 1099.3495680391788
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 266,
+          "pnl": -11643.450736999512
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 265,
+          "pnl": -11275.949535369873
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 264,
+          "pnl": 14761.950716972351
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 263,
+          "pnl": 16204.648189544678
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 262,
+          "pnl": -3523.8001441955566
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 261,
+          "pnl": -10977.749519348145
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 260,
+          "pnl": -17028.89923095703
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 259,
+          "pnl": -2194.4999192655087
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 258,
+          "pnl": 14943.60016822815
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 257,
+          "pnl": -8348.551025390625
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 256,
+          "pnl": -4606.347885131836
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 255,
+          "pnl": 16.798782348632812
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 254,
+          "pnl": -1015.349006652832
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 253,
+          "pnl": -13521.899871826172
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 252,
+          "pnl": 15202.949295043945
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 251,
+          "pnl": -10223.848686218262
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 250,
+          "pnl": -10731.001682281494
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 249,
+          "pnl": 4.199695587158203
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 248,
+          "pnl": 4128.599166870117
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 247,
+          "pnl": -6970.9479331970215
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 246,
+          "pnl": 2514.7495997697115
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 245,
+          "pnl": 13080.90139389038
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 244,
+          "pnl": 15740.550484657288
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 243,
+          "pnl": 13254.149250984192
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 242,
+          "pnl": 16129.049463272095
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 241,
+          "pnl": -5902.048301696777
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 240,
+          "pnl": 9172.80026435852
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 239,
+          "pnl": -2777.2504806518555
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 238,
+          "pnl": 7255.4992389678955
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 237,
+          "pnl": 12793.19851398468
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 236,
+          "pnl": 15450.750560760498
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 235,
+          "pnl": -5261.549663543701
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 234,
+          "pnl": -14398.650512695312
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 233,
+          "pnl": -1991.8501281738281
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 232,
+          "pnl": 2446.4999198913574
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 231,
+          "pnl": -10299.44881439209
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 230,
+          "pnl": -8198.398990631104
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 229,
+          "pnl": -22187.54774093628
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 228,
+          "pnl": -8356.948413848877
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 227,
+          "pnl": 16889.251441955566
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 226,
+          "pnl": 14831.249599456787
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 225,
+          "pnl": -8486.100769042969
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 224,
+          "pnl": -18779.251041412354
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 223,
+          "pnl": -10795.051345825195
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 222,
+          "pnl": 7036.050624847412
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 221,
+          "pnl": 20212.498548030853
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 220,
+          "pnl": -16599.449214935303
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 219,
+          "pnl": -8038.799343109131
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 218,
+          "pnl": 6029.09972794354
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 217,
+          "pnl": -9947.700576782227
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 216,
+          "pnl": -8125.199546813965
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 215,
+          "pnl": 14378.400020599365
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 214,
+          "pnl": -8259.301414489746
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 213,
+          "pnl": -5777.098846435547
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 212,
+          "pnl": -9407.699546813965
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 211,
+          "pnl": 3295.800247192383
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 210,
+          "pnl": 12582.001132965088
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 209,
+          "pnl": 11847.600073814392
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 208,
+          "pnl": 13828.499279022217
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 207,
+          "pnl": 21244.49933052063
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 206,
+          "pnl": 6252.299165725708
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 205,
+          "pnl": 12762.000360488892
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 204,
+          "pnl": 11806.19951248169
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 203,
+          "pnl": -6729.302444458008
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 202,
+          "pnl": -8817.300109863281
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 201,
+          "pnl": -9360.000343322754
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 200,
+          "pnl": 12931.199169158936
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 199,
+          "pnl": 12719.69913482666
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 198,
+          "pnl": -3851.9995880126953
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 197,
+          "pnl": -5190.30086517334
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 196,
+          "pnl": 13673.700542449951
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 195,
+          "pnl": -8319.600219726562
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 194,
+          "pnl": -5469.298667907715
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 193,
+          "pnl": -7269.299011230469
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 192,
+          "pnl": 10240.201091766357
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 191,
+          "pnl": -1460.7003021240234
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 190,
+          "pnl": 5969.700304269791
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 189,
+          "pnl": 13963.498935699463
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 188,
+          "pnl": 14597.998781204224
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 187,
+          "pnl": -6486.299285888672
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 186,
+          "pnl": -8446.500205993652
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 185,
+          "pnl": -4780.8012771606445
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 184,
+          "pnl": 12926.700611114502
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 183,
+          "pnl": -1124.1018676757812
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 182,
+          "pnl": 12100.500755310059
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 181,
+          "pnl": -8200.799903869629
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 180,
+          "pnl": 13451.399402618408
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 179,
+          "pnl": 13716.000137329102
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 178,
+          "pnl": -4501.799697875977
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 177,
+          "pnl": 6879.600734710693
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 176,
+          "pnl": -579.6012496948242
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 175,
+          "pnl": 3170.7003021240234
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 174,
+          "pnl": -493.1992721557617
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 173,
+          "pnl": -3074.39998626709
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 172,
+          "pnl": -318.60008239746094
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 171,
+          "pnl": -2320.198860168457
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 170,
+          "pnl": 2000.7009887695312
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 169,
+          "pnl": -4258.498477935791
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 168,
+          "pnl": -6806.24942779541
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 167,
+          "pnl": -17401.49974822998
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 166,
+          "pnl": -6990.749931335449
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 165,
+          "pnl": 11692.500400543213
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 164,
+          "pnl": 10076.25002861023
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 163,
+          "pnl": 1306.5008997917175
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 162,
+          "pnl": -5332.499313354492
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 161,
+          "pnl": -4156.500148773193
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 160,
+          "pnl": -5383.5004806518555
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 159,
+          "pnl": -922.4993705749512
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 158,
+          "pnl": -3364.500331878662
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 157,
+          "pnl": -2250.0008583068848
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 156,
+          "pnl": 1263.749885559082
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 155,
+          "pnl": -3144.0001487731934
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 154,
+          "pnl": 1384.4999313354492
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 153,
+          "pnl": 5850.75101852417
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 152,
+          "pnl": 11089.500403404236
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 151,
+          "pnl": 11397.749161720276
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 150,
+          "pnl": 10397.249221801758
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 149,
+          "pnl": 3417.7494049072266
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 148,
+          "pnl": 1902.7506351470947
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 147,
+          "pnl": 10560.000228881836
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 146,
+          "pnl": -6643.501281738281
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 145,
+          "pnl": 12278.250503540039
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 144,
+          "pnl": -8105.998992919922
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 143,
+          "pnl": 11266.500806808472
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 142,
+          "pnl": -5603.248500823975
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 141,
+          "pnl": -5089.500331878662
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 140,
+          "pnl": -6308.999862670898
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 139,
+          "pnl": 9981.000022888184
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 138,
+          "pnl": 6619.999933242798
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 137,
+          "pnl": -3559.999656677246
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 136,
+          "pnl": -5279.999732971191
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 135,
+          "pnl": 8400.00057220459
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 134,
+          "pnl": 7302.499961853027
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 133,
+          "pnl": 517.4993515014648
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 132,
+          "pnl": -2528.999900817871
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 131,
+          "pnl": -455.99889755249023
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 130,
+          "pnl": -2375.00057220459
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 129,
+          "pnl": -1967.4993515014648
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 128,
+          "pnl": -5117.499351501465
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 127,
+          "pnl": 2080.0003051757812
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 126,
+          "pnl": -855.0006866455078
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 125,
+          "pnl": -2052.499198913574
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 124,
+          "pnl": -3271.0004806518555
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 123,
+          "pnl": 6464.999961853027
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 122,
+          "pnl": 7605.99946975708
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 121,
+          "pnl": 7416.000556945801
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 120,
+          "pnl": 2262.500762939453
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 119,
+          "pnl": 10298.9999294281
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 118,
+          "pnl": -2830.9999465942383
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 117,
+          "pnl": 6812.499380111694
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 116,
+          "pnl": -5174.99885559082
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 115,
+          "pnl": -5367.500114440918
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 114,
+          "pnl": -6837.499237060547
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 113,
+          "pnl": 7797.499465942383
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 112,
+          "pnl": -5239.999198913574
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 111,
+          "pnl": 7005.499744415283
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 110,
+          "pnl": 510.00003814697266
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 109,
+          "pnl": 1269.9993133544922
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 108,
+          "pnl": 7078.499341011047
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 107,
+          "pnl": -2775.0003814697266
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 106,
+          "pnl": -3082.5002670288086
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 105,
+          "pnl": -2852.500534057617
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 104,
+          "pnl": -2897.4992752075195
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 103,
+          "pnl": 7405.000019073486
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 102,
+          "pnl": -1666.5006637573242
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 101,
+          "pnl": 6798.999738693237
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 100,
+          "pnl": -1091.4997100830078
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 99,
+          "pnl": -143.99967193603516
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 98,
+          "pnl": -5688.5009765625
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 97,
+          "pnl": -2384.999465942383
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 96,
+          "pnl": -573.9994049072266
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 95,
+          "pnl": -732.5000762939453
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 94,
+          "pnl": 160.00003814697266
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 93,
+          "pnl": -1385.0000381469727
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 92,
+          "pnl": 2067.499828338623
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 91,
+          "pnl": -5922.498893737793
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 90,
+          "pnl": -2248.5000610351562
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 89,
+          "pnl": 645.0010299682617
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 88,
+          "pnl": 9972.499179840088
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 87,
+          "pnl": -285.00099182128906
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 86,
+          "pnl": -3587.500762939453
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 85,
+          "pnl": -5655.000305175781
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 84,
+          "pnl": -5717.499923706055
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 83,
+          "pnl": -1080.000114440918
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 82,
+          "pnl": -217.49935150146484
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 81,
+          "pnl": -5451.500511169434
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 80,
+          "pnl": -5372.501182556152
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 79,
+          "pnl": 6920.000076293945
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 78,
+          "pnl": -2452.4993896484375
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 77,
+          "pnl": -502.4993896484375
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 76,
+          "pnl": 1687.5007629394531
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 75,
+          "pnl": 7969.999408721924
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 74,
+          "pnl": -2796.500587463379
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 73,
+          "pnl": -2552.500534057617
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 72,
+          "pnl": 7613.499355316162
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 71,
+          "pnl": -4595.998954772949
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 70,
+          "pnl": -4658.501052856445
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 69,
+          "pnl": 82.5002670288086
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 68,
+          "pnl": -493.99986267089844
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 67,
+          "pnl": -482.50064849853516
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 66,
+          "pnl": -3185.0000381469727
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 65,
+          "pnl": 8035.000133514404
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 64,
+          "pnl": -4899.000549316406
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 63,
+          "pnl": 8079.999613761902
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 62,
+          "pnl": -5281.000900268555
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 61,
+          "pnl": -6047.500038146973
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 60,
+          "pnl": -3902.500057220459
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 59,
+          "pnl": -1342.5012588500977
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 58,
+          "pnl": -2464.999580383301
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 57,
+          "pnl": 7400.00011920929
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 56,
+          "pnl": -4259.9992752075195
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 55,
+          "pnl": -5362.50057220459
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 54,
+          "pnl": 8019.999122619629
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 53,
+          "pnl": -5331.500244140625
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 52,
+          "pnl": -690.0003433227539
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 51,
+          "pnl": -1797.5000381469727
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 50,
+          "pnl": -3855.000686645508
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 49,
+          "pnl": -1282.5003623962402
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 48,
+          "pnl": -4277.499771118164
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 47,
+          "pnl": -4595.000076293945
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 46,
+          "pnl": 8403.999423980713
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 45,
+          "pnl": 7579.00071144104
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 44,
+          "pnl": 7486.50016784668
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 43,
+          "pnl": -5337.499809265137
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 42,
+          "pnl": -835.0008010864258
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 41,
+          "pnl": 1852.4999618530273
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 40,
+          "pnl": -1773.4991073608398
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 39,
+          "pnl": 6287.500095367432
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 38,
+          "pnl": 7716.000509262085
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 37,
+          "pnl": 7064.99981880188
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 36,
+          "pnl": 7901.000690460205
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 35,
+          "pnl": 6439.999198913574
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 34,
+          "pnl": -2400.0001907348633
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 33,
+          "pnl": -4062.5001907348633
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 32,
+          "pnl": 292.49935150146484
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 31,
+          "pnl": -4829.999542236328
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 30,
+          "pnl": -4490.000534057617
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 29,
+          "pnl": 7248.500728607178
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 28,
+          "pnl": -4809.999465942383
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 27,
+          "pnl": -1535.000228881836
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 26,
+          "pnl": 4637.49988079071
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 25,
+          "pnl": 3730.9995651245117
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 24,
+          "pnl": -4016.5000915527344
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 23,
+          "pnl": 2064.0003204345703
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 22,
+          "pnl": 2825.000762939453
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 21,
+          "pnl": 977.5012969970703
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 20,
+          "pnl": 2451.50089263916
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 19,
+          "pnl": -2480.0004959106445
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 18,
+          "pnl": -1227.4999618530273
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 17,
+          "pnl": -5610.99967956543
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 16,
+          "pnl": -5667.500114440918
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 15,
+          "pnl": 7232.499885559082
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 14,
+          "pnl": 7357.50036239624
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 13,
+          "pnl": -5007.499313354492
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 12,
+          "pnl": -5099.999618530273
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 11,
+          "pnl": 5820.000648498535
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 10,
+          "pnl": 7143.999290466309
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 9,
+          "pnl": 6619.000053405762
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 8,
+          "pnl": 6255.000305175781
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 7,
+          "pnl": 9145.000553131104
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 6,
+          "pnl": -4444.999885559082
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 5,
+          "pnl": 5762.499713897705
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 4,
+          "pnl": -4336.500930786133
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 3,
+          "pnl": 6837.500095367432
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 2,
+          "pnl": -435.0006103515625
+        },
+        {
+          "strategy_id": 7147483,
+          "run_counter": 1,
+          "pnl": -4912.500190734863
+        }
+      ],
+      "currency": "\u20b9 ",
+      "country": "IN",
+      "currency_code": "INR",
+      "display_run_counter_pnl": false,
+      "all_pnl": 902834.6955341697,
+      "can_unblock": false,
+      "is_stockbag": false,
+      "exclude_booked_pnl": false,
+      "globalPt": null
+    }
+  }
+}

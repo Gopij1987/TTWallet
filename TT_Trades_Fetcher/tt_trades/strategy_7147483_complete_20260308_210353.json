@@ -1,0 +1,5077 @@
+{
+  "extraction_date": "2026-03-08T21:03:53.012007",
+  "strategy_id": 7147483,
+  "strategy_name": "Directional Option Selling BNF With Hedge V4",
+  "status": "Live-Entered",
+  "capital_required": 140000.0,
+  "multiplier_max": 100,
+  "multiplier_min": 4,
+  "total_pnl": -4912.5005,
+  "run_counter": 1008,
+  "daily_pnl_analysis": {
+    "Run 1008": {
+      "date": "Run 1008",
+      "run_counter": 1008,
+      "pnl": 9092.40151977539
+    },
+    "Run 1007": {
+      "date": "Run 1007",
+      "run_counter": 1007,
+      "pnl": 1528.8006591796875
+    },
+    "Run 1006": {
+      "date": "Run 1006",
+      "run_counter": 1006,
+      "pnl": 6261.59912109375
+    },
+    "Run 1005": {
+      "date": "Run 1005",
+      "run_counter": 1005,
+      "pnl": 5363.998718261719
+    },
+    "Run 1004": {
+      "date": "Run 1004",
+      "run_counter": 1004,
+      "pnl": 11248.799743652344
+    },
+    "Run 1003": {
+      "date": "Run 1003",
+      "run_counter": 1003,
+      "pnl": -15112.801666259766
+    },
+    "Run 1002": {
+      "date": "Run 1002",
+      "run_counter": 1002,
+      "pnl": 18137.99835205078
+    },
+    "Run 1001": {
+      "date": "Run 1001",
+      "run_counter": 1001,
+      "pnl": -2088.0010986328125
+    },
+    "Run 1000": {
+      "date": "Run 1000",
+      "run_counter": 1000,
+      "pnl": 9265.201263427734
+    },
+    "Run 999": {
+      "date": "Run 999",
+      "run_counter": 999,
+      "pnl": -18144.000091552734
+    },
+    "Run 998": {
+      "date": "Run 998",
+      "run_counter": 998,
+      "pnl": 20857.201538085938
+    },
+    "Run 997": {
+      "date": "Run 997",
+      "run_counter": 997,
+      "pnl": -6262.80029296875
+    },
+    "Run 996": {
+      "date": "Run 996",
+      "run_counter": 996,
+      "pnl": -6425.999450683594
+    },
+    "Run 995": {
+      "date": "Run 995",
+      "run_counter": 995,
+      "pnl": -11975.999908447266
+    },
+    "Run 994": {
+      "date": "Run 994",
+      "run_counter": 994,
+      "pnl": -9899.998626708984
+    },
+    "Run 993": {
+      "date": "Run 993",
+      "run_counter": 993,
+      "pnl": 19775.999450683594
+    },
+    "Run 992": {
+      "date": "Run 992",
+      "run_counter": 992,
+      "pnl": -8338.802490234375
+    },
+    "Run 991": {
+      "date": "Run 991",
+      "run_counter": 991,
+      "pnl": -6374.4012451171875
+    },
+    "Run 990": {
+      "date": "Run 990",
+      "run_counter": 990,
+      "pnl": 10202.402114868164
+    },
+    "Run 989": {
+      "date": "Run 989",
+      "run_counter": 989,
+      "pnl": -4403.999176025391
+    },
+    "Run 988": {
+      "date": "Run 988",
+      "run_counter": 988,
+      "pnl": -6296.401062011719
+    },
+    "Run 987": {
+      "date": "Run 987",
+      "run_counter": 987,
+      "pnl": 7233.601226806641
+    },
+    "Run 986": {
+      "date": "Run 986",
+      "run_counter": 986,
+      "pnl": -5438.399505615234
+    },
+    "Run 985": {
+      "date": "Run 985",
+      "run_counter": 985,
+      "pnl": 4567.2015380859375
+    },
+    "Run 984": {
+      "date": "Run 984",
+      "run_counter": 984,
+      "pnl": -3019.2022705078125
+    },
+    "Run 983": {
+      "date": "Run 983",
+      "run_counter": 983,
+      "pnl": -2260.7981872558594
+    },
+    "Run 982": {
+      "date": "Run 982",
+      "run_counter": 982,
+      "pnl": 18814.799194335938
+    },
+    "Run 981": {
+      "date": "Run 981",
+      "run_counter": 981,
+      "pnl": -9989.001388549805
+    },
+    "Run 980": {
+      "date": "Run 980",
+      "run_counter": 980,
+      "pnl": 16326.80025100708
+    },
+    "Run 979": {
+      "date": "Run 979",
+      "run_counter": 979,
+      "pnl": 22747.19846725464
+    },
+    "Run 978": {
+      "date": "Run 978",
+      "run_counter": 978,
+      "pnl": -3770.2005767822266
+    },
+    "Run 977": {
+      "date": "Run 977",
+      "run_counter": 977,
+      "pnl": 3038.001174926758
+    },
+    "Run 976": {
+      "date": "Run 976",
+      "run_counter": 976,
+      "pnl": 15177.399978637695
+    },
+    "Run 975": {
+      "date": "Run 975",
+      "run_counter": 975,
+      "pnl": -3876.599807739258
+    },
+    "Run 974": {
+      "date": "Run 974",
+      "run_counter": 974,
+      "pnl": -7203.001174926758
+    },
+    "Run 973": {
+      "date": "Run 973",
+      "run_counter": 973,
+      "pnl": -7679.002990722656
+    },
+    "Run 972": {
+      "date": "Run 972",
+      "run_counter": 972,
+      "pnl": -8773.797607421875
+    },
+    "Run 971": {
+      "date": "Run 971",
+      "run_counter": 971,
+      "pnl": 9381.399230957031
+    },
+    "Run 970": {
+      "date": "Run 970",
+      "run_counter": 970,
+      "pnl": -14110.596389770508
+    },
+    "Run 969": {
+      "date": "Run 969",
+      "run_counter": 969,
+      "pnl": -8264.197692871094
+    },
+    "Run 968": {
+      "date": "Run 968",
+      "run_counter": 968,
+      "pnl": -1814.4014739990234
+    },
+    "Run 967": {
+      "date": "Run 967",
+      "run_counter": 967,
+      "pnl": -4306.402435302734
+    },
+    "Run 966": {
+      "date": "Run 966",
+      "run_counter": 966,
+      "pnl": -12170.201110839844
+    },
+    "Run 965": {
+      "date": "Run 965",
+      "run_counter": 965,
+      "pnl": 2207.797393798828
+    },
+    "Run 964": {
+      "date": "Run 964",
+      "run_counter": 964,
+      "pnl": 9553.597564697266
+    },
+    "Run 963": {
+      "date": "Run 963",
+      "run_counter": 963,
+      "pnl": -5625.20378112793
+    },
+    "Run 962": {
+      "date": "Run 962",
+      "run_counter": 962,
+      "pnl": -9924.600448608398
+    },
+    "Run 961": {
+      "date": "Run 961",
+      "run_counter": 961,
+      "pnl": 9125.201110839844
+    },
+    "Run 960": {
+      "date": "Run 960",
+      "run_counter": 960,
+      "pnl": -8330
+    },
+    "Run 959": {
+      "date": "Run 959",
+      "run_counter": 959,
+      "pnl": 14356.997756958008
+    },
+    "Run 958": {
+      "date": "Run 958",
+      "run_counter": 958,
+      "pnl": -16315.600662231445
+    },
+    "Run 957": {
+      "date": "Run 957",
+      "run_counter": 957,
+      "pnl": -13693.402862548828
+    },
+    "Run 956": {
+      "date": "Run 956",
+      "run_counter": 956,
+      "pnl": -16616.600341796875
+    },
+    "Run 955": {
+      "date": "Run 955",
+      "run_counter": 955,
+      "pnl": -12921.999893188477
+    },
+    "Run 954": {
+      "date": "Run 954",
+      "run_counter": 954,
+      "pnl": 4670.400085449219
+    },
+    "Run 953": {
+      "date": "Run 953",
+      "run_counter": 953,
+      "pnl": -13446.99935913086
+    },
+    "Run 952": {
+      "date": "Run 952",
+      "run_counter": 952,
+      "pnl": 9570.39981842041
+    },
+    "Run 951": {
+      "date": "Run 951",
+      "run_counter": 951,
+      "pnl": -7144.1998291015625
+    },
+    "Run 950": {
+      "date": "Run 950",
+      "run_counter": 950,
+      "pnl": -369.5967102050781
+    },
+    "Run 949": {
+      "date": "Run 949",
+      "run_counter": 949,
+      "pnl": 8975.39794921875
+    },
+    "Run 948": {
+      "date": "Run 948",
+      "run_counter": 948,
+      "pnl": -12735.801773071289
+    },
+    "Run 947": {
+      "date": "Run 947",
+      "run_counter": 947,
+      "pnl": -3948.0027770996094
+    },
+    "Run 946": {
+      "date": "Run 946",
+      "run_counter": 946,
+      "pnl": -14694.397735595703
+    },
+    "Run 945": {
+      "date": "Run 945",
+      "run_counter": 945,
+      "pnl": 21145.60146331787
+    },
+    "Run 944": {
+      "date": "Run 944",
+      "run_counter": 944,
+      "pnl": -5221.997222900391
+    },
+    "Run 943": {
+      "date": "Run 943",
+      "run_counter": 943,
+      "pnl": 6431.598739624023
+    },
+    "Run 942": {
+      "date": "Run 942",
+      "run_counter": 942,
+      "pnl": -1703.7997436523438
+    },
+    "Run 941": {
+      "date": "Run 941",
+      "run_counter": 941,
+      "pnl": -14557.200469970703
+    },
+    "Run 940": {
+      "date": "Run 940",
+      "run_counter": 940,
+      "pnl": -13413.402328491211
+    },
+    "Run 939": {
+      "date": "Run 939",
+      "run_counter": 939,
+      "pnl": -14496.99935913086
+    },
+    "Run 938": {
+      "date": "Run 938",
+      "run_counter": 938,
+      "pnl": 20628.99845123291
+    },
+    "Run 937": {
+      "date": "Run 937",
+      "run_counter": 937,
+      "pnl": -11038.999786376953
+    },
+    "Run 936": {
+      "date": "Run 936",
+      "run_counter": 936,
+      "pnl": -17389.400939941406
+    },
+    "Run 935": {
+      "date": "Run 935",
+      "run_counter": 935,
+      "pnl": -14711.20346069336
+    },
+    "Run 934": {
+      "date": "Run 934",
+      "run_counter": 934,
+      "pnl": 21492.799530029297
+    },
+    "Run 933": {
+      "date": "Run 933",
+      "run_counter": 933,
+      "pnl": -4750.200042724609
+    },
+    "Run 932": {
+      "date": "Run 932",
+      "run_counter": 932,
+      "pnl": -3974.598846435547
+    },
+    "Run 931": {
+      "date": "Run 931",
+      "run_counter": 931,
+      "pnl": -6.999359130859375
+    },
+    "Run 930": {
+      "date": "Run 930",
+      "run_counter": 930,
+      "pnl": -1925.0032043457031
+    },
+    "Run 929": {
+      "date": "Run 929",
+      "run_counter": 929,
+      "pnl": 11802.002029418945
+    },
+    "Run 928": {
+      "date": "Run 928",
+      "run_counter": 928,
+      "pnl": -10418.801879882812
+    },
+    "Run 927": {
+      "date": "Run 927",
+      "run_counter": 927,
+      "pnl": 17204.60178375244
+    },
+    "Run 926": {
+      "date": "Run 926",
+      "run_counter": 926,
+      "pnl": 20553.40045928955
+    },
+    "Run 925": {
+      "date": "Run 925",
+      "run_counter": 925,
+      "pnl": -3331.9991463422775
+    },
+    "Run 924": {
+      "date": "Run 924",
+      "run_counter": 924,
+      "pnl": -4453.400726318359
+    },
+    "Run 923": {
+      "date": "Run 923",
+      "run_counter": 923,
+      "pnl": -18782.39891052246
+    },
+    "Run 922": {
+      "date": "Run 922",
+      "run_counter": 922,
+      "pnl": 24329.201431274414
+    },
+    "Run 921": {
+      "date": "Run 921",
+      "run_counter": 921,
+      "pnl": 19689.6004486084
+    },
+    "Run 920": {
+      "date": "Run 920",
+      "run_counter": 920,
+      "pnl": 4227.999038696289
+    },
+    "Run 919": {
+      "date": "Run 919",
+      "run_counter": 919,
+      "pnl": -15714.998397827148
+    },
+    "Run 918": {
+      "date": "Run 918",
+      "run_counter": 918,
+      "pnl": -634.1987609863281
+    },
+    "Run 917": {
+      "date": "Run 917",
+      "run_counter": 917,
+      "pnl": -7688.799209594727
+    },
+    "Run 916": {
+      "date": "Run 916",
+      "run_counter": 916,
+      "pnl": -7389.199295043945
+    },
+    "Run 915": {
+      "date": "Run 915",
+      "run_counter": 915,
+      "pnl": -10287.199935913086
+    },
+    "Run 914": {
+      "date": "Run 914",
+      "run_counter": 914,
+      "pnl": -2309.9983978271484
+    },
+    "Run 913": {
+      "date": "Run 913",
+      "run_counter": 913,
+      "pnl": 27172.60108947754
+    },
+    "Run 912": {
+      "date": "Run 912",
+      "run_counter": 912,
+      "pnl": 2876.9972229003906
+    },
+    "Run 911": {
+      "date": "Run 911",
+      "run_counter": 911,
+      "pnl": 21919.8002243042
+    },
+    "Run 910": {
+      "date": "Run 910",
+      "run_counter": 910,
+      "pnl": -1416.79931640625
+    },
+    "Run 909": {
+      "date": "Run 909",
+      "run_counter": 909,
+      "pnl": -2672.5994873046875
+    },
+    "Run 908": {
+      "date": "Run 908",
+      "run_counter": 908,
+      "pnl": 2136.4013671875
+    },
+    "Run 907": {
+      "date": "Run 907",
+      "run_counter": 907,
+      "pnl": -8670.198440551758
+    },
+    "Run 906": {
+      "date": "Run 906",
+      "run_counter": 906,
+      "pnl": 2903.6002349853516
+    },
+    "Run 905": {
+      "date": "Run 905",
+      "run_counter": 905,
+      "pnl": -916.9977569580078
+    },
+    "Run 904": {
+      "date": "Run 904",
+      "run_counter": 904,
+      "pnl": -1338.4007263183594
+    },
+    "Run 903": {
+      "date": "Run 903",
+      "run_counter": 903,
+      "pnl": 5783.400726318359
+    },
+    "Run 902": {
+      "date": "Run 902",
+      "run_counter": 902,
+      "pnl": -14578.202819824219
+    },
+    "Run 901": {
+      "date": "Run 901",
+      "run_counter": 901,
+      "pnl": 29509.198026657104
+    },
+    "Run 900": {
+      "date": "Run 900",
+      "run_counter": 900,
+      "pnl": 21315.001335144043
+    },
+    "Run 899": {
+      "date": "Run 899",
+      "run_counter": 899,
+      "pnl": 4249.001388549805
+    },
+    "Run 898": {
+      "date": "Run 898",
+      "run_counter": 898,
+      "pnl": 22174.59857940674
+    },
+    "Run 897": {
+      "date": "Run 897",
+      "run_counter": 897,
+      "pnl": -4576.602478027344
+    },
+    "Run 896": {
+      "date": "Run 896",
+      "run_counter": 896,
+      "pnl": -2843.4033966064453
+    },
+    "Run 895": {
+      "date": "Run 895",
+      "run_counter": 895,
+      "pnl": -7698.601837158203
+    },
+    "Run 894": {
+      "date": "Run 894",
+      "run_counter": 894,
+      "pnl": -15752.801132202148
+    },
+    "Run 893": {
+      "date": "Run 893",
+      "run_counter": 893,
+      "pnl": 22000.998611450195
+    },
+    "Run 892": {
+      "date": "Run 892",
+      "run_counter": 892,
+      "pnl": -2444.3961334228516
+    },
+    "Run 891": {
+      "date": "Run 891",
+      "run_counter": 891,
+      "pnl": -2183.999786376953
+    },
+    "Run 890": {
+      "date": "Run 890",
+      "run_counter": 890,
+      "pnl": 839.9978637695312
+    },
+    "Run 889": {
+      "date": "Run 889",
+      "run_counter": 889,
+      "pnl": -694.3972015380859
+    },
+    "Run 888": {
+      "date": "Run 888",
+      "run_counter": 888,
+      "pnl": -1855.0010681152344
+    },
+    "Run 887": {
+      "date": "Run 887",
+      "run_counter": 887,
+      "pnl": -9753.798141479492
+    },
+    "Run 886": {
+      "date": "Run 886",
+      "run_counter": 886,
+      "pnl": -1300.599594116211
+    },
+    "Run 885": {
+      "date": "Run 885",
+      "run_counter": 885,
+      "pnl": 16596.998558044434
+    },
+    "Run 884": {
+      "date": "Run 884",
+      "run_counter": 884,
+      "pnl": -18251.8009185791
+    },
+    "Run 883": {
+      "date": "Run 883",
+      "run_counter": 883,
+      "pnl": -12844.999465942383
+    },
+    "Run 882": {
+      "date": "Run 882",
+      "run_counter": 882,
+      "pnl": 19382.998504638672
+    },
+    "Run 881": {
+      "date": "Run 881",
+      "run_counter": 881,
+      "pnl": -4725.001602172852
+    },
+    "Run 880": {
+      "date": "Run 880",
+      "run_counter": 880,
+      "pnl": -14782.597351074219
+    },
+    "Run 879": {
+      "date": "Run 879",
+      "run_counter": 879,
+      "pnl": -12854.799423217773
+    },
+    "Run 878": {
+      "date": "Run 878",
+      "run_counter": 878,
+      "pnl": 22348.199882507324
+    },
+    "Run 877": {
+      "date": "Run 877",
+      "run_counter": 877,
+      "pnl": -7487.197265625
+    },
+    "Run 876": {
+      "date": "Run 876",
+      "run_counter": 876,
+      "pnl": 3624.6004486083984
+    },
+    "Run 875": {
+      "date": "Run 875",
+      "run_counter": 875,
+      "pnl": -3572.7984619140625
+    },
+    "Run 874": {
+      "date": "Run 874",
+      "run_counter": 874,
+      "pnl": 6033.997116088867
+    },
+    "Run 873": {
+      "date": "Run 873",
+      "run_counter": 873,
+      "pnl": -8174.600448608398
+    },
+    "Run 872": {
+      "date": "Run 872",
+      "run_counter": 872,
+      "pnl": 20501.598205566406
+    },
+    "Run 871": {
+      "date": "Run 871",
+      "run_counter": 871,
+      "pnl": 3590.9991455078125
+    },
+    "Run 870": {
+      "date": "Run 870",
+      "run_counter": 870,
+      "pnl": -2158.797073364258
+    },
+    "Run 869": {
+      "date": "Run 869",
+      "run_counter": 869,
+      "pnl": 9406.60140991211
+    },
+    "Run 868": {
+      "date": "Run 868",
+      "run_counter": 868,
+      "pnl": 2525.6017303466797
+    },
+    "Run 867": {
+      "date": "Run 867",
+      "run_counter": 867,
+      "pnl": -2003.4012603759766
+    },
+    "Run 866": {
+      "date": "Run 866",
+      "run_counter": 866,
+      "pnl": 16.798782348632812
+    },
+    "Run 865": {
+      "date": "Run 865",
+      "run_counter": 865,
+      "pnl": 6917.40104675293
+    },
+    "Run 864": {
+      "date": "Run 864",
+      "run_counter": 864,
+      "pnl": -3548.9987182617188
+    },
+    "Run 863": {
+      "date": "Run 863",
+      "run_counter": 863,
+      "pnl": -4230.8001708984375
+    },
+    "Run 862": {
+      "date": "Run 862",
+      "run_counter": 862,
+      "pnl": 12182.799263000488
+    },
+    "Run 861": {
+      "date": "Run 861",
+      "run_counter": 861,
+      "pnl": -8871.600952148438
+    },
+    "Run 860": {
+      "date": "Run 860",
+      "run_counter": 860,
+      "pnl": 15578.400993347168
+    },
+    "Run 859": {
+      "date": "Run 859",
+      "run_counter": 859,
+      "pnl": -11331.600494384766
+    },
+    "Run 858": {
+      "date": "Run 858",
+      "run_counter": 858,
+      "pnl": 19949.997940063477
+    },
+    "Run 857": {
+      "date": "Run 857",
+      "run_counter": 857,
+      "pnl": -10208.401336669922
+    },
+    "Run 856": {
+      "date": "Run 856",
+      "run_counter": 856,
+      "pnl": -3907.1983337402344
+    },
+    "Run 855": {
+      "date": "Run 855",
+      "run_counter": 855,
+      "pnl": 1783.198471069336
+    },
+    "Run 854": {
+      "date": "Run 854",
+      "run_counter": 854,
+      "pnl": -1417.1974182128906
+    },
+    "Run 853": {
+      "date": "Run 853",
+      "run_counter": 853,
+      "pnl": -2140.8004760742188
+    },
+    "Run 852": {
+      "date": "Run 852",
+      "run_counter": 852,
+      "pnl": -2001.6018676757812
+    },
+    "Run 851": {
+      "date": "Run 851",
+      "run_counter": 851,
+      "pnl": -5618.401336669922
+    },
+    "Run 850": {
+      "date": "Run 850",
+      "run_counter": 850,
+      "pnl": 498.0006408691406
+    },
+    "Run 849": {
+      "date": "Run 849",
+      "run_counter": 849,
+      "pnl": 981.6000366210938
+    },
+    "Run 848": {
+      "date": "Run 848",
+      "run_counter": 848,
+      "pnl": 20179.20066833496
+    },
+    "Run 847": {
+      "date": "Run 847",
+      "run_counter": 847,
+      "pnl": -4917.600860595703
+    },
+    "Run 846": {
+      "date": "Run 846",
+      "run_counter": 846,
+      "pnl": 136.80084228515625
+    },
+    "Run 845": {
+      "date": "Run 845",
+      "run_counter": 845,
+      "pnl": 13023.601455688477
+    },
+    "Run 844": {
+      "date": "Run 844",
+      "run_counter": 844,
+      "pnl": -2817.600860595703
+    },
+    "Run 843": {
+      "date": "Run 843",
+      "run_counter": 843,
+      "pnl": 868.7992858886719
+    },
+    "Run 842": {
+      "date": "Run 842",
+      "run_counter": 842,
+      "pnl": 6864.000091552734
+    },
+    "Run 841": {
+      "date": "Run 841",
+      "run_counter": 841,
+      "pnl": -2077.200164794922
+    },
+    "Run 840": {
+      "date": "Run 840",
+      "run_counter": 840,
+      "pnl": 0
+    },
+    "Run 839": {
+      "date": "Run 839",
+      "run_counter": 839,
+      "pnl": -20504.39998626709
+    },
+    "Run 838": {
+      "date": "Run 838",
+      "run_counter": 838,
+      "pnl": -7855.201721191406
+    },
+    "Run 837": {
+      "date": "Run 837",
+      "run_counter": 837,
+      "pnl": 20326.80072784424
+    },
+    "Run 836": {
+      "date": "Run 836",
+      "run_counter": 836,
+      "pnl": -5983.2000732421875
+    },
+    "Run 835": {
+      "date": "Run 835",
+      "run_counter": 835,
+      "pnl": 16842.000045776367
+    },
+    "Run 834": {
+      "date": "Run 834",
+      "run_counter": 834,
+      "pnl": -9435.600128173828
+    },
+    "Run 833": {
+      "date": "Run 833",
+      "run_counter": 833,
+      "pnl": -12352.799377441406
+    },
+    "Run 832": {
+      "date": "Run 832",
+      "run_counter": 832,
+      "pnl": -6988.799743652344
+    },
+    "Run 831": {
+      "date": "Run 831",
+      "run_counter": 831,
+      "pnl": -2242.800750732422
+    },
+    "Run 830": {
+      "date": "Run 830",
+      "run_counter": 830,
+      "pnl": -1624.8019409179688
+    },
+    "Run 829": {
+      "date": "Run 829",
+      "run_counter": 829,
+      "pnl": 648.0006408691406
+    },
+    "Run 828": {
+      "date": "Run 828",
+      "run_counter": 828,
+      "pnl": 9344.401245117188
+    },
+    "Run 827": {
+      "date": "Run 827",
+      "run_counter": 827,
+      "pnl": -3796.7990112304688
+    },
+    "Run 826": {
+      "date": "Run 826",
+      "run_counter": 826,
+      "pnl": -2451.598663330078
+    },
+    "Run 825": {
+      "date": "Run 825",
+      "run_counter": 825,
+      "pnl": -5624.402618408203
+    },
+    "Run 824": {
+      "date": "Run 824",
+      "run_counter": 824,
+      "pnl": -13641.599578857422
+    },
+    "Run 823": {
+      "date": "Run 823",
+      "run_counter": 823,
+      "pnl": -9338.402709960938
+    },
+    "Run 822": {
+      "date": "Run 822",
+      "run_counter": 822,
+      "pnl": 1610.401611328125
+    },
+    "Run 821": {
+      "date": "Run 821",
+      "run_counter": 821,
+      "pnl": 16721.998443603516
+    },
+    "Run 820": {
+      "date": "Run 820",
+      "run_counter": 820,
+      "pnl": -7311.59912109375
+    },
+    "Run 819": {
+      "date": "Run 819",
+      "run_counter": 819,
+      "pnl": -8366.39877319336
+    },
+    "Run 818": {
+      "date": "Run 818",
+      "run_counter": 818,
+      "pnl": -4148.3990478515625
+    },
+    "Run 817": {
+      "date": "Run 817",
+      "run_counter": 817,
+      "pnl": -1114.79736328125
+    },
+    "Run 816": {
+      "date": "Run 816",
+      "run_counter": 816,
+      "pnl": 1600.8009338378906
+    },
+    "Run 815": {
+      "date": "Run 815",
+      "run_counter": 815,
+      "pnl": -11617.197875976562
+    },
+    "Run 814": {
+      "date": "Run 814",
+      "run_counter": 814,
+      "pnl": -14833.199615478516
+    },
+    "Run 813": {
+      "date": "Run 813",
+      "run_counter": 813,
+      "pnl": 19288.799285888672
+    },
+    "Run 812": {
+      "date": "Run 812",
+      "run_counter": 812,
+      "pnl": 18661.199111938477
+    },
+    "Run 811": {
+      "date": "Run 811",
+      "run_counter": 811,
+      "pnl": 22898.401107788086
+    },
+    "Run 810": {
+      "date": "Run 810",
+      "run_counter": 810,
+      "pnl": 18294.001693725586
+    },
+    "Run 809": {
+      "date": "Run 809",
+      "run_counter": 809,
+      "pnl": 17481.600952148438
+    },
+    "Run 808": {
+      "date": "Run 808",
+      "run_counter": 808,
+      "pnl": 21617.998580932617
+    },
+    "Run 807": {
+      "date": "Run 807",
+      "run_counter": 807,
+      "pnl": -12163.202362060547
+    },
+    "Run 806": {
+      "date": "Run 806",
+      "run_counter": 806,
+      "pnl": -5749.199523925781
+    },
+    "Run 805": {
+      "date": "Run 805",
+      "run_counter": 805,
+      "pnl": -14797.196960449219
+    },
+    "Run 804": {
+      "date": "Run 804",
+      "run_counter": 804,
+      "pnl": 4383.600769042969
+    },
+    "Run 803": {
+      "date": "Run 803",
+      "run_counter": 803,
+      "pnl": 1086.0008239746094
+    },
+    "Run 802": {
+      "date": "Run 802",
+      "run_counter": 802,
+      "pnl": -6304.7991943359375
+    },
+    "Run 801": {
+      "date": "Run 801",
+      "run_counter": 801,
+      "pnl": -10309.19906616211
+    },
+    "Run 800": {
+      "date": "Run 800",
+      "run_counter": 800,
+      "pnl": 1952.4000549316406
+    },
+    "Run 799": {
+      "date": "Run 799",
+      "run_counter": 799,
+      "pnl": -8348.396987915039
+    },
+    "Run 798": {
+      "date": "Run 798",
+      "run_counter": 798,
+      "pnl": -13527.598571777344
+    },
+    "Run 797": {
+      "date": "Run 797",
+      "run_counter": 797,
+      "pnl": 21969.601249694824
+    },
+    "Run 796": {
+      "date": "Run 796",
+      "run_counter": 796,
+      "pnl": -8953.199157714844
+    },
+    "Run 795": {
+      "date": "Run 795",
+      "run_counter": 795,
+      "pnl": 7145.999450683594
+    },
+    "Run 794": {
+      "date": "Run 794",
+      "run_counter": 794,
+      "pnl": 19395.600128173828
+    },
+    "Run 793": {
+      "date": "Run 793",
+      "run_counter": 793,
+      "pnl": 18832.79914855957
+    },
+    "Run 792": {
+      "date": "Run 792",
+      "run_counter": 792,
+      "pnl": 17242.79972076416
+    },
+    "Run 791": {
+      "date": "Run 791",
+      "run_counter": 791,
+      "pnl": 17881.201400756836
+    },
+    "Run 790": {
+      "date": "Run 790",
+      "run_counter": 790,
+      "pnl": 19045.19989013672
+    },
+    "Run 789": {
+      "date": "Run 789",
+      "run_counter": 789,
+      "pnl": -3775.1980590820312
+    },
+    "Run 788": {
+      "date": "Run 788",
+      "run_counter": 788,
+      "pnl": 112.79708862304688
+    },
+    "Run 787": {
+      "date": "Run 787",
+      "run_counter": 787,
+      "pnl": -2551.2002563476562
+    },
+    "Run 786": {
+      "date": "Run 786",
+      "run_counter": 786,
+      "pnl": 4320.0018310546875
+    },
+    "Run 785": {
+      "date": "Run 785",
+      "run_counter": 785,
+      "pnl": -1172.3995971679688
+    },
+    "Run 784": {
+      "date": "Run 784",
+      "run_counter": 784,
+      "pnl": 80.40206909179688
+    },
+    "Run 783": {
+      "date": "Run 783",
+      "run_counter": 783,
+      "pnl": -4285.20263671875
+    },
+    "Run 782": {
+      "date": "Run 782",
+      "run_counter": 782,
+      "pnl": 6759.60090637207
+    },
+    "Run 781": {
+      "date": "Run 781",
+      "run_counter": 781,
+      "pnl": -7278.000640869141
+    },
+    "Run 780": {
+      "date": "Run 780",
+      "run_counter": 780,
+      "pnl": 7501.201171875
+    },
+    "Run 779": {
+      "date": "Run 779",
+      "run_counter": 779,
+      "pnl": -849.6011352539062
+    },
+    "Run 778": {
+      "date": "Run 778",
+      "run_counter": 778,
+      "pnl": -8175.600128173828
+    },
+    "Run 777": {
+      "date": "Run 777",
+      "run_counter": 777,
+      "pnl": -1068.0001831054688
+    },
+    "Run 776": {
+      "date": "Run 776",
+      "run_counter": 776,
+      "pnl": -2845.198974609375
+    },
+    "Run 775": {
+      "date": "Run 775",
+      "run_counter": 775,
+      "pnl": -5707.200164794922
+    },
+    "Run 774": {
+      "date": "Run 774",
+      "run_counter": 774,
+      "pnl": 22641.601066589355
+    },
+    "Run 773": {
+      "date": "Run 773",
+      "run_counter": 773,
+      "pnl": -4512.000732421875
+    },
+    "Run 772": {
+      "date": "Run 772",
+      "run_counter": 772,
+      "pnl": -2073.5980224609375
+    },
+    "Run 771": {
+      "date": "Run 771",
+      "run_counter": 771,
+      "pnl": 9393.600311279297
+    },
+    "Run 770": {
+      "date": "Run 770",
+      "run_counter": 770,
+      "pnl": -1809.6002197265625
+    },
+    "Run 769": {
+      "date": "Run 769",
+      "run_counter": 769,
+      "pnl": -15244.800567626953
+    },
+    "Run 768": {
+      "date": "Run 768",
+      "run_counter": 768,
+      "pnl": -13069.19677734375
+    },
+    "Run 767": {
+      "date": "Run 767",
+      "run_counter": 767,
+      "pnl": 17296.798782348633
+    },
+    "Run 766": {
+      "date": "Run 766",
+      "run_counter": 766,
+      "pnl": -7617.601318359375
+    },
+    "Run 765": {
+      "date": "Run 765",
+      "run_counter": 765,
+      "pnl": -12675.60287475586
+    },
+    "Run 764": {
+      "date": "Run 764",
+      "run_counter": 764,
+      "pnl": 17435.999221801758
+    },
+    "Run 763": {
+      "date": "Run 763",
+      "run_counter": 763,
+      "pnl": 4464.00146484375
+    },
+    "Run 762": {
+      "date": "Run 762",
+      "run_counter": 762,
+      "pnl": -8720.399780273438
+    },
+    "Run 761": {
+      "date": "Run 761",
+      "run_counter": 761,
+      "pnl": 577.2001647949219
+    },
+    "Run 760": {
+      "date": "Run 760",
+      "run_counter": 760,
+      "pnl": 8824.79965209961
+    },
+    "Run 759": {
+      "date": "Run 759",
+      "run_counter": 759,
+      "pnl": -10465.19760131836
+    },
+    "Run 758": {
+      "date": "Run 758",
+      "run_counter": 758,
+      "pnl": -6724.950656890869
+    },
+    "Run 757": {
+      "date": "Run 757",
+      "run_counter": 757,
+      "pnl": 13527.148690223694
+    },
+    "Run 756": {
+      "date": "Run 756",
+      "run_counter": 756,
+      "pnl": -10151.401233673096
+    },
+    "Run 755": {
+      "date": "Run 755",
+      "run_counter": 755,
+      "pnl": 15176.699295043945
+    },
+    "Run 754": {
+      "date": "Run 754",
+      "run_counter": 754,
+      "pnl": -23125.20097732544
+    },
+    "Run 753": {
+      "date": "Run 753",
+      "run_counter": 753,
+      "pnl": 15381.448974609375
+    },
+    "Run 752": {
+      "date": "Run 752",
+      "run_counter": 752,
+      "pnl": -10658.551425933838
+    },
+    "Run 751": {
+      "date": "Run 751",
+      "run_counter": 751,
+      "pnl": -1002.7483177185059
+    },
+    "Run 750": {
+      "date": "Run 750",
+      "run_counter": 750,
+      "pnl": -11257.049503326416
+    },
+    "Run 749": {
+      "date": "Run 749",
+      "run_counter": 749,
+      "pnl": -12291.302146911621
+    },
+    "Run 748": {
+      "date": "Run 748",
+      "run_counter": 748,
+      "pnl": -1346.1015701293945
+    },
+    "Run 747": {
+      "date": "Run 747",
+      "run_counter": 747,
+      "pnl": -4648.350048065186
+    },
+    "Run 746": {
+      "date": "Run 746",
+      "run_counter": 746,
+      "pnl": -12154.800624847412
+    },
+    "Run 745": {
+      "date": "Run 745",
+      "run_counter": 745,
+      "pnl": 70.35140991210938
+    },
+    "Run 744": {
+      "date": "Run 744",
+      "run_counter": 744,
+      "pnl": -11534.249038696289
+    },
+    "Run 743": {
+      "date": "Run 743",
+      "run_counter": 743,
+      "pnl": 17804.84836578369
+    },
+    "Run 742": {
+      "date": "Run 742",
+      "run_counter": 742,
+      "pnl": 16475.55058479309
+    },
+    "Run 741": {
+      "date": "Run 741",
+      "run_counter": 741,
+      "pnl": 12839.40107345581
+    },
+    "Run 740": {
+      "date": "Run 740",
+      "run_counter": 740,
+      "pnl": 5261.547260284424
+    },
+    "Run 739": {
+      "date": "Run 739",
+      "run_counter": 739,
+      "pnl": -5280.450096130371
+    },
+    "Run 738": {
+      "date": "Run 738",
+      "run_counter": 738,
+      "pnl": -8778.001041412354
+    },
+    "Run 737": {
+      "date": "Run 737",
+      "run_counter": 737,
+      "pnl": -5349.7504806518555
+    },
+    "Run 736": {
+      "date": "Run 736",
+      "run_counter": 736,
+      "pnl": -4282.9484939575195
+    },
+    "Run 735": {
+      "date": "Run 735",
+      "run_counter": 735,
+      "pnl": -4433.099327087402
+    },
+    "Run 734": {
+      "date": "Run 734",
+      "run_counter": 734,
+      "pnl": -9994.949855804443
+    },
+    "Run 733": {
+      "date": "Run 733",
+      "run_counter": 733,
+      "pnl": -10527.298221588135
+    },
+    "Run 732": {
+      "date": "Run 732",
+      "run_counter": 732,
+      "pnl": -1236.9006729125977
+    },
+    "Run 731": {
+      "date": "Run 731",
+      "run_counter": 731,
+      "pnl": -11676.000480651855
+    },
+    "Run 730": {
+      "date": "Run 730",
+      "run_counter": 730,
+      "pnl": 16445.099086761475
+    },
+    "Run 729": {
+      "date": "Run 729",
+      "run_counter": 729,
+      "pnl": 14191.799783706665
+    },
+    "Run 728": {
+      "date": "Run 728",
+      "run_counter": 728,
+      "pnl": 16210.94913482666
+    },
+    "Run 727": {
+      "date": "Run 727",
+      "run_counter": 727,
+      "pnl": 16701.299743652344
+    },
+    "Run 726": {
+      "date": "Run 726",
+      "run_counter": 726,
+      "pnl": -2319.4496154785156
+    },
+    "Run 725": {
+      "date": "Run 725",
+      "run_counter": 725,
+      "pnl": -10186.05182647705
+    },
+    "Run 724": {
+      "date": "Run 724",
+      "run_counter": 724,
+      "pnl": 17045.698614120483
+    },
+    "Run 723": {
+      "date": "Run 723",
+      "run_counter": 723,
+      "pnl": -3317.998638153076
+    },
+    "Run 722": {
+      "date": "Run 722",
+      "run_counter": 722,
+      "pnl": -2854.950656890869
+    },
+    "Run 721": {
+      "date": "Run 721",
+      "run_counter": 721,
+      "pnl": -43.04878234863281
+    },
+    "Run 720": {
+      "date": "Run 720",
+      "run_counter": 720,
+      "pnl": -1479.4512176513672
+    },
+    "Run 719": {
+      "date": "Run 719",
+      "run_counter": 719,
+      "pnl": -1116.148509979248
+    },
+    "Run 718": {
+      "date": "Run 718",
+      "run_counter": 718,
+      "pnl": -4512.901554107666
+    },
+    "Run 717": {
+      "date": "Run 717",
+      "run_counter": 717,
+      "pnl": 3876.6006088256836
+    },
+    "Run 716": {
+      "date": "Run 716",
+      "run_counter": 716,
+      "pnl": 9887.85140991211
+    },
+    "Run 715": {
+      "date": "Run 715",
+      "run_counter": 715,
+      "pnl": -4627.349967956543
+    },
+    "Run 714": {
+      "date": "Run 714",
+      "run_counter": 714,
+      "pnl": 2589.29838180542
+    },
+    "Run 713": {
+      "date": "Run 713",
+      "run_counter": 713,
+      "pnl": -6748.349647521973
+    },
+    "Run 712": {
+      "date": "Run 712",
+      "run_counter": 712,
+      "pnl": 13701.449174880981
+    },
+    "Run 711": {
+      "date": "Run 711",
+      "run_counter": 711,
+      "pnl": -5785.501842498779
+    },
+    "Run 710": {
+      "date": "Run 710",
+      "run_counter": 710,
+      "pnl": -2156.700897216797
+    },
+    "Run 709": {
+      "date": "Run 709",
+      "run_counter": 709,
+      "pnl": 14507.849607467651
+    },
+    "Run 708": {
+      "date": "Run 708",
+      "run_counter": 708,
+      "pnl": 23293.201518058777
+    },
+    "Run 707": {
+      "date": "Run 707",
+      "run_counter": 707,
+      "pnl": -9359.698734283447
+    },
+    "Run 706": {
+      "date": "Run 706",
+      "run_counter": 706,
+      "pnl": -6166.65075302124
+    },
+    "Run 705": {
+      "date": "Run 705",
+      "run_counter": 705,
+      "pnl": -2146.200656890869
+    },
+    "Run 704": {
+      "date": "Run 704",
+      "run_counter": 704,
+      "pnl": -11184.599647521973
+    },
+    "Run 703": {
+      "date": "Run 703",
+      "run_counter": 703,
+      "pnl": 15703.800344467163
+    },
+    "Run 702": {
+      "date": "Run 702",
+      "run_counter": 702,
+      "pnl": 10571.401634216309
+    },
+    "Run 701": {
+      "date": "Run 701",
+      "run_counter": 701,
+      "pnl": -10589.251441955566
+    },
+    "Run 700": {
+      "date": "Run 700",
+      "run_counter": 700,
+      "pnl": 14097.299823760986
+    },
+    "Run 699": {
+      "date": "Run 699",
+      "run_counter": 699,
+      "pnl": 13378.048882484436
+    },
+    "Run 698": {
+      "date": "Run 698",
+      "run_counter": 698,
+      "pnl": 14812.349967956543
+    },
+    "Run 697": {
+      "date": "Run 697",
+      "run_counter": 697,
+      "pnl": -8679.300384521484
+    },
+    "Run 696": {
+      "date": "Run 696",
+      "run_counter": 696,
+      "pnl": -5161.798782348633
+    },
+    "Run 695": {
+      "date": "Run 695",
+      "run_counter": 695,
+      "pnl": 8456.698694229126
+    },
+    "Run 694": {
+      "date": "Run 694",
+      "run_counter": 694,
+      "pnl": -5671.051025390625
+    },
+    "Run 693": {
+      "date": "Run 693",
+      "run_counter": 693,
+      "pnl": 8258.250060081482
+    },
+    "Run 692": {
+      "date": "Run 692",
+      "run_counter": 692,
+      "pnl": 16412.55024433136
+    },
+    "Run 691": {
+      "date": "Run 691",
+      "run_counter": 691,
+      "pnl": 15546.301746368408
+    },
+    "Run 690": {
+      "date": "Run 690",
+      "run_counter": 690,
+      "pnl": -10938.90043258667
+    },
+    "Run 689": {
+      "date": "Run 689",
+      "run_counter": 689,
+      "pnl": -8382.147789001465
+    },
+    "Run 688": {
+      "date": "Run 688",
+      "run_counter": 688,
+      "pnl": -8465.100688934326
+    },
+    "Run 687": {
+      "date": "Run 687",
+      "run_counter": 687,
+      "pnl": 22264.201197624207
+    },
+    "Run 686": {
+      "date": "Run 686",
+      "run_counter": 686,
+      "pnl": -11049.151153564453
+    },
+    "Run 685": {
+      "date": "Run 685",
+      "run_counter": 685,
+      "pnl": 17323.9497756958
+    },
+    "Run 684": {
+      "date": "Run 684",
+      "run_counter": 684,
+      "pnl": 15005.55118560791
+    },
+    "Run 683": {
+      "date": "Run 683",
+      "run_counter": 683,
+      "pnl": 13777.051706314087
+    },
+    "Run 682": {
+      "date": "Run 682",
+      "run_counter": 682,
+      "pnl": -11216.09956741333
+    },
+    "Run 681": {
+      "date": "Run 681",
+      "run_counter": 681,
+      "pnl": 15878.09892654419
+    },
+    "Run 680": {
+      "date": "Run 680",
+      "run_counter": 680,
+      "pnl": -20618.84828567505
+    },
+    "Run 679": {
+      "date": "Run 679",
+      "run_counter": 679,
+      "pnl": 14181.30054473877
+    },
+    "Run 678": {
+      "date": "Run 678",
+      "run_counter": 678,
+      "pnl": 14645.399951934814
+    },
+    "Run 677": {
+      "date": "Run 677",
+      "run_counter": 677,
+      "pnl": -8664.598445892334
+    },
+    "Run 676": {
+      "date": "Run 676",
+      "run_counter": 676,
+      "pnl": -8626.798782348633
+    },
+    "Run 675": {
+      "date": "Run 675",
+      "run_counter": 675,
+      "pnl": -11726.398429870605
+    },
+    "Run 674": {
+      "date": "Run 674",
+      "run_counter": 674,
+      "pnl": -3022.9484939575195
+    },
+    "Run 673": {
+      "date": "Run 673",
+      "run_counter": 673,
+      "pnl": -9423.749198913574
+    },
+    "Run 672": {
+      "date": "Run 672",
+      "run_counter": 672,
+      "pnl": -11751.601009368896
+    },
+    "Run 671": {
+      "date": "Run 671",
+      "run_counter": 671,
+      "pnl": 16372.649631500244
+    },
+    "Run 670": {
+      "date": "Run 670",
+      "run_counter": 670,
+      "pnl": -7869.747276306152
+    },
+    "Run 669": {
+      "date": "Run 669",
+      "run_counter": 669,
+      "pnl": 16459.799423217773
+    },
+    "Run 668": {
+      "date": "Run 668",
+      "run_counter": 668,
+      "pnl": -896.7008972167969
+    },
+    "Run 667": {
+      "date": "Run 667",
+      "run_counter": 667,
+      "pnl": -1009.0496635437012
+    },
+    "Run 666": {
+      "date": "Run 666",
+      "run_counter": 666,
+      "pnl": -9078.299703598022
+    },
+    "Run 665": {
+      "date": "Run 665",
+      "run_counter": 665,
+      "pnl": 14281.0502243042
+    },
+    "Run 664": {
+      "date": "Run 664",
+      "run_counter": 664,
+      "pnl": 15549.45101737976
+    },
+    "Run 663": {
+      "date": "Run 663",
+      "run_counter": 663,
+      "pnl": -1786.0486221313477
+    },
+    "Run 662": {
+      "date": "Run 662",
+      "run_counter": 662,
+      "pnl": -2810.8504486083984
+    },
+    "Run 661": {
+      "date": "Run 661",
+      "run_counter": 661,
+      "pnl": -6790.349807739258
+    },
+    "Run 660": {
+      "date": "Run 660",
+      "run_counter": 660,
+      "pnl": -12921.298942565918
+    },
+    "Run 659": {
+      "date": "Run 659",
+      "run_counter": 659,
+      "pnl": 15041.249198913574
+    },
+    "Run 658": {
+      "date": "Run 658",
+      "run_counter": 658,
+      "pnl": -9325.051746368408
+    },
+    "Run 657": {
+      "date": "Run 657",
+      "run_counter": 657,
+      "pnl": -14516.25
+    },
+    "Run 656": {
+      "date": "Run 656",
+      "run_counter": 656,
+      "pnl": 15368.850688934326
+    },
+    "Run 655": {
+      "date": "Run 655",
+      "run_counter": 655,
+      "pnl": -11082.751522064209
+    },
+    "Run 654": {
+      "date": "Run 654",
+      "run_counter": 654,
+      "pnl": -11126.85173034668
+    },
+    "Run 653": {
+      "date": "Run 653",
+      "run_counter": 653,
+      "pnl": 16602.599487304688
+    },
+    "Run 652": {
+      "date": "Run 652",
+      "run_counter": 652,
+      "pnl": -8205.750961303711
+    },
+    "Run 651": {
+      "date": "Run 651",
+      "run_counter": 651,
+      "pnl": 17212.651133537292
+    },
+    "Run 650": {
+      "date": "Run 650",
+      "run_counter": 650,
+      "pnl": 15452.85080909729
+    },
+    "Run 649": {
+      "date": "Run 649",
+      "run_counter": 649,
+      "pnl": 15073.798141479492
+    },
+    "Run 648": {
+      "date": "Run 648",
+      "run_counter": 648,
+      "pnl": 21100.801305770874
+    },
+    "Run 647": {
+      "date": "Run 647",
+      "run_counter": 647,
+      "pnl": -4124.397869110107
+    },
+    "Run 646": {
+      "date": "Run 646",
+      "run_counter": 646,
+      "pnl": 15482.250280380249
+    },
+    "Run 645": {
+      "date": "Run 645",
+      "run_counter": 645,
+      "pnl": 4659.898760318756
+    },
+    "Run 644": {
+      "date": "Run 644",
+      "run_counter": 644,
+      "pnl": -8103.898830413818
+    },
+    "Run 643": {
+      "date": "Run 643",
+      "run_counter": 643,
+      "pnl": 15587.250280380249
+    },
+    "Run 642": {
+      "date": "Run 642",
+      "run_counter": 642,
+      "pnl": -9907.80086517334
+    },
+    "Run 641": {
+      "date": "Run 641",
+      "run_counter": 641,
+      "pnl": 16116.45097732544
+    },
+    "Run 640": {
+      "date": "Run 640",
+      "run_counter": 640,
+      "pnl": 14731.499519348145
+    },
+    "Run 639": {
+      "date": "Run 639",
+      "run_counter": 639,
+      "pnl": -6972.000560760498
+    },
+    "Run 638": {
+      "date": "Run 638",
+      "run_counter": 638,
+      "pnl": -5010.599727630615
+    },
+    "Run 637": {
+      "date": "Run 637",
+      "run_counter": 637,
+      "pnl": 14419.651193618774
+    },
+    "Run 636": {
+      "date": "Run 636",
+      "run_counter": 636,
+      "pnl": 16097.550945281982
+    },
+    "Run 635": {
+      "date": "Run 635",
+      "run_counter": 635,
+      "pnl": 15992.549543380737
+    },
+    "Run 634": {
+      "date": "Run 634",
+      "run_counter": 634,
+      "pnl": -2207.101249694824
+    },
+    "Run 633": {
+      "date": "Run 633",
+      "run_counter": 633,
+      "pnl": -2098.948974609375
+    },
+    "Run 632": {
+      "date": "Run 632",
+      "run_counter": 632,
+      "pnl": -92.40251541137695
+    },
+    "Run 631": {
+      "date": "Run 631",
+      "run_counter": 631,
+      "pnl": -4509.748878479004
+    },
+    "Run 630": {
+      "date": "Run 630",
+      "run_counter": 630,
+      "pnl": -211.04982376098633
+    },
+    "Run 629": {
+      "date": "Run 629",
+      "run_counter": 629,
+      "pnl": -2408.700656890869
+    },
+    "Run 628": {
+      "date": "Run 628",
+      "run_counter": 628,
+      "pnl": -8983.802146911621
+    },
+    "Run 627": {
+      "date": "Run 627",
+      "run_counter": 627,
+      "pnl": 16280.249419212341
+    },
+    "Run 626": {
+      "date": "Run 626",
+      "run_counter": 626,
+      "pnl": -3207.7517223358154
+    },
+    "Run 625": {
+      "date": "Run 625",
+      "run_counter": 625,
+      "pnl": 16621.49971961975
+    },
+    "Run 624": {
+      "date": "Run 624",
+      "run_counter": 624,
+      "pnl": -11255.998878479004
+    },
+    "Run 623": {
+      "date": "Run 623",
+      "run_counter": 623,
+      "pnl": -1316.7024993896484
+    },
+    "Run 622": {
+      "date": "Run 622",
+      "run_counter": 622,
+      "pnl": 381.1517143249512
+    },
+    "Run 621": {
+      "date": "Run 621",
+      "run_counter": 621,
+      "pnl": -2693.251361846924
+    },
+    "Run 620": {
+      "date": "Run 620",
+      "run_counter": 620,
+      "pnl": -1265.2503204345703
+    },
+    "Run 619": {
+      "date": "Run 619",
+      "run_counter": 619,
+      "pnl": -785.3987503051758
+    },
+    "Run 618": {
+      "date": "Run 618",
+      "run_counter": 618,
+      "pnl": -1094.1006088256836
+    },
+    "Run 617": {
+      "date": "Run 617",
+      "run_counter": 617,
+      "pnl": -8294.998798370361
+    },
+    "Run 616": {
+      "date": "Run 616",
+      "run_counter": 616,
+      "pnl": -10920.000801086426
+    },
+    "Run 615": {
+      "date": "Run 615",
+      "run_counter": 615,
+      "pnl": -1874.2506408691406
+    },
+    "Run 614": {
+      "date": "Run 614",
+      "run_counter": 614,
+      "pnl": -10470.59772491455
+    },
+    "Run 613": {
+      "date": "Run 613",
+      "run_counter": 613,
+      "pnl": -6945.748558044434
+    },
+    "Run 612": {
+      "date": "Run 612",
+      "run_counter": 612,
+      "pnl": -928.1992149353027
+    },
+    "Run 611": {
+      "date": "Run 611",
+      "run_counter": 611,
+      "pnl": -9737.69817352295
+    },
+    "Run 610": {
+      "date": "Run 610",
+      "run_counter": 610,
+      "pnl": -4139.098606109619
+    },
+    "Run 609": {
+      "date": "Run 609",
+      "run_counter": 609,
+      "pnl": -3751.6503524780273
+    },
+    "Run 608": {
+      "date": "Run 608",
+      "run_counter": 608,
+      "pnl": -1948.7993431091309
+    },
+    "Run 607": {
+      "date": "Run 607",
+      "run_counter": 607,
+      "pnl": -931.3493371009827
+    },
+    "Run 606": {
+      "date": "Run 606",
+      "run_counter": 606,
+      "pnl": -7966.348686218262
+    },
+    "Run 605": {
+      "date": "Run 605",
+      "run_counter": 605,
+      "pnl": -8781.148109436035
+    },
+    "Run 604": {
+      "date": "Run 604",
+      "run_counter": 604,
+      "pnl": 366.4521789550781
+    },
+    "Run 603": {
+      "date": "Run 603",
+      "run_counter": 603,
+      "pnl": -9866.851329803467
+    },
+    "Run 602": {
+      "date": "Run 602",
+      "run_counter": 602,
+      "pnl": 6232.801065444946
+    },
+    "Run 601": {
+      "date": "Run 601",
+      "run_counter": 601,
+      "pnl": -15204.003925323486
+    },
+    "Run 600": {
+      "date": "Run 600",
+      "run_counter": 600,
+      "pnl": -12677.700576782227
+    },
+    "Run 599": {
+      "date": "Run 599",
+      "run_counter": 599,
+      "pnl": 14960.400352478027
+    },
+    "Run 598": {
+      "date": "Run 598",
+      "run_counter": 598,
+      "pnl": -11469.151153564453
+    },
+    "Run 597": {
+      "date": "Run 597",
+      "run_counter": 597,
+      "pnl": -8589.00032043457
+    },
+    "Run 596": {
+      "date": "Run 596",
+      "run_counter": 596,
+      "pnl": -8749.651794433594
+    },
+    "Run 595": {
+      "date": "Run 595",
+      "run_counter": 595,
+      "pnl": -11897.551746368408
+    },
+    "Run 594": {
+      "date": "Run 594",
+      "run_counter": 594,
+      "pnl": 5171.251442581415
+    },
+    "Run 593": {
+      "date": "Run 593",
+      "run_counter": 593,
+      "pnl": 15498.00124168396
+    },
+    "Run 592": {
+      "date": "Run 592",
+      "run_counter": 592,
+      "pnl": 16768.499879837036
+    },
+    "Run 591": {
+      "date": "Run 591",
+      "run_counter": 591,
+      "pnl": -10164.000520706177
+    },
+    "Run 590": {
+      "date": "Run 590",
+      "run_counter": 590,
+      "pnl": -10277.398509979248
+    },
+    "Run 589": {
+      "date": "Run 589",
+      "run_counter": 589,
+      "pnl": -1337.6997756958008
+    },
+    "Run 588": {
+      "date": "Run 588",
+      "run_counter": 588,
+      "pnl": -1775.5475807189941
+    },
+    "Run 587": {
+      "date": "Run 587",
+      "run_counter": 587,
+      "pnl": -12594.749279022217
+    },
+    "Run 586": {
+      "date": "Run 586",
+      "run_counter": 586,
+      "pnl": -10830.750160217285
+    },
+    "Run 585": {
+      "date": "Run 585",
+      "run_counter": 585,
+      "pnl": -14236.948013305664
+    },
+    "Run 584": {
+      "date": "Run 584",
+      "run_counter": 584,
+      "pnl": 14409.149551391602
+    },
+    "Run 583": {
+      "date": "Run 583",
+      "run_counter": 583,
+      "pnl": 14100.449495315552
+    },
+    "Run 582": {
+      "date": "Run 582",
+      "run_counter": 582,
+      "pnl": 17381.700496673584
+    },
+    "Run 581": {
+      "date": "Run 581",
+      "run_counter": 581,
+      "pnl": -7147.350769042969
+    },
+    "Run 580": {
+      "date": "Run 580",
+      "run_counter": 580,
+      "pnl": 4730.25032043457
+    },
+    "Run 579": {
+      "date": "Run 579",
+      "run_counter": 579,
+      "pnl": -9978.149871826172
+    },
+    "Run 578": {
+      "date": "Run 578",
+      "run_counter": 578,
+      "pnl": -10305.750961303711
+    },
+    "Run 577": {
+      "date": "Run 577",
+      "run_counter": 577,
+      "pnl": 13106.100218296051
+    },
+    "Run 576": {
+      "date": "Run 576",
+      "run_counter": 576,
+      "pnl": -3931.199655532837
+    },
+    "Run 575": {
+      "date": "Run 575",
+      "run_counter": 575,
+      "pnl": -13620.60173034668
+    },
+    "Run 574": {
+      "date": "Run 574",
+      "run_counter": 574,
+      "pnl": -9497.249279022217
+    },
+    "Run 573": {
+      "date": "Run 573",
+      "run_counter": 573,
+      "pnl": 15357.301025390625
+    },
+    "Run 572": {
+      "date": "Run 572",
+      "run_counter": 572,
+      "pnl": 22027.94909477234
+    },
+    "Run 571": {
+      "date": "Run 571",
+      "run_counter": 571,
+      "pnl": -4284.001522064209
+    },
+    "Run 570": {
+      "date": "Run 570",
+      "run_counter": 570,
+      "pnl": -11438.70065689087
+    },
+    "Run 569": {
+      "date": "Run 569",
+      "run_counter": 569,
+      "pnl": 14772.451457977295
+    },
+    "Run 568": {
+      "date": "Run 568",
+      "run_counter": 568,
+      "pnl": 16632.001762390137
+    },
+    "Run 567": {
+      "date": "Run 567",
+      "run_counter": 567,
+      "pnl": -10505.248718261719
+    },
+    "Run 566": {
+      "date": "Run 566",
+      "run_counter": 566,
+      "pnl": 14934.148950576782
+    },
+    "Run 565": {
+      "date": "Run 565",
+      "run_counter": 565,
+      "pnl": -5316.1505126953125
+    },
+    "Run 564": {
+      "date": "Run 564",
+      "run_counter": 564,
+      "pnl": 470.40075302124023
+    },
+    "Run 563": {
+      "date": "Run 563",
+      "run_counter": 563,
+      "pnl": -2763.600368499756
+    },
+    "Run 562": {
+      "date": "Run 562",
+      "run_counter": 562,
+      "pnl": 857.8510093688965
+    },
+    "Run 561": {
+      "date": "Run 561",
+      "run_counter": 561,
+      "pnl": -5418.001441955566
+    },
+    "Run 560": {
+      "date": "Run 560",
+      "run_counter": 560,
+      "pnl": -7931.698894500732
+    },
+    "Run 559": {
+      "date": "Run 559",
+      "run_counter": 559,
+      "pnl": -8398.951778411865
+    },
+    "Run 558": {
+      "date": "Run 558",
+      "run_counter": 558,
+      "pnl": -3714.9013137817383
+    },
+    "Run 557": {
+      "date": "Run 557",
+      "run_counter": 557,
+      "pnl": -821.1019706726074
+    },
+    "Run 556": {
+      "date": "Run 556",
+      "run_counter": 556,
+      "pnl": -1054.2008972167969
+    },
+    "Run 555": {
+      "date": "Run 555",
+      "run_counter": 555,
+      "pnl": -13434.74967956543
+    },
+    "Run 554": {
+      "date": "Run 554",
+      "run_counter": 554,
+      "pnl": -10107.29902267456
+    },
+    "Run 553": {
+      "date": "Run 553",
+      "run_counter": 553,
+      "pnl": 9393.299703598022
+    },
+    "Run 552": {
+      "date": "Run 552",
+      "run_counter": 552,
+      "pnl": 3597.2980213165283
+    },
+    "Run 551": {
+      "date": "Run 551",
+      "run_counter": 551,
+      "pnl": -11752.649230957031
+    },
+    "Run 550": {
+      "date": "Run 550",
+      "run_counter": 550,
+      "pnl": 15819.299283027649
+    },
+    "Run 549": {
+      "date": "Run 549",
+      "run_counter": 549,
+      "pnl": -11652.900352478027
+    },
+    "Run 548": {
+      "date": "Run 548",
+      "run_counter": 548,
+      "pnl": -11131.04902267456
+    },
+    "Run 547": {
+      "date": "Run 547",
+      "run_counter": 547,
+      "pnl": -19288.497276306152
+    },
+    "Run 546": {
+      "date": "Run 546",
+      "run_counter": 546,
+      "pnl": -19626.601009368896
+    },
+    "Run 545": {
+      "date": "Run 545",
+      "run_counter": 545,
+      "pnl": 14115.149431228638
+    },
+    "Run 544": {
+      "date": "Run 544",
+      "run_counter": 544,
+      "pnl": -8315.999279022217
+    },
+    "Run 543": {
+      "date": "Run 543",
+      "run_counter": 543,
+      "pnl": 14915.249619483948
+    },
+    "Run 542": {
+      "date": "Run 542",
+      "run_counter": 542,
+      "pnl": -2983.0491828918457
+    },
+    "Run 541": {
+      "date": "Run 541",
+      "run_counter": 541,
+      "pnl": -9464.700736999512
+    },
+    "Run 540": {
+      "date": "Run 540",
+      "run_counter": 540,
+      "pnl": 15679.649991989136
+    },
+    "Run 539": {
+      "date": "Run 539",
+      "run_counter": 539,
+      "pnl": -8182.648830413818
+    },
+    "Run 538": {
+      "date": "Run 538",
+      "run_counter": 538,
+      "pnl": -9151.803188323975
+    },
+    "Run 537": {
+      "date": "Run 537",
+      "run_counter": 537,
+      "pnl": 2146.199655532837
+    },
+    "Run 536": {
+      "date": "Run 536",
+      "run_counter": 536,
+      "pnl": 12948.600068092346
+    },
+    "Run 535": {
+      "date": "Run 535",
+      "run_counter": 535,
+      "pnl": -14871.149311065674
+    },
+    "Run 534": {
+      "date": "Run 534",
+      "run_counter": 534,
+      "pnl": 16064.999198913574
+    },
+    "Run 533": {
+      "date": "Run 533",
+      "run_counter": 533,
+      "pnl": 15247.04810142517
+    },
+    "Run 532": {
+      "date": "Run 532",
+      "run_counter": 532,
+      "pnl": -10125.151634216309
+    },
+    "Run 531": {
+      "date": "Run 531",
+      "run_counter": 531,
+      "pnl": -11661.299743652344
+    },
+    "Run 530": {
+      "date": "Run 530",
+      "run_counter": 530,
+      "pnl": 856.7991828918457
+    },
+    "Run 529": {
+      "date": "Run 529",
+      "run_counter": 529,
+      "pnl": -1915.2017784118652
+    },
+    "Run 528": {
+      "date": "Run 528",
+      "run_counter": 528,
+      "pnl": 15132.599487304688
+    },
+    "Run 527": {
+      "date": "Run 527",
+      "run_counter": 527,
+      "pnl": -12510.74935913086
+    },
+    "Run 526": {
+      "date": "Run 526",
+      "run_counter": 526,
+      "pnl": 14507.849807739258
+    },
+    "Run 525": {
+      "date": "Run 525",
+      "run_counter": 525,
+      "pnl": 13167.00156211853
+    },
+    "Run 524": {
+      "date": "Run 524",
+      "run_counter": 524,
+      "pnl": 14454.29868221283
+    },
+    "Run 523": {
+      "date": "Run 523",
+      "run_counter": 523,
+      "pnl": -2358.2979011535645
+    },
+    "Run 522": {
+      "date": "Run 522",
+      "run_counter": 522,
+      "pnl": -1375.502643585205
+    },
+    "Run 521": {
+      "date": "Run 521",
+      "run_counter": 521,
+      "pnl": -414.75208282470703
+    },
+    "Run 520": {
+      "date": "Run 520",
+      "run_counter": 520,
+      "pnl": -1853.2485580444336
+    },
+    "Run 519": {
+      "date": "Run 519",
+      "run_counter": 519,
+      "pnl": -2858.1021308898926
+    },
+    "Run 518": {
+      "date": "Run 518",
+      "run_counter": 518,
+      "pnl": -5643.749198913574
+    },
+    "Run 517": {
+      "date": "Run 517",
+      "run_counter": 517,
+      "pnl": -3374.702739715576
+    },
+    "Run 516": {
+      "date": "Run 516",
+      "run_counter": 516,
+      "pnl": -12559.049663543701
+    },
+    "Run 515": {
+      "date": "Run 515",
+      "run_counter": 515,
+      "pnl": -17355.44969558716
+    },
+    "Run 514": {
+      "date": "Run 514",
+      "run_counter": 514,
+      "pnl": -3367.3487663269043
+    },
+    "Run 513": {
+      "date": "Run 513",
+      "run_counter": 513,
+      "pnl": -12147.44945526123
+    },
+    "Run 512": {
+      "date": "Run 512",
+      "run_counter": 512,
+      "pnl": -9688.35205078125
+    },
+    "Run 511": {
+      "date": "Run 511",
+      "run_counter": 511,
+      "pnl": 16652.998638153076
+    },
+    "Run 510": {
+      "date": "Run 510",
+      "run_counter": 510,
+      "pnl": -7231.3494873046875
+    },
+    "Run 509": {
+      "date": "Run 509",
+      "run_counter": 509,
+      "pnl": 12101.249599456787
+    },
+    "Run 508": {
+      "date": "Run 508",
+      "run_counter": 508,
+      "pnl": 0
+    },
+    "Run 507": {
+      "date": "Run 507",
+      "run_counter": 507,
+      "pnl": -6506.8525314331055
+    },
+    "Run 506": {
+      "date": "Run 506",
+      "run_counter": 506,
+      "pnl": 12846.750165224075
+    },
+    "Run 505": {
+      "date": "Run 505",
+      "run_counter": 505,
+      "pnl": 10956.749339103699
+    },
+    "Run 504": {
+      "date": "Run 504",
+      "run_counter": 504,
+      "pnl": 14198.099727630615
+    },
+    "Run 503": {
+      "date": "Run 503",
+      "run_counter": 503,
+      "pnl": 11698.050785064697
+    },
+    "Run 502": {
+      "date": "Run 502",
+      "run_counter": 502,
+      "pnl": -7450.8015060424805
+    },
+    "Run 501": {
+      "date": "Run 501",
+      "run_counter": 501,
+      "pnl": 16248.751602172852
+    },
+    "Run 500": {
+      "date": "Run 500",
+      "run_counter": 500,
+      "pnl": -6201.298942565918
+    },
+    "Run 499": {
+      "date": "Run 499",
+      "run_counter": 499,
+      "pnl": -1436.3984298706055
+    },
+    "Run 498": {
+      "date": "Run 498",
+      "run_counter": 498,
+      "pnl": -3832.500801086426
+    },
+    "Run 497": {
+      "date": "Run 497",
+      "run_counter": 497,
+      "pnl": 66.14850997924805
+    },
+    "Run 496": {
+      "date": "Run 496",
+      "run_counter": 496,
+      "pnl": 1369.1984939575195
+    },
+    "Run 495": {
+      "date": "Run 495",
+      "run_counter": 495,
+      "pnl": 0
+    },
+    "Run 494": {
+      "date": "Run 494",
+      "run_counter": 494,
+      "pnl": 0
+    },
+    "Run 493": {
+      "date": "Run 493",
+      "run_counter": 493,
+      "pnl": 15662.849957942963
+    },
+    "Run 492": {
+      "date": "Run 492",
+      "run_counter": 492,
+      "pnl": 14284.201498031616
+    },
+    "Run 491": {
+      "date": "Run 491",
+      "run_counter": 491,
+      "pnl": 21629.999749660492
+    },
+    "Run 490": {
+      "date": "Run 490",
+      "run_counter": 490,
+      "pnl": -10480.048542022705
+    },
+    "Run 489": {
+      "date": "Run 489",
+      "run_counter": 489,
+      "pnl": 17019.448614120483
+    },
+    "Run 488": {
+      "date": "Run 488",
+      "run_counter": 488,
+      "pnl": -10820.250120162964
+    },
+    "Run 487": {
+      "date": "Run 487",
+      "run_counter": 487,
+      "pnl": 15021.30054473877
+    },
+    "Run 486": {
+      "date": "Run 486",
+      "run_counter": 486,
+      "pnl": -10011.751041412354
+    },
+    "Run 485": {
+      "date": "Run 485",
+      "run_counter": 485,
+      "pnl": 9761.848688721657
+    },
+    "Run 484": {
+      "date": "Run 484",
+      "run_counter": 484,
+      "pnl": 16714.95125770569
+    },
+    "Run 483": {
+      "date": "Run 483",
+      "run_counter": 483,
+      "pnl": -6134.1010093688965
+    },
+    "Run 482": {
+      "date": "Run 482",
+      "run_counter": 482,
+      "pnl": -7019.249839782715
+    },
+    "Run 481": {
+      "date": "Run 481",
+      "run_counter": 481,
+      "pnl": -8295.000801086426
+    },
+    "Run 480": {
+      "date": "Run 480",
+      "run_counter": 480,
+      "pnl": 13835.851049423218
+    },
+    "Run 479": {
+      "date": "Run 479",
+      "run_counter": 479,
+      "pnl": -9086.700897216797
+    },
+    "Run 478": {
+      "date": "Run 478",
+      "run_counter": 478,
+      "pnl": -8971.199054718018
+    },
+    "Run 477": {
+      "date": "Run 477",
+      "run_counter": 477,
+      "pnl": -6272.698974609375
+    },
+    "Run 476": {
+      "date": "Run 476",
+      "run_counter": 476,
+      "pnl": -630.0020027160645
+    },
+    "Run 475": {
+      "date": "Run 475",
+      "run_counter": 475,
+      "pnl": -8098.6505126953125
+    },
+    "Run 474": {
+      "date": "Run 474",
+      "run_counter": 474,
+      "pnl": 15307.9509973526
+    },
+    "Run 473": {
+      "date": "Run 473",
+      "run_counter": 473,
+      "pnl": -9985.499839782715
+    },
+    "Run 472": {
+      "date": "Run 472",
+      "run_counter": 472,
+      "pnl": -9611.702499389648
+    },
+    "Run 471": {
+      "date": "Run 471",
+      "run_counter": 471,
+      "pnl": -5322.451457977295
+    },
+    "Run 470": {
+      "date": "Run 470",
+      "run_counter": 470,
+      "pnl": 15211.348686218262
+    },
+    "Run 469": {
+      "date": "Run 469",
+      "run_counter": 469,
+      "pnl": 15688.049983978271
+    },
+    "Run 468": {
+      "date": "Run 468",
+      "run_counter": 468,
+      "pnl": -10794.00032043457
+    },
+    "Run 467": {
+      "date": "Run 467",
+      "run_counter": 467,
+      "pnl": 13105.04964351654
+    },
+    "Run 466": {
+      "date": "Run 466",
+      "run_counter": 466,
+      "pnl": -9092.998237609863
+    },
+    "Run 465": {
+      "date": "Run 465",
+      "run_counter": 465,
+      "pnl": 15264.89951133728
+    },
+    "Run 464": {
+      "date": "Run 464",
+      "run_counter": 464,
+      "pnl": 14827.05150604248
+    },
+    "Run 463": {
+      "date": "Run 463",
+      "run_counter": 463,
+      "pnl": -11140.49783706665
+    },
+    "Run 462": {
+      "date": "Run 462",
+      "run_counter": 462,
+      "pnl": 8037.749319076538
+    },
+    "Run 461": {
+      "date": "Run 461",
+      "run_counter": 461,
+      "pnl": -9262.047901153564
+    },
+    "Run 460": {
+      "date": "Run 460",
+      "run_counter": 460,
+      "pnl": -2777.248477935791
+    },
+    "Run 459": {
+      "date": "Run 459",
+      "run_counter": 459,
+      "pnl": -12493.94817352295
+    },
+    "Run 458": {
+      "date": "Run 458",
+      "run_counter": 458,
+      "pnl": -7033.949775695801
+    },
+    "Run 457": {
+      "date": "Run 457",
+      "run_counter": 457,
+      "pnl": 15044.400973320007
+    },
+    "Run 456": {
+      "date": "Run 456",
+      "run_counter": 456,
+      "pnl": 16805.24871826172
+    },
+    "Run 455": {
+      "date": "Run 455",
+      "run_counter": 455,
+      "pnl": 15534.750680923462
+    },
+    "Run 454": {
+      "date": "Run 454",
+      "run_counter": 454,
+      "pnl": -12917.099647521973
+    },
+    "Run 453": {
+      "date": "Run 453",
+      "run_counter": 453,
+      "pnl": 656.2491989135742
+    },
+    "Run 452": {
+      "date": "Run 452",
+      "run_counter": 452,
+      "pnl": -8891.398429870605
+    },
+    "Run 451": {
+      "date": "Run 451",
+      "run_counter": 451,
+      "pnl": -6519.4500160217285
+    },
+    "Run 450": {
+      "date": "Run 450",
+      "run_counter": 450,
+      "pnl": -645.7525634765625
+    },
+    "Run 449": {
+      "date": "Run 449",
+      "run_counter": 449,
+      "pnl": 15618.748898506165
+    },
+    "Run 448": {
+      "date": "Run 448",
+      "run_counter": 448,
+      "pnl": 17570.699815750122
+    },
+    "Run 447": {
+      "date": "Run 447",
+      "run_counter": 447,
+      "pnl": 20289.148750305176
+    },
+    "Run 446": {
+      "date": "Run 446",
+      "run_counter": 446,
+      "pnl": -9511.950016021729
+    },
+    "Run 445": {
+      "date": "Run 445",
+      "run_counter": 445,
+      "pnl": 19560.449295043945
+    },
+    "Run 444": {
+      "date": "Run 444",
+      "run_counter": 444,
+      "pnl": -8773.798141479492
+    },
+    "Run 443": {
+      "date": "Run 443",
+      "run_counter": 443,
+      "pnl": 353.8502883911133
+    },
+    "Run 442": {
+      "date": "Run 442",
+      "run_counter": 442,
+      "pnl": -10238.552627563477
+    },
+    "Run 441": {
+      "date": "Run 441",
+      "run_counter": 441,
+      "pnl": 18225.899991989136
+    },
+    "Run 440": {
+      "date": "Run 440",
+      "run_counter": 440,
+      "pnl": 17293.499479293823
+    },
+    "Run 439": {
+      "date": "Run 439",
+      "run_counter": 439,
+      "pnl": 21162.75057077408
+    },
+    "Run 438": {
+      "date": "Run 438",
+      "run_counter": 438,
+      "pnl": -9193.802547454834
+    },
+    "Run 437": {
+      "date": "Run 437",
+      "run_counter": 437,
+      "pnl": 2745.751042664051
+    },
+    "Run 436": {
+      "date": "Run 436",
+      "run_counter": 436,
+      "pnl": 15151.501121520996
+    },
+    "Run 435": {
+      "date": "Run 435",
+      "run_counter": 435,
+      "pnl": -4516.051025390625
+    },
+    "Run 434": {
+      "date": "Run 434",
+      "run_counter": 434,
+      "pnl": -11722.197933197021
+    },
+    "Run 433": {
+      "date": "Run 433",
+      "run_counter": 433,
+      "pnl": 16047.151193618774
+    },
+    "Run 432": {
+      "date": "Run 432",
+      "run_counter": 432,
+      "pnl": 15330.000801086426
+    },
+    "Run 431": {
+      "date": "Run 431",
+      "run_counter": 431,
+      "pnl": 15198.749599456787
+    },
+    "Run 430": {
+      "date": "Run 430",
+      "run_counter": 430,
+      "pnl": -11365.200176239014
+    },
+    "Run 429": {
+      "date": "Run 429",
+      "run_counter": 429,
+      "pnl": 15989.398469924927
+    },
+    "Run 428": {
+      "date": "Run 428",
+      "run_counter": 428,
+      "pnl": 4042.501802444458
+    },
+    "Run 426": {
+      "date": "Run 426",
+      "run_counter": 426,
+      "pnl": 20097.00036048889
+    },
+    "Run 425": {
+      "date": "Run 425",
+      "run_counter": 425,
+      "pnl": -1141.3494873046875
+    },
+    "Run 424": {
+      "date": "Run 424",
+      "run_counter": 424,
+      "pnl": -11335.799102783203
+    },
+    "Run 423": {
+      "date": "Run 423",
+      "run_counter": 423,
+      "pnl": 5246.849226951599
+    },
+    "Run 422": {
+      "date": "Run 422",
+      "run_counter": 422,
+      "pnl": 5316.1501121521
+    },
+    "Run 421": {
+      "date": "Run 421",
+      "run_counter": 421,
+      "pnl": -9469.95065689087
+    },
+    "Run 420": {
+      "date": "Run 420",
+      "run_counter": 420,
+      "pnl": -7378.350448608398
+    },
+    "Run 419": {
+      "date": "Run 419",
+      "run_counter": 419,
+      "pnl": -14355.59892654419
+    },
+    "Run 418": {
+      "date": "Run 418",
+      "run_counter": 418,
+      "pnl": -2576.700897216797
+    },
+    "Run 417": {
+      "date": "Run 417",
+      "run_counter": 417,
+      "pnl": -12265.048542022705
+    },
+    "Run 416": {
+      "date": "Run 416",
+      "run_counter": 416,
+      "pnl": 16380.000801086426
+    },
+    "Run 415": {
+      "date": "Run 415",
+      "run_counter": 415,
+      "pnl": 14689.50001001358
+    },
+    "Run 414": {
+      "date": "Run 414",
+      "run_counter": 414,
+      "pnl": -2062.1983337402344
+    },
+    "Run 413": {
+      "date": "Run 413",
+      "run_counter": 413,
+      "pnl": -11213.999519348145
+    },
+    "Run 412": {
+      "date": "Run 412",
+      "run_counter": 412,
+      "pnl": -5259.449615478516
+    },
+    "Run 411": {
+      "date": "Run 411",
+      "run_counter": 411,
+      "pnl": -11681.248397827148
+    },
+    "Run 410": {
+      "date": "Run 410",
+      "run_counter": 410,
+      "pnl": 16302.298221588135
+    },
+    "Run 409": {
+      "date": "Run 409",
+      "run_counter": 409,
+      "pnl": -10782.448654174805
+    },
+    "Run 408": {
+      "date": "Run 408",
+      "run_counter": 408,
+      "pnl": -2283.75
+    },
+    "Run 407": {
+      "date": "Run 407",
+      "run_counter": 407,
+      "pnl": 15007.650833129883
+    },
+    "Run 406": {
+      "date": "Run 406",
+      "run_counter": 406,
+      "pnl": -13256.248798370361
+    },
+    "Run 405": {
+      "date": "Run 405",
+      "run_counter": 405,
+      "pnl": -9819.60205078125
+    },
+    "Run 404": {
+      "date": "Run 404",
+      "run_counter": 404,
+      "pnl": -10157.698974609375
+    },
+    "Run 403": {
+      "date": "Run 403",
+      "run_counter": 403,
+      "pnl": 15656.548862457275
+    },
+    "Run 402": {
+      "date": "Run 402",
+      "run_counter": 402,
+      "pnl": 13672.050004005432
+    },
+    "Run 401": {
+      "date": "Run 401",
+      "run_counter": 401,
+      "pnl": -296.09936714172363
+    },
+    "Run 400": {
+      "date": "Run 400",
+      "run_counter": 400,
+      "pnl": 15319.499559402466
+    },
+    "Run 399": {
+      "date": "Run 399",
+      "run_counter": 399,
+      "pnl": 16578.450136184692
+    },
+    "Run 398": {
+      "date": "Run 398",
+      "run_counter": 398,
+      "pnl": -5020.049743652344
+    },
+    "Run 397": {
+      "date": "Run 397",
+      "run_counter": 397,
+      "pnl": 6450.15013217926
+    },
+    "Run 396": {
+      "date": "Run 396",
+      "run_counter": 396,
+      "pnl": 16249.799823760986
+    },
+    "Run 395": {
+      "date": "Run 395",
+      "run_counter": 395,
+      "pnl": 16373.701858520508
+    },
+    "Run 394": {
+      "date": "Run 394",
+      "run_counter": 394,
+      "pnl": -12419.399471282959
+    },
+    "Run 393": {
+      "date": "Run 393",
+      "run_counter": 393,
+      "pnl": 14703.149471282959
+    },
+    "Run 392": {
+      "date": "Run 392",
+      "run_counter": 392,
+      "pnl": -9993.902034759521
+    },
+    "Run 391": {
+      "date": "Run 391",
+      "run_counter": 391,
+      "pnl": -4664.098205566406
+    },
+    "Run 390": {
+      "date": "Run 390",
+      "run_counter": 390,
+      "pnl": 14476.349687576294
+    },
+    "Run 389": {
+      "date": "Run 389",
+      "run_counter": 389,
+      "pnl": -781.2002563476562
+    },
+    "Run 388": {
+      "date": "Run 388",
+      "run_counter": 388,
+      "pnl": 6785.099086761475
+    },
+    "Run 387": {
+      "date": "Run 387",
+      "run_counter": 387,
+      "pnl": -12602.098846435547
+    },
+    "Run 386": {
+      "date": "Run 386",
+      "run_counter": 386,
+      "pnl": -9632.698974609375
+    },
+    "Run 385": {
+      "date": "Run 385",
+      "run_counter": 385,
+      "pnl": 14804.999198913574
+    },
+    "Run 384": {
+      "date": "Run 384",
+      "run_counter": 384,
+      "pnl": -3884.9983978271484
+    },
+    "Run 383": {
+      "date": "Run 383",
+      "run_counter": 383,
+      "pnl": -7205.101490020752
+    },
+    "Run 382": {
+      "date": "Run 382",
+      "run_counter": 382,
+      "pnl": 15142.050504684448
+    },
+    "Run 381": {
+      "date": "Run 381",
+      "run_counter": 381,
+      "pnl": 15134.699335098267
+    },
+    "Run 380": {
+      "date": "Run 380",
+      "run_counter": 380,
+      "pnl": 14227.501602172852
+    },
+    "Run 379": {
+      "date": "Run 379",
+      "run_counter": 379,
+      "pnl": -8066.099967956543
+    },
+    "Run 378": {
+      "date": "Run 378",
+      "run_counter": 378,
+      "pnl": -10441.200256347656
+    },
+    "Run 377": {
+      "date": "Run 377",
+      "run_counter": 377,
+      "pnl": -11485.949935913086
+    },
+    "Run 376": {
+      "date": "Run 376",
+      "run_counter": 376,
+      "pnl": -13127.098045349121
+    },
+    "Run 375": {
+      "date": "Run 375",
+      "run_counter": 375,
+      "pnl": 16401.00028038025
+    },
+    "Run 374": {
+      "date": "Run 374",
+      "run_counter": 374,
+      "pnl": -3451.348285675049
+    },
+    "Run 373": {
+      "date": "Run 373",
+      "run_counter": 373,
+      "pnl": 3511.1990547180176
+    },
+    "Run 372": {
+      "date": "Run 372",
+      "run_counter": 372,
+      "pnl": -10259.550704956055
+    },
+    "Run 371": {
+      "date": "Run 371",
+      "run_counter": 371,
+      "pnl": -1386.0012817382812
+    },
+    "Run 370": {
+      "date": "Run 370",
+      "run_counter": 370,
+      "pnl": -8676.148509979248
+    },
+    "Run 369": {
+      "date": "Run 369",
+      "run_counter": 369,
+      "pnl": -18741.44697189331
+    },
+    "Run 368": {
+      "date": "Run 368",
+      "run_counter": 368,
+      "pnl": -9275.699615478516
+    },
+    "Run 367": {
+      "date": "Run 367",
+      "run_counter": 367,
+      "pnl": 17230.500240325928
+    },
+    "Run 366": {
+      "date": "Run 366",
+      "run_counter": 366,
+      "pnl": -9424.799823760986
+    },
+    "Run 365": {
+      "date": "Run 365",
+      "run_counter": 365,
+      "pnl": 15789.899311065674
+    },
+    "Run 364": {
+      "date": "Run 364",
+      "run_counter": 364,
+      "pnl": 14433.299403190613
+    },
+    "Run 363": {
+      "date": "Run 363",
+      "run_counter": 363,
+      "pnl": -10485.29806137085
+    },
+    "Run 362": {
+      "date": "Run 362",
+      "run_counter": 362,
+      "pnl": 15319.500360488892
+    },
+    "Run 361": {
+      "date": "Run 361",
+      "run_counter": 361,
+      "pnl": -9161.25280380249
+    },
+    "Run 360": {
+      "date": "Run 360",
+      "run_counter": 360,
+      "pnl": 3556.3493871688843
+    },
+    "Run 359": {
+      "date": "Run 359",
+      "run_counter": 359,
+      "pnl": -13247.853012084961
+    },
+    "Run 358": {
+      "date": "Run 358",
+      "run_counter": 358,
+      "pnl": 14842.801015377045
+    },
+    "Run 357": {
+      "date": "Run 357",
+      "run_counter": 357,
+      "pnl": 15246.000280380249
+    },
+    "Run 356": {
+      "date": "Run 356",
+      "run_counter": 356,
+      "pnl": -9182.247276306152
+    },
+    "Run 355": {
+      "date": "Run 355",
+      "run_counter": 355,
+      "pnl": -11457.599487304688
+    },
+    "Run 354": {
+      "date": "Run 354",
+      "run_counter": 354,
+      "pnl": -9687.3002243042
+    },
+    "Run 353": {
+      "date": "Run 353",
+      "run_counter": 353,
+      "pnl": 15503.24875831604
+    },
+    "Run 352": {
+      "date": "Run 352",
+      "run_counter": 352,
+      "pnl": -9911.99935913086
+    },
+    "Run 351": {
+      "date": "Run 351",
+      "run_counter": 351,
+      "pnl": -12726.001281738281
+    },
+    "Run 350": {
+      "date": "Run 350",
+      "run_counter": 350,
+      "pnl": -10317.29902267456
+    },
+    "Run 349": {
+      "date": "Run 349",
+      "run_counter": 349,
+      "pnl": 9118.200817108154
+    },
+    "Run 348": {
+      "date": "Run 348",
+      "run_counter": 348,
+      "pnl": 11933.25063586235
+    },
+    "Run 347": {
+      "date": "Run 347",
+      "run_counter": 347,
+      "pnl": 14848.050985336304
+    },
+    "Run 346": {
+      "date": "Run 346",
+      "run_counter": 346,
+      "pnl": 16820.998678207397
+    },
+    "Run 345": {
+      "date": "Run 345",
+      "run_counter": 345,
+      "pnl": 15619.799423217773
+    },
+    "Run 344": {
+      "date": "Run 344",
+      "run_counter": 344,
+      "pnl": 24396.749439239502
+    },
+    "Run 343": {
+      "date": "Run 343",
+      "run_counter": 343,
+      "pnl": -10452.75032043457
+    },
+    "Run 342": {
+      "date": "Run 342",
+      "run_counter": 342,
+      "pnl": 14437.49969959259
+    },
+    "Run 341": {
+      "date": "Run 341",
+      "run_counter": 341,
+      "pnl": -4002.597885131836
+    },
+    "Run 340": {
+      "date": "Run 340",
+      "run_counter": 340,
+      "pnl": -8519.69913482666
+    },
+    "Run 339": {
+      "date": "Run 339",
+      "run_counter": 339,
+      "pnl": -10967.250080108643
+    },
+    "Run 338": {
+      "date": "Run 338",
+      "run_counter": 338,
+      "pnl": 16397.84960746765
+    },
+    "Run 337": {
+      "date": "Run 337",
+      "run_counter": 337,
+      "pnl": -9903.599166870117
+    },
+    "Run 336": {
+      "date": "Run 336",
+      "run_counter": 336,
+      "pnl": -16899.752082824707
+    },
+    "Run 335": {
+      "date": "Run 335",
+      "run_counter": 335,
+      "pnl": 15617.699975967407
+    },
+    "Run 334": {
+      "date": "Run 334",
+      "run_counter": 334,
+      "pnl": 14930.998477935791
+    },
+    "Run 333": {
+      "date": "Run 333",
+      "run_counter": 333,
+      "pnl": -10153.498878479004
+    },
+    "Run 332": {
+      "date": "Run 332",
+      "run_counter": 332,
+      "pnl": 16616.248598098755
+    },
+    "Run 331": {
+      "date": "Run 331",
+      "run_counter": 331,
+      "pnl": -4635.749759674072
+    },
+    "Run 330": {
+      "date": "Run 330",
+      "run_counter": 330,
+      "pnl": -12991.649951934814
+    },
+    "Run 329": {
+      "date": "Run 329",
+      "run_counter": 329,
+      "pnl": 15528.450236320496
+    },
+    "Run 328": {
+      "date": "Run 328",
+      "run_counter": 328,
+      "pnl": 15942.14919090271
+    },
+    "Run 327": {
+      "date": "Run 327",
+      "run_counter": 327,
+      "pnl": -9952.950096130371
+    },
+    "Run 326": {
+      "date": "Run 326",
+      "run_counter": 326,
+      "pnl": -9538.199615478516
+    },
+    "Run 325": {
+      "date": "Run 325",
+      "run_counter": 325,
+      "pnl": 15272.249579429626
+    },
+    "Run 324": {
+      "date": "Run 324",
+      "run_counter": 324,
+      "pnl": -9080.401954650879
+    },
+    "Run 323": {
+      "date": "Run 323",
+      "run_counter": 323,
+      "pnl": -4555.948333740234
+    },
+    "Run 322": {
+      "date": "Run 322",
+      "run_counter": 322,
+      "pnl": 15147.300524711609
+    },
+    "Run 321": {
+      "date": "Run 321",
+      "run_counter": 321,
+      "pnl": 14998.200016021729
+    },
+    "Run 320": {
+      "date": "Run 320",
+      "run_counter": 320,
+      "pnl": 13979.70003604889
+    },
+    "Run 319": {
+      "date": "Run 319",
+      "run_counter": 319,
+      "pnl": -9354.449615478516
+    },
+    "Run 318": {
+      "date": "Run 318",
+      "run_counter": 318,
+      "pnl": -305.5503845214844
+    },
+    "Run 317": {
+      "date": "Run 317",
+      "run_counter": 317,
+      "pnl": -11982.5998878479
+    },
+    "Run 316": {
+      "date": "Run 316",
+      "run_counter": 316,
+      "pnl": 15438.14887046814
+    },
+    "Run 315": {
+      "date": "Run 315",
+      "run_counter": 315,
+      "pnl": -3811.4999198913574
+    },
+    "Run 314": {
+      "date": "Run 314",
+      "run_counter": 314,
+      "pnl": -1207.4987983703613
+    },
+    "Run 313": {
+      "date": "Run 313",
+      "run_counter": 313,
+      "pnl": -2005.4998397827148
+    },
+    "Run 312": {
+      "date": "Run 312",
+      "run_counter": 312,
+      "pnl": -3717.000961303711
+    },
+    "Run 311": {
+      "date": "Run 311",
+      "run_counter": 311,
+      "pnl": 1335.5993270874023
+    },
+    "Run 310": {
+      "date": "Run 310",
+      "run_counter": 310,
+      "pnl": -1576.051025390625
+    },
+    "Run 309": {
+      "date": "Run 309",
+      "run_counter": 309,
+      "pnl": 2846.5492630004883
+    },
+    "Run 308": {
+      "date": "Run 308",
+      "run_counter": 308,
+      "pnl": 15077.99843788147
+    },
+    "Run 307": {
+      "date": "Run 307",
+      "run_counter": 307,
+      "pnl": -13728.75
+    },
+    "Run 306": {
+      "date": "Run 306",
+      "run_counter": 306,
+      "pnl": 16772.69847393036
+    },
+    "Run 305": {
+      "date": "Run 305",
+      "run_counter": 305,
+      "pnl": -8808.450736999512
+    },
+    "Run 304": {
+      "date": "Run 304",
+      "run_counter": 304,
+      "pnl": 17167.499599456787
+    },
+    "Run 303": {
+      "date": "Run 303",
+      "run_counter": 303,
+      "pnl": -3087.0017623901367
+    },
+    "Run 302": {
+      "date": "Run 302",
+      "run_counter": 302,
+      "pnl": 6206.549863815308
+    },
+    "Run 301": {
+      "date": "Run 301",
+      "run_counter": 301,
+      "pnl": 873.6015701293945
+    },
+    "Run 300": {
+      "date": "Run 300",
+      "run_counter": 300,
+      "pnl": -6982.497997283936
+    },
+    "Run 299": {
+      "date": "Run 299",
+      "run_counter": 299,
+      "pnl": -5779.201698303223
+    },
+    "Run 298": {
+      "date": "Run 298",
+      "run_counter": 298,
+      "pnl": -11252.847805023193
+    },
+    "Run 297": {
+      "date": "Run 297",
+      "run_counter": 297,
+      "pnl": 14730.45129776001
+    },
+    "Run 296": {
+      "date": "Run 296",
+      "run_counter": 296,
+      "pnl": 17538.149271011353
+    },
+    "Run 295": {
+      "date": "Run 295",
+      "run_counter": 295,
+      "pnl": 16233.00064086914
+    },
+    "Run 294": {
+      "date": "Run 294",
+      "run_counter": 294,
+      "pnl": 20494.95005607605
+    },
+    "Run 293": {
+      "date": "Run 293",
+      "run_counter": 293,
+      "pnl": 15240.751762390137
+    },
+    "Run 292": {
+      "date": "Run 292",
+      "run_counter": 292,
+      "pnl": -2361.448974609375
+    },
+    "Run 291": {
+      "date": "Run 291",
+      "run_counter": 291,
+      "pnl": -1864.7998237609863
+    },
+    "Run 290": {
+      "date": "Run 290",
+      "run_counter": 290,
+      "pnl": -4192.650032043457
+    },
+    "Run 289": {
+      "date": "Run 289",
+      "run_counter": 289,
+      "pnl": -10573.49967956543
+    },
+    "Run 288": {
+      "date": "Run 288",
+      "run_counter": 288,
+      "pnl": 16623.60076904297
+    },
+    "Run 287": {
+      "date": "Run 287",
+      "run_counter": 287,
+      "pnl": 14269.498958587646
+    },
+    "Run 286": {
+      "date": "Run 286",
+      "run_counter": 286,
+      "pnl": 14507.84860610962
+    },
+    "Run 285": {
+      "date": "Run 285",
+      "run_counter": 285,
+      "pnl": 16354.79872226715
+    },
+    "Run 284": {
+      "date": "Run 284",
+      "run_counter": 284,
+      "pnl": -6724.200096130371
+    },
+    "Run 283": {
+      "date": "Run 283",
+      "run_counter": 283,
+      "pnl": 18541.197967529297
+    },
+    "Run 282": {
+      "date": "Run 282",
+      "run_counter": 282,
+      "pnl": 17345.99956512451
+    },
+    "Run 281": {
+      "date": "Run 281",
+      "run_counter": 281,
+      "pnl": -9974.999599456787
+    },
+    "Run 280": {
+      "date": "Run 280",
+      "run_counter": 280,
+      "pnl": -7402.500400543213
+    },
+    "Run 279": {
+      "date": "Run 279",
+      "run_counter": 279,
+      "pnl": -1279.9502563476562
+    },
+    "Run 278": {
+      "date": "Run 278",
+      "run_counter": 278,
+      "pnl": -1543.5012817382812
+    },
+    "Run 277": {
+      "date": "Run 277",
+      "run_counter": 277,
+      "pnl": -1081.4999198913574
+    },
+    "Run 276": {
+      "date": "Run 276",
+      "run_counter": 276,
+      "pnl": 9439.49815750122
+    },
+    "Run 275": {
+      "date": "Run 275",
+      "run_counter": 275,
+      "pnl": -12071.851329803467
+    },
+    "Run 274": {
+      "date": "Run 274",
+      "run_counter": 274,
+      "pnl": -6334.649791717529
+    },
+    "Run 273": {
+      "date": "Run 273",
+      "run_counter": 273,
+      "pnl": -8614.199695587158
+    },
+    "Run 272": {
+      "date": "Run 272",
+      "run_counter": 272,
+      "pnl": 22100.401303768158
+    },
+    "Run 271": {
+      "date": "Run 271",
+      "run_counter": 271,
+      "pnl": -10612.349166870117
+    },
+    "Run 270": {
+      "date": "Run 270",
+      "run_counter": 270,
+      "pnl": -4320.750560760498
+    },
+    "Run 269": {
+      "date": "Run 269",
+      "run_counter": 269,
+      "pnl": 1852.2023391723633
+    },
+    "Run 268": {
+      "date": "Run 268",
+      "run_counter": 268,
+      "pnl": 4840.498638153076
+    },
+    "Run 267": {
+      "date": "Run 267",
+      "run_counter": 267,
+      "pnl": 1099.3495680391788
+    },
+    "Run 266": {
+      "date": "Run 266",
+      "run_counter": 266,
+      "pnl": -11643.450736999512
+    },
+    "Run 265": {
+      "date": "Run 265",
+      "run_counter": 265,
+      "pnl": -11275.949535369873
+    },
+    "Run 264": {
+      "date": "Run 264",
+      "run_counter": 264,
+      "pnl": 14761.950716972351
+    },
+    "Run 263": {
+      "date": "Run 263",
+      "run_counter": 263,
+      "pnl": 16204.648189544678
+    },
+    "Run 262": {
+      "date": "Run 262",
+      "run_counter": 262,
+      "pnl": -3523.8001441955566
+    },
+    "Run 261": {
+      "date": "Run 261",
+      "run_counter": 261,
+      "pnl": -10977.749519348145
+    },
+    "Run 260": {
+      "date": "Run 260",
+      "run_counter": 260,
+      "pnl": -17028.89923095703
+    },
+    "Run 259": {
+      "date": "Run 259",
+      "run_counter": 259,
+      "pnl": -2194.4999192655087
+    },
+    "Run 258": {
+      "date": "Run 258",
+      "run_counter": 258,
+      "pnl": 14943.60016822815
+    },
+    "Run 257": {
+      "date": "Run 257",
+      "run_counter": 257,
+      "pnl": -8348.551025390625
+    },
+    "Run 256": {
+      "date": "Run 256",
+      "run_counter": 256,
+      "pnl": -4606.347885131836
+    },
+    "Run 255": {
+      "date": "Run 255",
+      "run_counter": 255,
+      "pnl": 16.798782348632812
+    },
+    "Run 254": {
+      "date": "Run 254",
+      "run_counter": 254,
+      "pnl": -1015.349006652832
+    },
+    "Run 253": {
+      "date": "Run 253",
+      "run_counter": 253,
+      "pnl": -13521.899871826172
+    },
+    "Run 252": {
+      "date": "Run 252",
+      "run_counter": 252,
+      "pnl": 15202.949295043945
+    },
+    "Run 251": {
+      "date": "Run 251",
+      "run_counter": 251,
+      "pnl": -10223.848686218262
+    },
+    "Run 250": {
+      "date": "Run 250",
+      "run_counter": 250,
+      "pnl": -10731.001682281494
+    },
+    "Run 249": {
+      "date": "Run 249",
+      "run_counter": 249,
+      "pnl": 4.199695587158203
+    },
+    "Run 248": {
+      "date": "Run 248",
+      "run_counter": 248,
+      "pnl": 4128.599166870117
+    },
+    "Run 247": {
+      "date": "Run 247",
+      "run_counter": 247,
+      "pnl": -6970.9479331970215
+    },
+    "Run 246": {
+      "date": "Run 246",
+      "run_counter": 246,
+      "pnl": 2514.7495997697115
+    },
+    "Run 245": {
+      "date": "Run 245",
+      "run_counter": 245,
+      "pnl": 13080.90139389038
+    },
+    "Run 244": {
+      "date": "Run 244",
+      "run_counter": 244,
+      "pnl": 15740.550484657288
+    },
+    "Run 243": {
+      "date": "Run 243",
+      "run_counter": 243,
+      "pnl": 13254.149250984192
+    },
+    "Run 242": {
+      "date": "Run 242",
+      "run_counter": 242,
+      "pnl": 16129.049463272095
+    },
+    "Run 241": {
+      "date": "Run 241",
+      "run_counter": 241,
+      "pnl": -5902.048301696777
+    },
+    "Run 240": {
+      "date": "Run 240",
+      "run_counter": 240,
+      "pnl": 9172.80026435852
+    },
+    "Run 239": {
+      "date": "Run 239",
+      "run_counter": 239,
+      "pnl": -2777.2504806518555
+    },
+    "Run 238": {
+      "date": "Run 238",
+      "run_counter": 238,
+      "pnl": 7255.4992389678955
+    },
+    "Run 237": {
+      "date": "Run 237",
+      "run_counter": 237,
+      "pnl": 12793.19851398468
+    },
+    "Run 236": {
+      "date": "Run 236",
+      "run_counter": 236,
+      "pnl": 15450.750560760498
+    },
+    "Run 235": {
+      "date": "Run 235",
+      "run_counter": 235,
+      "pnl": -5261.549663543701
+    },
+    "Run 234": {
+      "date": "Run 234",
+      "run_counter": 234,
+      "pnl": -14398.650512695312
+    },
+    "Run 233": {
+      "date": "Run 233",
+      "run_counter": 233,
+      "pnl": -1991.8501281738281
+    },
+    "Run 232": {
+      "date": "Run 232",
+      "run_counter": 232,
+      "pnl": 2446.4999198913574
+    },
+    "Run 231": {
+      "date": "Run 231",
+      "run_counter": 231,
+      "pnl": -10299.44881439209
+    },
+    "Run 230": {
+      "date": "Run 230",
+      "run_counter": 230,
+      "pnl": -8198.398990631104
+    },
+    "Run 229": {
+      "date": "Run 229",
+      "run_counter": 229,
+      "pnl": -22187.54774093628
+    },
+    "Run 228": {
+      "date": "Run 228",
+      "run_counter": 228,
+      "pnl": -8356.948413848877
+    },
+    "Run 227": {
+      "date": "Run 227",
+      "run_counter": 227,
+      "pnl": 16889.251441955566
+    },
+    "Run 226": {
+      "date": "Run 226",
+      "run_counter": 226,
+      "pnl": 14831.249599456787
+    },
+    "Run 225": {
+      "date": "Run 225",
+      "run_counter": 225,
+      "pnl": -8486.100769042969
+    },
+    "Run 224": {
+      "date": "Run 224",
+      "run_counter": 224,
+      "pnl": -18779.251041412354
+    },
+    "Run 223": {
+      "date": "Run 223",
+      "run_counter": 223,
+      "pnl": -10795.051345825195
+    },
+    "Run 222": {
+      "date": "Run 222",
+      "run_counter": 222,
+      "pnl": 7036.050624847412
+    },
+    "Run 221": {
+      "date": "Run 221",
+      "run_counter": 221,
+      "pnl": 20212.498548030853
+    },
+    "Run 220": {
+      "date": "Run 220",
+      "run_counter": 220,
+      "pnl": -16599.449214935303
+    },
+    "Run 219": {
+      "date": "Run 219",
+      "run_counter": 219,
+      "pnl": -8038.799343109131
+    },
+    "Run 218": {
+      "date": "Run 218",
+      "run_counter": 218,
+      "pnl": 6029.09972794354
+    },
+    "Run 217": {
+      "date": "Run 217",
+      "run_counter": 217,
+      "pnl": -9947.700576782227
+    },
+    "Run 216": {
+      "date": "Run 216",
+      "run_counter": 216,
+      "pnl": -8125.199546813965
+    },
+    "Run 215": {
+      "date": "Run 215",
+      "run_counter": 215,
+      "pnl": 14378.400020599365
+    },
+    "Run 214": {
+      "date": "Run 214",
+      "run_counter": 214,
+      "pnl": -8259.301414489746
+    },
+    "Run 213": {
+      "date": "Run 213",
+      "run_counter": 213,
+      "pnl": -5777.098846435547
+    },
+    "Run 212": {
+      "date": "Run 212",
+      "run_counter": 212,
+      "pnl": -9407.699546813965
+    },
+    "Run 211": {
+      "date": "Run 211",
+      "run_counter": 211,
+      "pnl": 3295.800247192383
+    },
+    "Run 210": {
+      "date": "Run 210",
+      "run_counter": 210,
+      "pnl": 12582.001132965088
+    },
+    "Run 209": {
+      "date": "Run 209",
+      "run_counter": 209,
+      "pnl": 11847.600073814392
+    },
+    "Run 208": {
+      "date": "Run 208",
+      "run_counter": 208,
+      "pnl": 13828.499279022217
+    },
+    "Run 207": {
+      "date": "Run 207",
+      "run_counter": 207,
+      "pnl": 21244.49933052063
+    },
+    "Run 206": {
+      "date": "Run 206",
+      "run_counter": 206,
+      "pnl": 6252.299165725708
+    },
+    "Run 205": {
+      "date": "Run 205",
+      "run_counter": 205,
+      "pnl": 12762.000360488892
+    },
+    "Run 204": {
+      "date": "Run 204",
+      "run_counter": 204,
+      "pnl": 11806.19951248169
+    },
+    "Run 203": {
+      "date": "Run 203",
+      "run_counter": 203,
+      "pnl": -6729.302444458008
+    },
+    "Run 202": {
+      "date": "Run 202",
+      "run_counter": 202,
+      "pnl": -8817.300109863281
+    },
+    "Run 201": {
+      "date": "Run 201",
+      "run_counter": 201,
+      "pnl": -9360.000343322754
+    },
+    "Run 200": {
+      "date": "Run 200",
+      "run_counter": 200,
+      "pnl": 12931.199169158936
+    },
+    "Run 199": {
+      "date": "Run 199",
+      "run_counter": 199,
+      "pnl": 12719.69913482666
+    },
+    "Run 198": {
+      "date": "Run 198",
+      "run_counter": 198,
+      "pnl": -3851.9995880126953
+    },
+    "Run 197": {
+      "date": "Run 197",
+      "run_counter": 197,
+      "pnl": -5190.30086517334
+    },
+    "Run 196": {
+      "date": "Run 196",
+      "run_counter": 196,
+      "pnl": 13673.700542449951
+    },
+    "Run 195": {
+      "date": "Run 195",
+      "run_counter": 195,
+      "pnl": -8319.600219726562
+    },
+    "Run 194": {
+      "date": "Run 194",
+      "run_counter": 194,
+      "pnl": -5469.298667907715
+    },
+    "Run 193": {
+      "date": "Run 193",
+      "run_counter": 193,
+      "pnl": -7269.299011230469
+    },
+    "Run 192": {
+      "date": "Run 192",
+      "run_counter": 192,
+      "pnl": 10240.201091766357
+    },
+    "Run 191": {
+      "date": "Run 191",
+      "run_counter": 191,
+      "pnl": -1460.7003021240234
+    },
+    "Run 190": {
+      "date": "Run 190",
+      "run_counter": 190,
+      "pnl": 5969.700304269791
+    },
+    "Run 189": {
+      "date": "Run 189",
+      "run_counter": 189,
+      "pnl": 13963.498935699463
+    },
+    "Run 188": {
+      "date": "Run 188",
+      "run_counter": 188,
+      "pnl": 14597.998781204224
+    },
+    "Run 187": {
+      "date": "Run 187",
+      "run_counter": 187,
+      "pnl": -6486.299285888672
+    },
+    "Run 186": {
+      "date": "Run 186",
+      "run_counter": 186,
+      "pnl": -8446.500205993652
+    },
+    "Run 185": {
+      "date": "Run 185",
+      "run_counter": 185,
+      "pnl": -4780.8012771606445
+    },
+    "Run 184": {
+      "date": "Run 184",
+      "run_counter": 184,
+      "pnl": 12926.700611114502
+    },
+    "Run 183": {
+      "date": "Run 183",
+      "run_counter": 183,
+      "pnl": -1124.1018676757812
+    },
+    "Run 182": {
+      "date": "Run 182",
+      "run_counter": 182,
+      "pnl": 12100.500755310059
+    },
+    "Run 181": {
+      "date": "Run 181",
+      "run_counter": 181,
+      "pnl": -8200.799903869629
+    },
+    "Run 180": {
+      "date": "Run 180",
+      "run_counter": 180,
+      "pnl": 13451.399402618408
+    },
+    "Run 179": {
+      "date": "Run 179",
+      "run_counter": 179,
+      "pnl": 13716.000137329102
+    },
+    "Run 178": {
+      "date": "Run 178",
+      "run_counter": 178,
+      "pnl": -4501.799697875977
+    },
+    "Run 177": {
+      "date": "Run 177",
+      "run_counter": 177,
+      "pnl": 6879.600734710693
+    },
+    "Run 176": {
+      "date": "Run 176",
+      "run_counter": 176,
+      "pnl": -579.6012496948242
+    },
+    "Run 175": {
+      "date": "Run 175",
+      "run_counter": 175,
+      "pnl": 3170.7003021240234
+    },
+    "Run 174": {
+      "date": "Run 174",
+      "run_counter": 174,
+      "pnl": -493.1992721557617
+    },
+    "Run 173": {
+      "date": "Run 173",
+      "run_counter": 173,
+      "pnl": -3074.39998626709
+    },
+    "Run 172": {
+      "date": "Run 172",
+      "run_counter": 172,
+      "pnl": -318.60008239746094
+    },
+    "Run 171": {
+      "date": "Run 171",
+      "run_counter": 171,
+      "pnl": -2320.198860168457
+    },
+    "Run 170": {
+      "date": "Run 170",
+      "run_counter": 170,
+      "pnl": 2000.7009887695312
+    },
+    "Run 169": {
+      "date": "Run 169",
+      "run_counter": 169,
+      "pnl": -4258.498477935791
+    },
+    "Run 168": {
+      "date": "Run 168",
+      "run_counter": 168,
+      "pnl": -6806.24942779541
+    },
+    "Run 167": {
+      "date": "Run 167",
+      "run_counter": 167,
+      "pnl": -17401.49974822998
+    },
+    "Run 166": {
+      "date": "Run 166",
+      "run_counter": 166,
+      "pnl": -6990.749931335449
+    },
+    "Run 165": {
+      "date": "Run 165",
+      "run_counter": 165,
+      "pnl": 11692.500400543213
+    },
+    "Run 164": {
+      "date": "Run 164",
+      "run_counter": 164,
+      "pnl": 10076.25002861023
+    },
+    "Run 163": {
+      "date": "Run 163",
+      "run_counter": 163,
+      "pnl": 1306.5008997917175
+    },
+    "Run 162": {
+      "date": "Run 162",
+      "run_counter": 162,
+      "pnl": -5332.499313354492
+    },
+    "Run 161": {
+      "date": "Run 161",
+      "run_counter": 161,
+      "pnl": -4156.500148773193
+    },
+    "Run 160": {
+      "date": "Run 160",
+      "run_counter": 160,
+      "pnl": -5383.5004806518555
+    },
+    "Run 159": {
+      "date": "Run 159",
+      "run_counter": 159,
+      "pnl": -922.4993705749512
+    },
+    "Run 158": {
+      "date": "Run 158",
+      "run_counter": 158,
+      "pnl": -3364.500331878662
+    },
+    "Run 157": {
+      "date": "Run 157",
+      "run_counter": 157,
+      "pnl": -2250.0008583068848
+    },
+    "Run 156": {
+      "date": "Run 156",
+      "run_counter": 156,
+      "pnl": 1263.749885559082
+    },
+    "Run 155": {
+      "date": "Run 155",
+      "run_counter": 155,
+      "pnl": -3144.0001487731934
+    },
+    "Run 154": {
+      "date": "Run 154",
+      "run_counter": 154,
+      "pnl": 1384.4999313354492
+    },
+    "Run 153": {
+      "date": "Run 153",
+      "run_counter": 153,
+      "pnl": 5850.75101852417
+    },
+    "Run 152": {
+      "date": "Run 152",
+      "run_counter": 152,
+      "pnl": 11089.500403404236
+    },
+    "Run 151": {
+      "date": "Run 151",
+      "run_counter": 151,
+      "pnl": 11397.749161720276
+    },
+    "Run 150": {
+      "date": "Run 150",
+      "run_counter": 150,
+      "pnl": 10397.249221801758
+    },
+    "Run 149": {
+      "date": "Run 149",
+      "run_counter": 149,
+      "pnl": 3417.7494049072266
+    },
+    "Run 148": {
+      "date": "Run 148",
+      "run_counter": 148,
+      "pnl": 1902.7506351470947
+    },
+    "Run 147": {
+      "date": "Run 147",
+      "run_counter": 147,
+      "pnl": 10560.000228881836
+    },
+    "Run 146": {
+      "date": "Run 146",
+      "run_counter": 146,
+      "pnl": -6643.501281738281
+    },
+    "Run 145": {
+      "date": "Run 145",
+      "run_counter": 145,
+      "pnl": 12278.250503540039
+    },
+    "Run 144": {
+      "date": "Run 144",
+      "run_counter": 144,
+      "pnl": -8105.998992919922
+    },
+    "Run 143": {
+      "date": "Run 143",
+      "run_counter": 143,
+      "pnl": 11266.500806808472
+    },
+    "Run 142": {
+      "date": "Run 142",
+      "run_counter": 142,
+      "pnl": -5603.248500823975
+    },
+    "Run 141": {
+      "date": "Run 141",
+      "run_counter": 141,
+      "pnl": -5089.500331878662
+    },
+    "Run 140": {
+      "date": "Run 140",
+      "run_counter": 140,
+      "pnl": -6308.999862670898
+    },
+    "Run 139": {
+      "date": "Run 139",
+      "run_counter": 139,
+      "pnl": 9981.000022888184
+    },
+    "Run 138": {
+      "date": "Run 138",
+      "run_counter": 138,
+      "pnl": 6619.999933242798
+    },
+    "Run 137": {
+      "date": "Run 137",
+      "run_counter": 137,
+      "pnl": -3559.999656677246
+    },
+    "Run 136": {
+      "date": "Run 136",
+      "run_counter": 136,
+      "pnl": -5279.999732971191
+    },
+    "Run 135": {
+      "date": "Run 135",
+      "run_counter": 135,
+      "pnl": 8400.00057220459
+    },
+    "Run 134": {
+      "date": "Run 134",
+      "run_counter": 134,
+      "pnl": 7302.499961853027
+    },
+    "Run 133": {
+      "date": "Run 133",
+      "run_counter": 133,
+      "pnl": 517.4993515014648
+    },
+    "Run 132": {
+      "date": "Run 132",
+      "run_counter": 132,
+      "pnl": -2528.999900817871
+    },
+    "Run 131": {
+      "date": "Run 131",
+      "run_counter": 131,
+      "pnl": -455.99889755249023
+    },
+    "Run 130": {
+      "date": "Run 130",
+      "run_counter": 130,
+      "pnl": -2375.00057220459
+    },
+    "Run 129": {
+      "date": "Run 129",
+      "run_counter": 129,
+      "pnl": -1967.4993515014648
+    },
+    "Run 128": {
+      "date": "Run 128",
+      "run_counter": 128,
+      "pnl": -5117.499351501465
+    },
+    "Run 127": {
+      "date": "Run 127",
+      "run_counter": 127,
+      "pnl": 2080.0003051757812
+    },
+    "Run 126": {
+      "date": "Run 126",
+      "run_counter": 126,
+      "pnl": -855.0006866455078
+    },
+    "Run 125": {
+      "date": "Run 125",
+      "run_counter": 125,
+      "pnl": -2052.499198913574
+    },
+    "Run 124": {
+      "date": "Run 124",
+      "run_counter": 124,
+      "pnl": -3271.0004806518555
+    },
+    "Run 123": {
+      "date": "Run 123",
+      "run_counter": 123,
+      "pnl": 6464.999961853027
+    },
+    "Run 122": {
+      "date": "Run 122",
+      "run_counter": 122,
+      "pnl": 7605.99946975708
+    },
+    "Run 121": {
+      "date": "Run 121",
+      "run_counter": 121,
+      "pnl": 7416.000556945801
+    },
+    "Run 120": {
+      "date": "Run 120",
+      "run_counter": 120,
+      "pnl": 2262.500762939453
+    },
+    "Run 119": {
+      "date": "Run 119",
+      "run_counter": 119,
+      "pnl": 10298.9999294281
+    },
+    "Run 118": {
+      "date": "Run 118",
+      "run_counter": 118,
+      "pnl": -2830.9999465942383
+    },
+    "Run 117": {
+      "date": "Run 117",
+      "run_counter": 117,
+      "pnl": 6812.499380111694
+    },
+    "Run 116": {
+      "date": "Run 116",
+      "run_counter": 116,
+      "pnl": -5174.99885559082
+    },
+    "Run 115": {
+      "date": "Run 115",
+      "run_counter": 115,
+      "pnl": -5367.500114440918
+    },
+    "Run 114": {
+      "date": "Run 114",
+      "run_counter": 114,
+      "pnl": -6837.499237060547
+    },
+    "Run 113": {
+      "date": "Run 113",
+      "run_counter": 113,
+      "pnl": 7797.499465942383
+    },
+    "Run 112": {
+      "date": "Run 112",
+      "run_counter": 112,
+      "pnl": -5239.999198913574
+    },
+    "Run 111": {
+      "date": "Run 111",
+      "run_counter": 111,
+      "pnl": 7005.499744415283
+    },
+    "Run 110": {
+      "date": "Run 110",
+      "run_counter": 110,
+      "pnl": 510.00003814697266
+    },
+    "Run 109": {
+      "date": "Run 109",
+      "run_counter": 109,
+      "pnl": 1269.9993133544922
+    },
+    "Run 108": {
+      "date": "Run 108",
+      "run_counter": 108,
+      "pnl": 7078.499341011047
+    },
+    "Run 107": {
+      "date": "Run 107",
+      "run_counter": 107,
+      "pnl": -2775.0003814697266
+    },
+    "Run 106": {
+      "date": "Run 106",
+      "run_counter": 106,
+      "pnl": -3082.5002670288086
+    },
+    "Run 105": {
+      "date": "Run 105",
+      "run_counter": 105,
+      "pnl": -2852.500534057617
+    },
+    "Run 104": {
+      "date": "Run 104",
+      "run_counter": 104,
+      "pnl": -2897.4992752075195
+    },
+    "Run 103": {
+      "date": "Run 103",
+      "run_counter": 103,
+      "pnl": 7405.000019073486
+    },
+    "Run 102": {
+      "date": "Run 102",
+      "run_counter": 102,
+      "pnl": -1666.5006637573242
+    },
+    "Run 101": {
+      "date": "Run 101",
+      "run_counter": 101,
+      "pnl": 6798.999738693237
+    },
+    "Run 100": {
+      "date": "Run 100",
+      "run_counter": 100,
+      "pnl": -1091.4997100830078
+    },
+    "Run 99": {
+      "date": "Run 99",
+      "run_counter": 99,
+      "pnl": -143.99967193603516
+    },
+    "Run 98": {
+      "date": "Run 98",
+      "run_counter": 98,
+      "pnl": -5688.5009765625
+    },
+    "Run 97": {
+      "date": "Run 97",
+      "run_counter": 97,
+      "pnl": -2384.999465942383
+    },
+    "Run 96": {
+      "date": "Run 96",
+      "run_counter": 96,
+      "pnl": -573.9994049072266
+    },
+    "Run 95": {
+      "date": "Run 95",
+      "run_counter": 95,
+      "pnl": -732.5000762939453
+    },
+    "Run 94": {
+      "date": "Run 94",
+      "run_counter": 94,
+      "pnl": 160.00003814697266
+    },
+    "Run 93": {
+      "date": "Run 93",
+      "run_counter": 93,
+      "pnl": -1385.0000381469727
+    },
+    "Run 92": {
+      "date": "Run 92",
+      "run_counter": 92,
+      "pnl": 2067.499828338623
+    },
+    "Run 91": {
+      "date": "Run 91",
+      "run_counter": 91,
+      "pnl": -5922.498893737793
+    },
+    "Run 90": {
+      "date": "Run 90",
+      "run_counter": 90,
+      "pnl": -2248.5000610351562
+    },
+    "Run 89": {
+      "date": "Run 89",
+      "run_counter": 89,
+      "pnl": 645.0010299682617
+    },
+    "Run 88": {
+      "date": "Run 88",
+      "run_counter": 88,
+      "pnl": 9972.499179840088
+    },
+    "Run 87": {
+      "date": "Run 87",
+      "run_counter": 87,
+      "pnl": -285.00099182128906
+    },
+    "Run 86": {
+      "date": "Run 86",
+      "run_counter": 86,
+      "pnl": -3587.500762939453
+    },
+    "Run 85": {
+      "date": "Run 85",
+      "run_counter": 85,
+      "pnl": -5655.000305175781
+    },
+    "Run 84": {
+      "date": "Run 84",
+      "run_counter": 84,
+      "pnl": -5717.499923706055
+    },
+    "Run 83": {
+      "date": "Run 83",
+      "run_counter": 83,
+      "pnl": -1080.000114440918
+    },
+    "Run 82": {
+      "date": "Run 82",
+      "run_counter": 82,
+      "pnl": -217.49935150146484
+    },
+    "Run 81": {
+      "date": "Run 81",
+      "run_counter": 81,
+      "pnl": -5451.500511169434
+    },
+    "Run 80": {
+      "date": "Run 80",
+      "run_counter": 80,
+      "pnl": -5372.501182556152
+    },
+    "Run 79": {
+      "date": "Run 79",
+      "run_counter": 79,
+      "pnl": 6920.000076293945
+    },
+    "Run 78": {
+      "date": "Run 78",
+      "run_counter": 78,
+      "pnl": -2452.4993896484375
+    },
+    "Run 77": {
+      "date": "Run 77",
+      "run_counter": 77,
+      "pnl": -502.4993896484375
+    },
+    "Run 76": {
+      "date": "Run 76",
+      "run_counter": 76,
+      "pnl": 1687.5007629394531
+    },
+    "Run 75": {
+      "date": "Run 75",
+      "run_counter": 75,
+      "pnl": 7969.999408721924
+    },
+    "Run 74": {
+      "date": "Run 74",
+      "run_counter": 74,
+      "pnl": -2796.500587463379
+    },
+    "Run 73": {
+      "date": "Run 73",
+      "run_counter": 73,
+      "pnl": -2552.500534057617
+    },
+    "Run 72": {
+      "date": "Run 72",
+      "run_counter": 72,
+      "pnl": 7613.499355316162
+    },
+    "Run 71": {
+      "date": "Run 71",
+      "run_counter": 71,
+      "pnl": -4595.998954772949
+    },
+    "Run 70": {
+      "date": "Run 70",
+      "run_counter": 70,
+      "pnl": -4658.501052856445
+    },
+    "Run 69": {
+      "date": "Run 69",
+      "run_counter": 69,
+      "pnl": 82.5002670288086
+    },
+    "Run 68": {
+      "date": "Run 68",
+      "run_counter": 68,
+      "pnl": -493.99986267089844
+    },
+    "Run 67": {
+      "date": "Run 67",
+      "run_counter": 67,
+      "pnl": -482.50064849853516
+    },
+    "Run 66": {
+      "date": "Run 66",
+      "run_counter": 66,
+      "pnl": -3185.0000381469727
+    },
+    "Run 65": {
+      "date": "Run 65",
+      "run_counter": 65,
+      "pnl": 8035.000133514404
+    },
+    "Run 64": {
+      "date": "Run 64",
+      "run_counter": 64,
+      "pnl": -4899.000549316406
+    },
+    "Run 63": {
+      "date": "Run 63",
+      "run_counter": 63,
+      "pnl": 8079.999613761902
+    },
+    "Run 62": {
+      "date": "Run 62",
+      "run_counter": 62,
+      "pnl": -5281.000900268555
+    },
+    "Run 61": {
+      "date": "Run 61",
+      "run_counter": 61,
+      "pnl": -6047.500038146973
+    },
+    "Run 60": {
+      "date": "Run 60",
+      "run_counter": 60,
+      "pnl": -3902.500057220459
+    },
+    "Run 59": {
+      "date": "Run 59",
+      "run_counter": 59,
+      "pnl": -1342.5012588500977
+    },
+    "Run 58": {
+      "date": "Run 58",
+      "run_counter": 58,
+      "pnl": -2464.999580383301
+    },
+    "Run 57": {
+      "date": "Run 57",
+      "run_counter": 57,
+      "pnl": 7400.00011920929
+    },
+    "Run 56": {
+      "date": "Run 56",
+      "run_counter": 56,
+      "pnl": -4259.9992752075195
+    },
+    "Run 55": {
+      "date": "Run 55",
+      "run_counter": 55,
+      "pnl": -5362.50057220459
+    },
+    "Run 54": {
+      "date": "Run 54",
+      "run_counter": 54,
+      "pnl": 8019.999122619629
+    },
+    "Run 53": {
+      "date": "Run 53",
+      "run_counter": 53,
+      "pnl": -5331.500244140625
+    },
+    "Run 52": {
+      "date": "Run 52",
+      "run_counter": 52,
+      "pnl": -690.0003433227539
+    },
+    "Run 51": {
+      "date": "Run 51",
+      "run_counter": 51,
+      "pnl": -1797.5000381469727
+    },
+    "Run 50": {
+      "date": "Run 50",
+      "run_counter": 50,
+      "pnl": -3855.000686645508
+    },
+    "Run 49": {
+      "date": "Run 49",
+      "run_counter": 49,
+      "pnl": -1282.5003623962402
+    },
+    "Run 48": {
+      "date": "Run 48",
+      "run_counter": 48,
+      "pnl": -4277.499771118164
+    },
+    "Run 47": {
+      "date": "Run 47",
+      "run_counter": 47,
+      "pnl": -4595.000076293945
+    },
+    "Run 46": {
+      "date": "Run 46",
+      "run_counter": 46,
+      "pnl": 8403.999423980713
+    },
+    "Run 45": {
+      "date": "Run 45",
+      "run_counter": 45,
+      "pnl": 7579.00071144104
+    },
+    "Run 44": {
+      "date": "Run 44",
+      "run_counter": 44,
+      "pnl": 7486.50016784668
+    },
+    "Run 43": {
+      "date": "Run 43",
+      "run_counter": 43,
+      "pnl": -5337.499809265137
+    },
+    "Run 42": {
+      "date": "Run 42",
+      "run_counter": 42,
+      "pnl": -835.0008010864258
+    },
+    "Run 41": {
+      "date": "Run 41",
+      "run_counter": 41,
+      "pnl": 1852.4999618530273
+    },
+    "Run 40": {
+      "date": "Run 40",
+      "run_counter": 40,
+      "pnl": -1773.4991073608398
+    },
+    "Run 39": {
+      "date": "Run 39",
+      "run_counter": 39,
+      "pnl": 6287.500095367432
+    },
+    "Run 38": {
+      "date": "Run 38",
+      "run_counter": 38,
+      "pnl": 7716.000509262085
+    },
+    "Run 37": {
+      "date": "Run 37",
+      "run_counter": 37,
+      "pnl": 7064.99981880188
+    },
+    "Run 36": {
+      "date": "Run 36",
+      "run_counter": 36,
+      "pnl": 7901.000690460205
+    },
+    "Run 35": {
+      "date": "Run 35",
+      "run_counter": 35,
+      "pnl": 6439.999198913574
+    },
+    "Run 34": {
+      "date": "Run 34",
+      "run_counter": 34,
+      "pnl": -2400.0001907348633
+    },
+    "Run 33": {
+      "date": "Run 33",
+      "run_counter": 33,
+      "pnl": -4062.5001907348633
+    },
+    "Run 32": {
+      "date": "Run 32",
+      "run_counter": 32,
+      "pnl": 292.49935150146484
+    },
+    "Run 31": {
+      "date": "Run 31",
+      "run_counter": 31,
+      "pnl": -4829.999542236328
+    },
+    "Run 30": {
+      "date": "Run 30",
+      "run_counter": 30,
+      "pnl": -4490.000534057617
+    },
+    "Run 29": {
+      "date": "Run 29",
+      "run_counter": 29,
+      "pnl": 7248.500728607178
+    },
+    "Run 28": {
+      "date": "Run 28",
+      "run_counter": 28,
+      "pnl": -4809.999465942383
+    },
+    "Run 27": {
+      "date": "Run 27",
+      "run_counter": 27,
+      "pnl": -1535.000228881836
+    },
+    "Run 26": {
+      "date": "Run 26",
+      "run_counter": 26,
+      "pnl": 4637.49988079071
+    },
+    "Run 25": {
+      "date": "Run 25",
+      "run_counter": 25,
+      "pnl": 3730.9995651245117
+    },
+    "Run 24": {
+      "date": "Run 24",
+      "run_counter": 24,
+      "pnl": -4016.5000915527344
+    },
+    "Run 23": {
+      "date": "Run 23",
+      "run_counter": 23,
+      "pnl": 2064.0003204345703
+    },
+    "Run 22": {
+      "date": "Run 22",
+      "run_counter": 22,
+      "pnl": 2825.000762939453
+    },
+    "Run 21": {
+      "date": "Run 21",
+      "run_counter": 21,
+      "pnl": 977.5012969970703
+    },
+    "Run 20": {
+      "date": "Run 20",
+      "run_counter": 20,
+      "pnl": 2451.50089263916
+    },
+    "Run 19": {
+      "date": "Run 19",
+      "run_counter": 19,
+      "pnl": -2480.0004959106445
+    },
+    "Run 18": {
+      "date": "Run 18",
+      "run_counter": 18,
+      "pnl": -1227.4999618530273
+    },
+    "Run 17": {
+      "date": "Run 17",
+      "run_counter": 17,
+      "pnl": -5610.99967956543
+    },
+    "Run 16": {
+      "date": "Run 16",
+      "run_counter": 16,
+      "pnl": -5667.500114440918
+    },
+    "Run 15": {
+      "date": "Run 15",
+      "run_counter": 15,
+      "pnl": 7232.499885559082
+    },
+    "Run 14": {
+      "date": "Run 14",
+      "run_counter": 14,
+      "pnl": 7357.50036239624
+    },
+    "Run 13": {
+      "date": "Run 13",
+      "run_counter": 13,
+      "pnl": -5007.499313354492
+    },
+    "Run 12": {
+      "date": "Run 12",
+      "run_counter": 12,
+      "pnl": -5099.999618530273
+    },
+    "Run 11": {
+      "date": "Run 11",
+      "run_counter": 11,
+      "pnl": 5820.000648498535
+    },
+    "Run 10": {
+      "date": "Run 10",
+      "run_counter": 10,
+      "pnl": 7143.999290466309
+    },
+    "Run 9": {
+      "date": "Run 9",
+      "run_counter": 9,
+      "pnl": 6619.000053405762
+    },
+    "Run 8": {
+      "date": "Run 8",
+      "run_counter": 8,
+      "pnl": 6255.000305175781
+    },
+    "Run 7": {
+      "date": "Run 7",
+      "run_counter": 7,
+      "pnl": 9145.000553131104
+    },
+    "Run 6": {
+      "date": "Run 6",
+      "run_counter": 6,
+      "pnl": -4444.999885559082
+    },
+    "Run 5": {
+      "date": "Run 5",
+      "run_counter": 5,
+      "pnl": 5762.499713897705
+    },
+    "Run 4": {
+      "date": "Run 4",
+      "run_counter": 4,
+      "pnl": -4336.500930786133
+    },
+    "Run 3": {
+      "date": "Run 3",
+      "run_counter": 3,
+      "pnl": 6837.500095367432
+    },
+    "Run 2": {
+      "date": "Run 2",
+      "run_counter": 2,
+      "pnl": -435.0006103515625
+    },
+    "Run 1": {
+      "date": "Run 1",
+      "run_counter": 1,
+      "pnl": -4912.500190734863
+    }
+  },
+  "current_positions": [
+    {
+      "id": 23030601170736,
+      "symbol": "OPTIDX_BANKNIFTY_09MAR2023_PE_40800",
+      "underlying": "NIFTY BANK",
+      "option_type": "PE",
+      "quantity": 0,
+      "price": 69.15,
+      "pnl": 1305.0000000000005,
+      "ltp": 0,
+      "entry_value": -1305.0000000000005,
+      "exchange": "NFO"
+    },
+    {
+      "id": 23030601170034,
+      "symbol": "OPTIDX_BANKNIFTY_09MAR2023_PE_41700",
+      "underlying": "NIFTY BANK",
+      "option_type": "PE",
+      "quantity": 0,
+      "price": 308.39999,
+      "pnl": -6217.5005,
+      "ltp": 0,
+      "entry_value": 6217.5005,
+      "exchange": "NFO"
+    }
+  ],
+  "deployment_date": "2023-03-06T00:00:00.000000Z",
+  "broker": "Angelone",
+  "exchange": "NFO"
+}
