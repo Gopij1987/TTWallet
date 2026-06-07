@@ -59,22 +59,9 @@ def main():
         return 1
 
     print('✅ Token is valid (getMe returned bot info)')
-
+    # By default we do not send a test message to avoid spamming the chat.
     if chat:
-        print('Testing sendMessage to chat id:', chat)
-        try:
-            r2 = requests.post(f'https://api.telegram.org/bot{token}/sendMessage', json={'chat_id': chat, 'text': 'TT Wallet monitor: test message from validator'}, timeout=10)
-            print('sendMessage response:', r2.status_code, r2.text)
-            if r2.status_code == 200:
-                print('✅ sendMessage succeeded')
-                return 0
-            else:
-                print('❌ sendMessage failed')
-                return 1
-        except Exception as e:
-            print('❌ sendMessage request failed:', str(e))
-            return 1
-
+        print('ℹ️  Chat test skipped by default (sendMessage disabled).')
     return 0
 
 
