@@ -437,24 +437,20 @@ def main():
     # Step 4: Save outputs
     print(f"[4/4] Saving and validating data...\n")
     
-    # Use external one-time extraction folder
-    extract_folder = Path(r"C:\Users\gopij\OneDrive\Synced\Python\AlphaMetrix.In\One time Extraction")
-    extract_folder.mkdir(parents=True, exist_ok=True)
-    
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     
     # Save leg data
-    leg_file = extract_folder / f"leg_wise_{STRATEGY_ID}_complete_{timestamp}.json"
+    leg_file = f"leg_wise_{STRATEGY_ID}_complete_{timestamp}.json"
     with open(leg_file, "w", encoding="utf-8") as f:
         json.dump(all_legs, f, indent=2)
     
     # Save counter details
-    counter_file = extract_folder / f"counter_details_{STRATEGY_ID}_complete_{timestamp}.json"
+    counter_file = f"counter_details_{STRATEGY_ID}_complete_{timestamp}.json"
     with open(counter_file, "w", encoding="utf-8") as f:
         json.dump(counter_details, f, indent=2, default=str)
     
     # Save as CSV with shared_code_id in front
-    csv_file = extract_folder / f"leg_wise_{STRATEGY_ID}_complete_{timestamp}.csv"
+    csv_file = f"leg_wise_{STRATEGY_ID}_complete_{timestamp}.csv"
     import csv as csv_module
     with open(csv_file, "w", newline="", encoding="utf-8") as f:
         writer = csv_module.DictWriter(f, fieldnames=[

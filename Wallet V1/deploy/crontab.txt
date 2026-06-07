@@ -1,0 +1,4 @@
+# Add this line to crontab (crontab -e)
+# Runs at 07:30 IST Monday–Friday. Process starts, finishes, and exits — zero idle RAM.
+
+30 7 * * 1-5 TZ=Asia/Kolkata /usr/bin/python3 /opt/tt-wallet/Wallet\ V1/tt_integrated_automation.py >> /var/log/tt-auto.log 2>&1

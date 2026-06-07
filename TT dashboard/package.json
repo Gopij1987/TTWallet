@@ -1,0 +1,22 @@
+{
+  "name": "tt-dashboard",
+  "version": "1.0.0",
+  "description": "TT Dashboard - Tradetron Strategy PnL Monitor",
+  "private": true,
+  "scripts": {
+    "setup": "node setup.js",
+    "setup:check": "node setup.js",
+    "start": "node start-all.js",
+    "start:all": "node start-all.js",
+    "backend:install": "cd backend && npm install",
+    "frontend:install": "cd frontend && npm install",
+    "install:all": "npm run backend:install && npm run frontend:install",
+    "backend:dev": "cd backend && npm run dev",
+    "frontend:dev": "cd frontend && npm run dev",
+    "backend:start": "cd backend && npm start",
+    "frontend:start": "cd frontend && npm run build && npm run preview"
+  },
+  "keywords": ["tradetron", "pnl", "dashboard"],
+  "author": "",
+  "license": "MIT"
+}

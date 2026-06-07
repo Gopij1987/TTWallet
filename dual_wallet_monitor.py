@@ -44,18 +44,19 @@ import pytz
 # Load environment variables from wallet_monitor.env (for local development)
 try:
     from dotenv import load_dotenv
-    import os
-    # Load wallet monitor env
-    wallet_monitor_env = os.path.join(os.path.dirname(__file__), 'wallet_monitor.env')
-    if os.path.exists(wallet_monitor_env):
-        load_dotenv(dotenv_path=wallet_monitor_env, override=True)
-    # Also load legacy wallet-specific env for compatibility
-    gopi_env = os.path.join(os.path.dirname(__file__), 'TTGopiWallet', '.env')
-    if os.path.exists(gopi_env):
-        load_dotenv(dotenv_path=gopi_env, override=True)
-    ramki_env = os.path.join(os.path.dirname(__file__), 'TTRamkiWallet', '.env')
-    if os.path.exists(ramki_env):
-        load_dotenv(dotenv_path=ramki_env, override=True)
+    # Only load local .env files when NOT running inside GitHub Actions
+    if os.getenv('GITHUB_ACTIONS', '').lower() != 'true':
+        # Load wallet monitor env
+        wallet_monitor_env = os.path.join(os.path.dirname(__file__), 'wallet_monitor.env')
+        if os.path.exists(wallet_monitor_env):
+            load_dotenv(dotenv_path=wallet_monitor_env, override=True)
+        # Also load legacy wallet-specific env for local compatibility
+        gopi_env = os.path.join(os.path.dirname(__file__), 'TTGopiWallet', '.env')
+        if os.path.exists(gopi_env):
+            load_dotenv(dotenv_path=gopi_env, override=True)
+        ramki_env = os.path.join(os.path.dirname(__file__), 'TTRamkiWallet', '.env')
+        if os.path.exists(ramki_env):
+            load_dotenv(dotenv_path=ramki_env, override=True)
 except ImportError:
     pass  # dotenv not installed or not needed in GitHub Actions
 
@@ -69,6 +70,12 @@ def send_telegram_message(message, title="TT Wallet Monitor"):
         return False
     
     try:
+        # Mask token for logging (show first/last 4 chars)
+        def _mask(t):
+            if not t:
+                return '<empty>'
+            return (t[:4] + '...' + t[-4:]) if len(t) > 10 else t
+        print(f"Using TELEGRAM_BOT_TOKEN={_mask(bot_token)} and TELEGRAM_CHAT_ID={chat_id}")
         url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
         payload = {
             "chat_id": chat_id,
@@ -76,6 +83,12 @@ def send_telegram_message(message, title="TT Wallet Monitor"):
             "parse_mode": "HTML"
         }
         response = requests.post(url, json=payload, timeout=10)
+        # Debugging: show status and response body to help diagnose failures
+        try:
+            resp_text = response.text
+        except Exception:
+            resp_text = '<unavailable>'
+        print(f"Telegram API response: {response.status_code} - {resp_text}")
         return response.status_code == 200
     except Exception as e:
         print(f"⚠️  Telegram error: {str(e)}")

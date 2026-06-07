@@ -26,6 +26,14 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install requests python-dotenv pytz
+
+      - name: Validate Telegram token and chat (pre-check)
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          echo "Validating Telegram token and chat id using validate_telegram.py"
+          python validate_telegram.py --token "${TELEGRAM_BOT_TOKEN}" --chat "${TELEGRAM_CHAT_ID}"
       
       - name: Run wallet monitor
         env:

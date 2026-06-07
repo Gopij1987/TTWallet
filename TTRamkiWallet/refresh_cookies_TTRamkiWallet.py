@@ -2,13 +2,12 @@
 Run locally to keep cookies fresh
 """
 
-import requests
-import pickle
 import base64
 import os
-import subprocess
-from shutil import which
+import pickle
+import time
 from pathlib import Path
+
 from config_TTRamkiWallet import load_credentials, validate_credentials
 
 def login_and_save_cookies():
@@ -23,6 +22,7 @@ def login_and_save_cookies():
         from selenium.webdriver.support.ui import WebDriverWait
         from selenium.webdriver.support import expected_conditions as EC
         from selenium.webdriver.chrome.options import Options
+        from selenium.webdriver.chrome.service import Service
         from webdriver_manager.chrome import ChromeDriverManager
     except ImportError:
         print("❌ Required packages not installed. Run: pip install selenium webdriver-manager")
@@ -37,10 +37,20 @@ def login_and_save_cookies():
     driver = None
     try:
         # Initialize driver with matching Chrome version
-        driver = webdriver.Chrome(
-            service=webdriver.ChromeService(ChromeDriverManager().install()),
-            options=chrome_options
-        )
+        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+
+        # Block common ad/cookie overlays and expose closed shadow roots where possible.
+        driver.execute_cdp_cmd("Network.enable", {})
+        driver.execute_cdp_cmd("Network.setBlockedURLs", {"urls": [
+            "*nextroll.com*", "*adroll.com*", "*nr-data.net*",
+            "*d.adroll.com*", "*s.adroll.com*"
+        ]})
+        driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {"source": """
+            const _attachShadow = Element.prototype.attachShadow;
+            Element.prototype.attachShadow = function(init) {
+                return _attachShadow.call(this, { ...init, mode: 'open' });
+            };
+        """})
         
         print("Opening Tradetron login page...")
         driver.get("https://tradetron.tech/login")
@@ -56,56 +66,63 @@ def login_and_save_cookies():
         password_field = driver.find_element(By.NAME, "password")
         password_field.send_keys(creds['password'])
         print("✓ Password entered")
+
+        # Try to solve ALTCHA automatically before submitting the form.
+        print("\n⚙️  Trying automated ALTCHA handling...")
+        altcha_triggered = handle_altcha_captcha(driver)
+        if not altcha_triggered:
+            print("⚠️  ALTCHA was not solved automatically. You can solve it manually if prompted.")
         
         # Click login button
         login_button = driver.find_element(By.XPATH, "//button[contains(., 'Login') or contains(., 'Sign in')]")
         login_button.click()
         print("✓ Login button clicked")
 
-        # Wait for user to solve captcha and complete login
-        print("\n⚠️ Solve the captcha in the browser, then press Enter here to continue...")
-        input()
+        # If the automated flow did not complete, allow a manual fallback.
+        if not altcha_triggered:
+            print("\n⚠️ Solve the captcha in the browser, then press Enter here to continue...")
+            input()
 
-        # Wait for redirect (dashboard or logged-in state)
-        WebDriverWait(driver, 60).until(
-            lambda d: "dashboard" in d.current_url or "login" not in d.current_url
-        )
+        # Let the post-submit state settle, then capture cookies and continue the old flow.
+        try:
+            WebDriverWait(driver, 20).until(
+                lambda d: "login" not in d.current_url or "dashboard" in d.current_url
+            )
+        except Exception:
+            pass
 
-        if "dashboard" in driver.current_url or "login" not in driver.current_url:
-            print("✓ Login successful!")
-            
-            # Extract cookies
-            cookies_list = []
-            for cookie in driver.get_cookies():
-                cookies_list.append({
-                    'name': cookie['name'],
-                    'value': cookie['value'],
-                    'domain': cookie.get('domain', '.tradetron.tech')
-                })
-            
-            print(f"✓ Total cookies: {len(cookies_list)}")
-            
-            # Generate base64 for GitHub secret
-            print("\n" + "="*70)
-            print("📋 Base64 encoded cookies for GitHub secret TT_COOKIES_B64_RAMKI:")
-            print("="*70)
-            cookies_b64 = base64.b64encode(pickle.dumps(cookies_list)).decode('utf-8')
-            print(cookies_b64)
-            print("="*70)
-            print("\nℹ️  Copy the above value and update the GitHub secret:")
-            print("   https://github.com/Gopij1987/TTLogin/settings/secrets/actions")
-            print("   Secret name: TT_COOKIES_B64_RAMKI")
-            print("="*70)
+        time.sleep(2)
+        print(f"✓ Post-sign-in URL: {driver.current_url}")
 
-            # Update the local TTRamkiWallet/.env (create if missing)
-            env_path = Path(__file__).parent / ".env"
-            update_env_with_cookies_b64(env_path, cookies_b64)
-            print(f'✓ .env file updated with new TT_COOKIES_B64_RAMKI value at {env_path}')
+        # Extract cookies immediately after the sign-in flow has settled.
+        cookies_list = []
+        for cookie in driver.get_cookies():
+            cookies_list.append({
+                'name': cookie['name'],
+                'value': cookie['value'],
+                'domain': cookie.get('domain', '.tradetron.tech')
+            })
 
-            return True
-        else:
-            print(f"❌ Login failed. Current URL: {driver.current_url}")
-            return False
+        print(f"✓ Total cookies: {len(cookies_list)}")
+
+        # Generate base64 for GitHub secret
+        print("\n" + "="*70)
+        print("📋 Base64 encoded cookies for GitHub secret TT_COOKIES_B64_RAMKI:")
+        print("="*70)
+        cookies_b64 = base64.b64encode(pickle.dumps(cookies_list)).decode('utf-8')
+        print(cookies_b64)
+        print("="*70)
+        print("\nℹ️  Copy the above value and update the GitHub secret:")
+        print("   https://github.com/Gopij1987/TTLogin/settings/secrets/actions")
+        print("   Secret name: TT_COOKIES_B64_RAMKI")
+        print("="*70)
+
+        # Update the local TTRamkiWallet/.env (create if missing)
+        env_path = Path(__file__).parent / ".env"
+        update_env_with_cookies_b64(env_path, cookies_b64)
+        print(f'✓ .env file updated with new TT_COOKIES_B64_RAMKI value at {env_path}')
+
+        return True
             
     except Exception as e:
         print(f"❌ Error: {e}")
@@ -113,6 +130,60 @@ def login_and_save_cookies():
     finally:
         if driver:
             driver.quit()
+
+
+def handle_altcha_captcha(driver):
+    """Trigger ALTCHA verification if the widget is present."""
+    try:
+        from selenium.webdriver.common.by import By
+
+        for attempt in range(8):
+            result = driver.execute_script("""
+                var widget = document.querySelector('altcha-widget');
+                if (!widget) return 'no-widget';
+
+                if (typeof widget.verify === 'function') {
+                    try { widget.verify(); return 'verify-called'; } catch (e) {}
+                }
+
+                var root = widget.shadowRoot || widget;
+                var cb = root.querySelector('input[type="checkbox"]');
+                if (!cb) return 'no-checkbox';
+                cb.click();
+                return 'clicked';
+            """)
+            print(f"   ALTCHA attempt {attempt + 1}: {result}")
+            if result in ("clicked", "verify-called"):
+                break
+            if result == "no-widget":
+                time.sleep(1)
+                continue
+            time.sleep(1)
+
+        cbs = driver.find_elements(By.CSS_SELECTOR, "altcha-widget input[type='checkbox']")
+        if cbs:
+            driver.execute_script("arguments[0].scrollIntoView({block:'center'});", cbs[0])
+            time.sleep(0.3)
+            cbs[0].click()
+            print("   Selenium-clicked ALTCHA checkbox.")
+
+        print("   Waiting for ALTCHA proof-of-work to complete (up to 30s)...")
+        for _ in range(30):
+            time.sleep(1)
+            state = driver.execute_script("""
+                var w = document.querySelector('altcha-widget');
+                if (!w) return 'no-widget';
+                var d = w.querySelector('[data-state]');
+                return d ? d.getAttribute('data-state') : (w.getAttribute('state') || 'pending');
+            """)
+            print(f"   ALTCHA state: {state}")
+            if state == "verified":
+                print("   ✔ ALTCHA verified.")
+                return True
+    except Exception as e:
+        print(f"   ALTCHA step error: {e} — continuing anyway...")
+
+    return False
 
 
 def update_env_with_cookies_b64(env_path, b64_value):
